@@ -183,7 +183,7 @@ block:
       "provenance": "documentation example, compiler-verified",
       "compilerVerified": true,
       "raw": " var $c; $c2 : Collection\n $c:=New collection\n ...",
-      "docPage": "mirror/docs/21-R3/API/CollectionClass.html",
+      "docPage": "https://developer.4d.com/docs/API/CollectionClass",
       "title": "Example 1",
       "caption": "Ordering a collection of numbers ..."
     },
@@ -191,6 +191,13 @@ block:
   }
 }
 ```
+
+Every `docPage` -- on a member, on a class card, and on each example block --
+is an official documentation permalink, and text mode prints it as a `docs:`
+line. It is deliberately **version-less**: `https://developer.4d.com/docs/API/FileClass`
+rather than `.../docs/21-R3/API/FileClass`, because a version-pinned URL stops
+resolving once that release is superseded and would rot this binary on 4D's
+release schedule. `4D.Transporter` has no API page and so carries none.
 
 A **class** result carries `instantiation` (the raw IR recipes), a rendered
 `howToObtain`, `constructibleByUserCode` + `constructibilityNote`,

@@ -953,3 +953,90 @@ fn idf_discounts_ubiquitous_tokens() {
     );
     assert!(data::CORPUS_MEMBERS as usize == 502);
 }
+
+/// `docPage` is an official permalink, not a path into the docs mirror the
+/// pipeline parsed. The mirror is not shipped, so a mirror path served here
+/// would be a dead reference for every consumer.
+///
+/// The URL is deliberately version-less: a `/docs/21-R3/API/...` URL stops
+/// resolving once 21-R3 is superseded, so this asserts the absence of a
+/// version segment rather than merely asserting the prefix -- a pinned URL
+/// would satisfy a prefix check while rotting on 4D's release schedule.
+#[test]
+fn doc_pages_are_version_less_official_permalinks() {
+    const BASE: &str = "https://developer.4d.com/docs/API/";
+    let idx = index::get();
+    let mut seen = 0;
+
+    for (id, record) in &idx.members {
+        let card = model::build_member_result(record, None);
+        let page = card
+            .doc_page
+            .unwrap_or_else(|| panic!("{id} has no docPage"));
+        assert!(
+            page.starts_with(BASE),
+            "{id} docPage is not an official API permalink: {page}"
+        );
+        let slug = &page[BASE.len()..];
+        assert!(
+            !slug.contains('/'),
+            "{id} docPage carries a version or extra path segment: {page}"
+        );
+        assert!(
+            !slug.ends_with(".html"),
+            "{id} docPage still looks like a mirror file: {page}"
+        );
+        seen += 1;
+    }
+    assert_eq!(seen, 502, "expected every member to carry a docPage");
+
+    // Classes agree with their members, and the one class with no API page
+    // stays null rather than being given a fabricated URL.
+    let file = model::class_card("File").expect("File class");
+    assert_eq!(
+        file.doc_page.as_deref(),
+        Some("https://developer.4d.com/docs/API/FileClass")
+    );
+    let transporter = model::class_card("Transporter").expect("Transporter class");
+    assert_eq!(
+        transporter.doc_page, None,
+        "Transporter has no API page; a URL here would be invented"
+    );
+
+    // Doc examples carry their own docPage, and it was missed by the first
+    // pass at this change -- the IR was rewritten while `example.primary`
+    // still served a mirror path. Cover it here so the two cannot diverge
+    // again, since it is the citation an agent is most likely to surface.
+    let mut examples_seen = 0;
+    for (id, record) in &idx.members {
+        let card = model::build_member_result(record, None);
+        let blocks = card
+            .example
+            .primary
+            .iter()
+            .chain(card.example.alternates.iter());
+        for block in blocks {
+            if let Some(page) = &block.doc_page {
+                assert!(
+                    page.starts_with(BASE) && !page.ends_with(".html"),
+                    "{id} example cites a non-permalink docPage: {page}"
+                );
+                examples_seen += 1;
+            }
+        }
+    }
+    assert!(
+        examples_seen > 400,
+        "expected the doc-example corpus to be exercised, saw {examples_seen}"
+    );
+
+    // Control: the assertions above pass trivially if the predicate is weak,
+    // so pin that the same predicate rejects the two shapes this test exists
+    // to keep out -- a pinned-version URL and a mirror path.
+    let rejects = |page: &str| {
+        !page.starts_with(BASE) || page[BASE.len()..].contains('/') || page.ends_with(".html")
+    };
+    assert!(rejects("https://developer.4d.com/docs/21-R3/API/FileClass"));
+    assert!(rejects("mirror/docs/21-R3/API/FileClass.html"));
+    assert!(!rejects("https://developer.4d.com/docs/API/FileClass"));
+}
