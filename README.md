@@ -295,6 +295,37 @@ More importantly, a classic-style stopword list would eat `at`, `by` and
 `get` — which are real member-name tokens (`Collection.at`, `.orderBy`,
 `Entity.getKey`). IDF discounts them without deleting them.
 
+### Abstract classes are still nameable types
+
+The four abstract bases — `Document`, `Directory`, `Function`, `Transporter`
+— are flagged `isAbstract`, and their cards say so and point at the concrete
+subclasses. That flag records the documented **instantiation** guidance; it
+says nothing about whether the type may be *named*, which it may:
+`var $x : 4D.Document` compiles, and every abstract class resolves under both
+its bare id and its `4D.<Class>` form.
+
+This was wrong in the upstream IR until `4d-static-docs` `fb0a69ac`, which
+this snapshot postdates. `Document.typeName` was recorded as `4D.File` and
+`Directory.typeName` as `4D.Folder` — the type of one of their *two* concrete
+subclasses, which was both arbitrary (why `File` over `ZipFile`?) and false.
+Rendering that would have told an agent that `Document` **is** `4D.File`.
+
+The renderer now trusts the data, and a corpus-wide test
+(`every_class_owns_its_type_name`) enforces the invariant that no class is
+displayed under a type name belonging to another: a regression fails a test
+naming the offending class rather than being quietly papered over.
+
+```
+$ 4d-language-oop class Document
+4D.Document (class Document)
+flags: abstract
+subclasses: File, ZipFile
+HOW TO OBTAIN AN INSTANCE:
+  NOT CONSTRUCTIBLE BY USER CODE.
+  This is an abstract base class: it is never instantiated directly. Obtain
+  an instance of one of its concrete subclasses instead.
+```
+
 ### Class-flooding control
 
 `Collection` has 47 members, `WebServer` 41, `EntitySelection` 34. A naive
@@ -309,14 +340,16 @@ else. Two rules prevent that, evaluated over a **fixed-size candidate pool**
   as a result too. A card named outright by the query is ranked first, since
   the query was really asking about the class.
 
-> **Deviation from the brief, deliberate.** The specification says the class
-> card is emitted "instead of" flooding with members. Emitting the card
-> *in addition to* the capped member rows was measurably better: with pure
-> replacement, "order a collection" returned the `Collection` card and hid
-> `Collection.orderBy` entirely, which is the actual answer. Composing the
-> two rules also keeps the 3-row cap from being dead code for exactly the
-> classes that need it. `query "order a collection"` now returns the card
-> followed by `.multiSort`, `.orderBy`, `.orderByMethod`.
+> **Deviation from the brief, deliberate — do not "fix" this back.** The
+> specification says the class card is emitted "instead of" flooding with
+> members. Emitting the card *in addition to* the capped member rows was
+> measurably better: with pure replacement, "order a collection" returned the
+> `Collection` card and hid `Collection.orderBy` entirely, which is the actual
+> answer. Composing the two rules also keeps the 3-row cap from being dead
+> code for exactly the classes that need it — under pure replacement the cap
+> could never fire, leaving two rules that cannot both be live. `query "order
+> a collection"` now returns the card followed by `.multiSort`, `.orderBy`,
+> `.orderByMethod`. Reviewed and accepted by the pipeline owner.
 
 This intentionally stays scoped to **single-member lookups** — no multi-step
 task chaining/composition in this version.
@@ -350,14 +383,15 @@ what agents are told.
 ## Releases
 
 `.github/workflows/release.yml` builds a matrix of macOS arm64/x64, Linux
-arm64/x64 (static musl) and Windows x64, and publishes one `.tar.xz` per
-platform named:
+arm64/x64 (static musl) and Windows arm64/x64, and publishes one `.tar.xz`
+per platform named:
 
 ```
 4d-language-oop-macos-arm64.tar.xz
 4d-language-oop-macos-x64.tar.xz
 4d-language-oop-linux-arm64.tar.xz
 4d-language-oop-linux-x64.tar.xz
+4d-language-oop-windows-arm64.tar.xz
 4d-language-oop-windows-x64.tar.xz
 ```
 

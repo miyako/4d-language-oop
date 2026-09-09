@@ -462,13 +462,98 @@ fn event_callback_classes_are_not_constructible() {
     }
 }
 
-/// The 4 abstract bases are never instantiated directly.
+/// An abstract base is still a real, nameable 4D type. This was once wrong in
+/// the upstream IR: `Document.typeName` was recorded as `4D.File` and
+/// `Directory.typeName` as `4D.Folder` — the type of one of their *two*
+/// concrete subclasses, which was arbitrary and false. `tool4d` accepts
+/// `var $x : 4D.Document` and rejects `4D.DocumentX`. Fixed in
+/// `4d-static-docs` `fb0a69ac`; pinned here so it cannot regress.
+///
+/// All four abstract classes are covered, not just the two that were broken:
+/// `Function` and `Transporter` were correct only by luck.
+#[test]
+fn abstract_classes_have_their_own_type_name() {
+    for (id, type_name) in [
+        ("Document", "4D.Document"),
+        ("Directory", "4D.Directory"),
+        ("Function", "4D.Function"),
+        ("Transporter", "4D.Transporter"),
+    ] {
+        let card = model::class_card(id).unwrap_or_else(|| panic!("class {id} must resolve"));
+        assert_eq!(card.type_name, type_name, "{id} has the wrong type name");
+        assert_eq!(
+            model::class_heading(&card.id, &card.type_name),
+            format!("{type_name} (class {id})"),
+            "wrong heading for abstract class {id}"
+        );
+
+        // The 4D.<Class> spelling must resolve to the same card...
+        let by_type =
+            model::class_card(type_name).unwrap_or_else(|| panic!("{type_name} must resolve"));
+        assert_eq!(by_type.id, id, "{type_name} resolved to the wrong class");
+
+        // ...while a fabricated name must not. A resolution test proves
+        // nothing unless something in it is required to fail.
+        let bogus = format!("{type_name}X");
+        assert!(
+            model::class_card(&bogus).is_none(),
+            "{bogus} is not a real type and must not resolve"
+        );
+    }
+}
+
+/// Concrete class headings, for contrast — including `Collection`, whose type
+/// name is bare rather than `4D.<id>`.
+#[test]
+fn concrete_class_headings() {
+    for (id, want) in [
+        ("File", "4D.File (class File)"),
+        ("Folder", "4D.Folder (class Folder)"),
+        ("Entity", "4D.Entity (class Entity)"),
+        ("Collection", "Collection"),
+    ] {
+        let card = model::class_card(id).unwrap_or_else(|| panic!("class {id} must resolve"));
+        assert_eq!(
+            model::class_heading(&card.id, &card.type_name),
+            want,
+            "wrong heading for {id}"
+        );
+    }
+}
+
+/// Corpus-wide invariant: no class may be displayed under a type name that
+/// belongs to a different class. Enforced as a test rather than handled in
+/// the renderer, so a data regression names the offending class instead of
+/// being quietly papered over.
+#[test]
+fn every_class_owns_its_type_name() {
+    let idx = index::get();
+    let borrowed: Vec<(&str, &str)> = idx
+        .classes
+        .iter()
+        .filter(|(id, cl)| !model::owns_its_type_name(id, &cl.ir.type_name))
+        .map(|(id, cl)| (id.as_str(), cl.ir.type_name.as_str()))
+        .collect();
+    assert!(
+        borrowed.is_empty(),
+        "these classes are recorded under a type name that is not theirs: {borrowed:?}"
+    );
+}
+
+/// The 4 abstract bases are never instantiated directly. `isAbstract` records
+/// the documented instantiation guidance — it says nothing about whether the
+/// type may be *named*, which it may.
 #[test]
 fn abstract_classes_are_flagged() {
     for id in ["Directory", "Document", "Function", "Transporter"] {
         let card = model::class_card(id).unwrap_or_else(|| panic!("class {id} must resolve"));
         assert!(card.is_abstract, "{id} must be flagged abstract");
         assert!(!card.constructible_by_user_code);
+        assert!(
+            card.constructibility_note
+                .is_some_and(|n| n.contains("concrete subclass")),
+            "{id} must point the caller at its concrete subclasses"
+        );
     }
 }
 

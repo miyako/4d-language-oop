@@ -79,7 +79,7 @@ pub fn run_query(args: QueryArgs) -> i32 {
                 println!(
                     "{}. {} [class card]  score={:.2}",
                     rank + 1,
-                    c.type_name,
+                    model::class_heading(&c.id, &c.type_name),
                     c.score.unwrap_or(0.0)
                 );
                 if let Some(reason) = c.card_reason {
@@ -163,7 +163,7 @@ pub fn run_class(args: NameArgs) -> i32 {
     if args.json {
         return print_json(&card);
     }
-    println!("{} (class {})", card.type_name, card.id);
+    println!("{}", model::class_heading(&card.id, &card.type_name));
     print_class_body(&card, "", usize::MAX);
     0
 }
@@ -193,9 +193,8 @@ pub fn run_members(args: NameArgs) -> i32 {
 
 fn print_members_text(listing: &MembersListing) {
     println!(
-        "{} ({}) -- {} member(s){}",
-        listing.type_name,
-        listing.class_id,
+        "{} ({} member(s){})",
+        model::class_heading(&listing.class_id, &listing.type_name),
         listing.count,
         listing
             .kind
@@ -230,7 +229,10 @@ pub fn run_returns(args: NameArgs) -> i32 {
 }
 
 fn print_returns_text(r: &ReturnsResult) {
-    println!("What produces a {} ({})?", r.type_name, r.class_id);
+    println!(
+        "What produces a {}?",
+        model::class_heading(&r.class_id, &r.type_name)
+    );
     if !r.constructible_by_user_code {
         println!("  NOTE: not constructible by user code.");
         if let Some(note) = r.constructibility_note {
@@ -272,7 +274,7 @@ fn print_returns_text(r: &ReturnsResult) {
 
 fn print_member_body(m: &MemberResult, pad: &str) {
     if m.class_id == m.class_type_name {
-        println!("{pad}class: {} ({})", m.class_id, m.receiver_kind);
+        println!("{pad}class: {} ({} member)", m.class_id, m.receiver_kind);
     } else {
         println!(
             "{pad}class: {} (declared type {}, {} member)",

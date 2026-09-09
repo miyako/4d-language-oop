@@ -278,6 +278,45 @@ pub struct MemberResult {
     pub example: ExampleInfo,
 }
 
+/// Whether a class's IR `typeName` genuinely belongs to it, i.e. is `<id>` or
+/// `4D.<id>`.
+///
+/// This is an invariant the regression suite enforces over the whole corpus
+/// rather than a case the renderer handles. It exists because it was once
+/// violated: `Document.typeName` was recorded upstream as `4D.File` and
+/// `Directory.typeName` as `4D.Folder` — the type of one of their *two*
+/// concrete subclasses, which was arbitrary (why `File` over `ZipFile`?) and
+/// wrong. `tool4d` accepts `var $x : 4D.Document` and rejects `4D.DocumentX`,
+/// so those are real class-store types and are the correct declaration type
+/// for a value that may be either subclass. Fixed upstream in
+/// `4d-static-docs` `fb0a69ac`.
+///
+/// Deliberately a test-enforced invariant, not a fallback branch: if the data
+/// regresses we want a failing test naming the class, not a renderer quietly
+/// papering over it.
+pub fn owns_its_type_name(class_id: &str, type_name: &str) -> bool {
+    type_name == class_id
+        || type_name
+            .strip_prefix("4D.")
+            .is_some_and(|rest| rest == class_id)
+}
+
+/// One-line header for a class, shared by `class`, `query` class cards,
+/// `members` and `returns` so they can never disagree with each other.
+///
+/// Abstractness is deliberately *not* in the header. `isAbstract` records the
+/// documented instantiation guidance ("obtain an instance of one of its
+/// concrete subclasses"), not whether the type may be named — and since the
+/// type may be named, saying so next to the type name would misinform.
+/// The card body carries the guidance instead.
+pub fn class_heading(class_id: &str, type_name: &str) -> String {
+    if type_name == class_id {
+        type_name.to_string()
+    } else {
+        format!("{type_name} (class {class_id})")
+    }
+}
+
 pub fn build_member_result(record: &MemberRecord, score: Option<f32>) -> MemberResult {
     let idx = index::get();
     let class_type_name = idx
@@ -627,6 +666,8 @@ pub struct MembersListing {
     pub class_id: String,
     #[serde(rename = "typeName")]
     pub type_name: String,
+    #[serde(rename = "isAbstract")]
+    pub is_abstract: bool,
     #[serde(skip_serializing_if = "Option::is_none")]
     pub kind: Option<String>,
     pub count: usize,
@@ -644,6 +685,7 @@ pub fn members_listing(class_name: &str, kind: Option<&str>) -> Option<MembersLi
     Some(MembersListing {
         class_id: card.id,
         type_name: card.type_name,
+        is_abstract: card.is_abstract,
         kind: wanted,
         count: members.len(),
         members,
@@ -689,6 +731,8 @@ pub struct ReturnsResult {
     pub class_id: String,
     #[serde(rename = "typeName")]
     pub type_name: String,
+    #[serde(rename = "isAbstract")]
+    pub is_abstract: bool,
     #[serde(rename = "constructibleByUserCode")]
     pub constructible_by_user_code: bool,
     #[serde(
@@ -759,6 +803,7 @@ pub fn returns_result(class_name: &str) -> Option<ReturnsResult> {
     Some(ReturnsResult {
         class_id: card.id,
         type_name: card.type_name,
+        is_abstract: card.is_abstract,
         constructible_by_user_code: card.constructible_by_user_code,
         constructibility_note: card.constructibility_note,
         how_to_obtain: card.how_to_obtain,
