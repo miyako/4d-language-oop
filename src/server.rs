@@ -223,8 +223,11 @@ fn respond_plain(request: tiny_http::Request, status: u16, body: &str) {
 }
 
 fn respond_json(request: tiny_http::Request, status: u16, body: &str) {
-    let header = Header::from_bytes(&b"Content-Type"[..], &b"application/json; charset=utf-8"[..])
-        .expect("static header is valid");
+    let header = Header::from_bytes(
+        &b"Content-Type"[..],
+        &b"application/json; charset=utf-8"[..],
+    )
+    .expect("static header is valid");
     let response = Response::from_string(body)
         .with_status_code(status)
         .with_header(header);

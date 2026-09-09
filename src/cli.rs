@@ -208,7 +208,12 @@ fn print_members_text(listing: &MembersListing) {
             Some(owner) => format!(" (inherited from {owner})"),
             None => String::new(),
         };
-        println!("  {:<28} {:<16}{}", m.member_name, short_kind(&m.kind), marker);
+        println!(
+            "  {:<28} {:<16}{}",
+            m.member_name,
+            short_kind(&m.kind),
+            marker
+        );
         println!("      {}", first_line(&m.summary));
     }
 }
@@ -243,7 +248,12 @@ fn print_returns_text(r: &ReturnsResult) {
         } else {
             ""
         };
-        println!("    {} [{}]{}", p.producer, p.relationships.join(", "), corpus);
+        println!(
+            "    {} [{}]{}",
+            p.producer,
+            p.relationships.join(", "),
+            corpus
+        );
         if let Some(summary) = &p.summary {
             println!("      {}", first_line(summary));
         }
@@ -271,7 +281,10 @@ fn print_member_body(m: &MemberResult, pad: &str) {
     }
     if let Some(from) = &m.inherited_from {
         let asked = m.requested_as.as_deref().unwrap_or(&m.id);
-        println!("{pad}inherited: {asked} resolves to {}, declared on {from}", m.id);
+        println!(
+            "{pad}inherited: {asked} resolves to {}, declared on {from}",
+            m.id
+        );
     }
     println!("{pad}summary: {}", first_line(&m.summary));
 
@@ -316,9 +329,18 @@ fn print_member_body(m: &MemberResult, pad: &str) {
             println!("{pad}property type: {}", names.join(" | "));
         }
         if let Some(acc) = &m.accessor {
-            let readable = acc.get("readable").and_then(|v| v.as_bool()).unwrap_or(true);
-            let writable = acc.get("writable").and_then(|v| v.as_bool()).unwrap_or(false);
-            let computed = acc.get("computed").and_then(|v| v.as_bool()).unwrap_or(false);
+            let readable = acc
+                .get("readable")
+                .and_then(|v| v.as_bool())
+                .unwrap_or(true);
+            let writable = acc
+                .get("writable")
+                .and_then(|v| v.as_bool())
+                .unwrap_or(false);
+            let computed = acc
+                .get("computed")
+                .and_then(|v| v.as_bool())
+                .unwrap_or(false);
             println!(
                 "{pad}  access: {}{}{}",
                 if readable { "read" } else { "" },
@@ -441,7 +463,12 @@ fn print_class_body(c: &ClassResult, pad: &str, max_members: usize) {
             Some(owner) => format!(" (inherited from {owner})"),
             None => String::new(),
         };
-        println!("{pad}  {:<26} {:<14}{}", m.member_name, short_kind(&m.kind), marker);
+        println!(
+            "{pad}  {:<26} {:<14}{}",
+            m.member_name,
+            short_kind(&m.kind),
+            marker
+        );
     }
     if c.members.len() > max_members {
         println!(
@@ -486,7 +513,8 @@ fn class_suggestions(name: &str) -> Vec<String> {
         .classes
         .values()
         .filter(|c| {
-            c.ir.id.to_lowercase().contains(&needle) || c.ir.type_name.to_lowercase().contains(&needle)
+            c.ir.id.to_lowercase().contains(&needle)
+                || c.ir.type_name.to_lowercase().contains(&needle)
         })
         .map(|c| c.ir.type_name.clone())
         .collect();

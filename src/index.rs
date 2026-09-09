@@ -243,7 +243,10 @@ fn build_index() -> Index {
         if ex.is_not_4d_source() {
             continue;
         }
-        doc_by_member.entry(ex.member_id.clone()).or_default().push(ex);
+        doc_by_member
+            .entry(ex.member_id.clone())
+            .or_default()
+            .push(ex);
     }
     for list in doc_by_member.values_mut() {
         list.sort_by(|a, b| {
@@ -346,7 +349,10 @@ fn index_member(m: &MemberIr, acc: &mut HashMap<String, HashMap<String, f32>>) {
     let mut add = |text: &str, weight: f32| {
         let unique: HashSet<String> = tokenize(text).into_iter().collect();
         for tok in unique {
-            *acc.entry(tok).or_default().entry(m.id.clone()).or_insert(0.0) += weight;
+            *acc.entry(tok)
+                .or_default()
+                .entry(m.id.clone())
+                .or_insert(0.0) += weight;
         }
     };
 
@@ -403,7 +409,9 @@ fn build_class_records(classes: &HashMap<String, ClassIr>) -> BTreeMap<String, C
             if !seen.insert(sup_id) {
                 break;
             }
-            let Some(sup) = classes.get(sup_id) else { break };
+            let Some(sup) = classes.get(sup_id) else {
+                break;
+            };
             inherited.extend(sup.members.iter().cloned());
             cursor = sup.superclass.as_deref();
         }
@@ -654,7 +662,9 @@ pub fn search(query: &str, limit: usize) -> Vec<Hit<'static>> {
     }
 
     for (id, score) in pool {
-        let Some(m) = idx.members.get(*id) else { continue };
+        let Some(m) = idx.members.get(*id) else {
+            continue;
+        };
         let class_id = m.class_id();
         if let Some(reason) = collapsed.get(class_id).copied() {
             if emitted_class.insert(class_id) {

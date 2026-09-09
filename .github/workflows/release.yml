@@ -1,0 +1,273 @@
+name: Build and Release
+
+# Produces one self-contained `4d-language-oop` binary per platform.
+#
+# Artifact naming is `4d-language-oop-<os>-<arch>` with a `.tar.xz` payload,
+# matching the convention `miyako/skills` uses for `4d-language-classic`
+# (`4d-language-classic-linux-x64.tar.xz` and friends). The `4dtools`
+# provisioner resolves binaries by that exact name, so do not change it
+# without updating the skills repo in the same change.
+#
+# Note: the skills repo builds this crate from its own vendored submodule and
+# does the macOS signing/notarization there, with its own certificates. The
+# binaries released here are unsigned.
+
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: "Release tag (e.g. v0.1.0)"
+        required: true
+        type: string
+  push:
+    tags:
+      - "v*"
+
+permissions:
+  contents: write
+
+env:
+  BIN_NAME: 4d-language-oop
+
+jobs:
+  # ---------------------------------------------------------------------------
+  # Test once. The regression suite is the thing that makes a ranking change
+  # visible, so a release must not skip it.
+  # ---------------------------------------------------------------------------
+  test:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install Rust toolchain
+        uses: dtolnay/rust-toolchain@stable
+
+      - name: Check formatting
+        run: cargo fmt --check
+
+      - name: Clippy
+        run: cargo clippy --all-targets -- -D warnings
+
+      - name: Test
+        run: cargo test --release
+
+  # ---------------------------------------------------------------------------
+  # Linux (static musl, so the binary has no libc dependency either)
+  # ---------------------------------------------------------------------------
+  linux:
+    needs: test
+    strategy:
+      fail-fast: false
+      matrix:
+        arch: [x64, arm64]
+        include:
+          - arch: x64
+            target: x86_64-unknown-linux-musl
+            runner: ubuntu-24.04
+          - arch: arm64
+            target: aarch64-unknown-linux-musl
+            runner: ubuntu-24.04-arm
+
+    runs-on: ${{ matrix.runner }}
+
+    env:
+      ARTIFACT: 4d-language-oop-linux-${{ matrix.arch }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install Rust toolchain
+        uses: dtolnay/rust-toolchain@stable
+        with:
+          targets: ${{ matrix.target }}
+
+      - name: Install musl tools
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y musl-tools
+
+      - name: Build
+        run: |
+          cargo build --release --target "${{ matrix.target }}"
+
+          strip "target/${{ matrix.target }}/release/${{ env.BIN_NAME }}" || true
+
+          file "target/${{ matrix.target }}/release/${{ env.BIN_NAME }}"
+
+      - name: Verify the binary is self-contained
+        run: |
+          # Run from an empty directory with no repo present: every byte of the
+          # corpus is embedded at compile time, so this must work.
+          WORK="$(mktemp -d)"
+          cp "target/${{ matrix.target }}/release/${{ env.BIN_NAME }}" "$WORK/"
+          cd "$WORK"
+          ./${{ env.BIN_NAME }} query "read a text file line by line" --limit 3
+          ./${{ env.BIN_NAME }} class 4D.File
+          ./${{ env.BIN_NAME }} member File.exists
+          ./${{ env.BIN_NAME }} returns 4D.FileHandle
+
+      - name: Archive
+        run: |
+          mkdir -p staging
+          cp "target/${{ matrix.target }}/release/${{ env.BIN_NAME }}" "staging/${{ env.BIN_NAME }}"
+          tar -cJf "${{ env.ARTIFACT }}.tar.xz" -C staging "${{ env.BIN_NAME }}"
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ env.ARTIFACT }}
+          path: ${{ env.ARTIFACT }}.tar.xz
+          if-no-files-found: error
+          retention-days: 5
+
+  # ---------------------------------------------------------------------------
+  # macOS
+  # ---------------------------------------------------------------------------
+  macos:
+    needs: test
+    strategy:
+      fail-fast: false
+      matrix:
+        arch: [x64, arm64]
+        include:
+          - arch: x64
+            target: x86_64-apple-darwin
+          - arch: arm64
+            target: aarch64-apple-darwin
+
+    runs-on: macos-14
+
+    env:
+      ARTIFACT: 4d-language-oop-macos-${{ matrix.arch }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install Rust toolchain
+        uses: dtolnay/rust-toolchain@stable
+        with:
+          targets: ${{ matrix.target }}
+
+      - name: Build
+        run: |
+          cargo build --release --target "${{ matrix.target }}"
+
+          strip "target/${{ matrix.target }}/release/${{ env.BIN_NAME }}" || true
+
+          file "target/${{ matrix.target }}/release/${{ env.BIN_NAME }}"
+
+      - name: Verify the binary is self-contained
+        if: matrix.arch == 'arm64'
+        run: |
+          WORK="$(mktemp -d)"
+          cp "target/${{ matrix.target }}/release/${{ env.BIN_NAME }}" "$WORK/"
+          cd "$WORK"
+          ./${{ env.BIN_NAME }} query "read a text file line by line" --limit 3
+          ./${{ env.BIN_NAME }} class 4D.File
+          ./${{ env.BIN_NAME }} member File.exists
+          ./${{ env.BIN_NAME }} returns 4D.FileHandle
+
+      - name: Archive
+        run: |
+          mkdir -p staging
+          cp "target/${{ matrix.target }}/release/${{ env.BIN_NAME }}" "staging/${{ env.BIN_NAME }}"
+          tar -cJf "${{ env.ARTIFACT }}.tar.xz" -C staging "${{ env.BIN_NAME }}"
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ env.ARTIFACT }}
+          path: ${{ env.ARTIFACT }}.tar.xz
+          if-no-files-found: error
+          retention-days: 5
+
+  # ---------------------------------------------------------------------------
+  # Windows
+  # ---------------------------------------------------------------------------
+  windows:
+    needs: test
+    strategy:
+      fail-fast: false
+      matrix:
+        arch: [x64]
+        include:
+          - arch: x64
+            target: x86_64-pc-windows-msvc
+            runner: windows-2022
+
+    runs-on: ${{ matrix.runner }}
+
+    env:
+      ARTIFACT: 4d-language-oop-windows-${{ matrix.arch }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install Rust toolchain
+        uses: dtolnay/rust-toolchain@stable
+        with:
+          targets: ${{ matrix.target }}
+
+      - name: Build
+        run: cargo build --release --target "${{ matrix.target }}"
+
+      - name: Verify the binary is self-contained
+        shell: bash
+        run: |
+          WORK="$(mktemp -d)"
+          cp "target/${{ matrix.target }}/release/${{ env.BIN_NAME }}.exe" "$WORK/"
+          cd "$WORK"
+          ./${{ env.BIN_NAME }}.exe query "read a text file line by line" --limit 3
+          ./${{ env.BIN_NAME }}.exe class 4D.File
+          ./${{ env.BIN_NAME }}.exe member File.exists
+          ./${{ env.BIN_NAME }}.exe returns 4D.FileHandle
+
+      - name: Archive
+        shell: bash
+        run: |
+          mkdir -p staging
+          cp "target/${{ matrix.target }}/release/${{ env.BIN_NAME }}.exe" "staging/${{ env.BIN_NAME }}.exe"
+          tar -cJf "${{ env.ARTIFACT }}.tar.xz" -C staging "${{ env.BIN_NAME }}.exe"
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ env.ARTIFACT }}
+          path: ${{ env.ARTIFACT }}.tar.xz
+          if-no-files-found: error
+          retention-days: 5
+
+  # ---------------------------------------------------------------------------
+  # Release
+  # ---------------------------------------------------------------------------
+  release:
+    needs: [linux, macos, windows]
+    runs-on: ubuntu-24.04
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Download artifacts
+        uses: actions/download-artifact@v4
+        with:
+          path: artifacts
+          merge-multiple: true
+
+      - name: List artifacts
+        run: ls -la artifacts
+
+      - name: Create release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ inputs.tag || github.ref_name }}
+        run: |
+          gh release create "$TAG" \
+            --repo "${{ github.repository }}" \
+            --title "$TAG" \
+            --generate-notes \
+            artifacts/*.tar.xz

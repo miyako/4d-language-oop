@@ -152,9 +152,16 @@ fn gen_idf_table(out_dir: &str) {
     code.push_str(
         "/// (token, ln(N / df)) sorted by token, for binary search at index-build time.\n",
     );
+    // This is generated numeric data, not hand-written constants; clippy's
+    // float lints have nothing useful to say about it.
+    code.push_str("#[allow(clippy::approx_constant, clippy::excessive_precision)]\n");
     code.push_str("pub static IDF_TABLE: &[(&str, f32)] = &[\n");
     for (token, value) in &idf {
-        code.push_str(&format!("    ({token:?}, {value:?}f32),\n"));
+        // Round-trip through f32 first so the literal is the shortest
+        // representation of the value actually stored -- printing the f64
+        // digits would be silently truncated by the compiler anyway.
+        let value = *value as f32;
+        code.push_str(&format!("    ({token:?}, {value}f32),\n"));
     }
     code.push_str("];\n");
 

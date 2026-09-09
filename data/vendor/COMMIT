@@ -3,5 +3,5 @@ branch=main
 commit=12f546ad898eb5f27023dd54d9d261a21444f461
 commit_date=2026-09-09T14:14:18+09:00
 commit_subject=OOP IR Phases 4–5: doc-example harvest, synthesis, and tool4d cross-check (#20)
-fetched_at=2026-09-09T05:19:11Z
+fetched_at=2026-09-09T05:38:03Z
 files_vendored=4d-oop-ir.json,oop_doc_examples.json,oop_synth_manifest.json,oop_corpus_stats.json,methods/SynthOOP_*.4dm (502 files)

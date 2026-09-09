@@ -166,8 +166,7 @@ pub fn build_example(record: &MemberRecord) -> ExampleInfo {
         // examples follow it, clearly labelled -- never in its place.
         None => {
             let primary = synth_block(record);
-            let alternates: Vec<ExampleBlock> =
-                record.doc_examples.iter().map(doc_block).collect();
+            let alternates: Vec<ExampleBlock> = record.doc_examples.iter().map(doc_block).collect();
             ExampleInfo {
                 available: primary.is_some(),
                 primary,
@@ -363,7 +362,10 @@ pub struct ClassResult {
     /// expression in user code produces one.
     #[serde(rename = "constructibleByUserCode")]
     pub constructible_by_user_code: bool,
-    #[serde(rename = "constructibilityNote", skip_serializing_if = "Option::is_none")]
+    #[serde(
+        rename = "constructibilityNote",
+        skip_serializing_if = "Option::is_none"
+    )]
     pub constructibility_note: Option<&'static str>,
     #[serde(rename = "isAbstract", skip_serializing_if = "std::ops::Not::not")]
     pub is_abstract: bool,
@@ -689,7 +691,10 @@ pub struct ReturnsResult {
     pub type_name: String,
     #[serde(rename = "constructibleByUserCode")]
     pub constructible_by_user_code: bool,
-    #[serde(rename = "constructibilityNote", skip_serializing_if = "Option::is_none")]
+    #[serde(
+        rename = "constructibilityNote",
+        skip_serializing_if = "Option::is_none"
+    )]
     pub constructibility_note: Option<&'static str>,
     #[serde(rename = "howToObtain")]
     pub how_to_obtain: Vec<String>,
