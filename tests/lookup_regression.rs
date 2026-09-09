@@ -982,6 +982,16 @@ fn doc_pages_are_version_less_official_permalinks() {
             !slug.contains('/'),
             "{id} docPage carries a version or extra path segment: {page}"
         );
+        // Members deep-link to their own section; the anchor is what makes
+        // the link land on the member rather than the top of a page listing
+        // dozens of them.
+        let (_, anchor) = slug
+            .split_once('#')
+            .unwrap_or_else(|| panic!("{id} docPage has no member anchor: {page}"));
+        assert!(
+            !anchor.is_empty(),
+            "{id} docPage has an empty anchor: {page}"
+        );
         assert!(
             !slug.ends_with(".html"),
             "{id} docPage still looks like a mirror file: {page}"
@@ -992,6 +1002,33 @@ fn doc_pages_are_version_less_official_permalinks() {
 
     // Classes agree with their members, and the one class with no API page
     // stays null rather than being given a fabricated URL.
+    // Constructors anchor on the fully-qualified name, everything else on the
+    // bare member name. Pinned explicitly because bare-name anchoring would
+    // collapse all 19 constructors to `#new` and still look plausible.
+    for (id, expected) in [
+        (
+            "Document.exists",
+            "https://developer.4d.com/docs/API/Document#exists",
+        ),
+        (
+            "Collection.orderBy",
+            "https://developer.4d.com/docs/API/CollectionClass#orderby",
+        ),
+        (
+            "4D.IMAPNotifier.new",
+            "https://developer.4d.com/docs/API/IMAPNotifierClass#4dimapnotifiernew",
+        ),
+    ] {
+        let record = idx
+            .members
+            .get(id)
+            .unwrap_or_else(|| panic!("{id} missing"));
+        let card = model::build_member_result(record, None);
+        assert_eq!(card.doc_page.as_deref(), Some(expected), "{id}");
+    }
+
+    // Class cards stay page-level: the page is already the right target, so an
+    // anchor here would be noise.
     let file = model::class_card("File").expect("File class");
     assert_eq!(
         file.doc_page.as_deref(),

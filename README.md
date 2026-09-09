@@ -194,7 +194,11 @@ block:
 
 Every `docPage` -- on a member, on a class card, and on each example block --
 is an official documentation permalink, and text mode prints it as a `docs:`
-line. It is deliberately **version-less**: `https://developer.4d.com/docs/API/FileClass`
+line. **Member links carry the member's section anchor**
+(`.../API/Document#exists`), so they land on the member rather than the top
+of a page listing dozens of them; class cards stay page-level. Constructors
+anchor on their fully-qualified name (`.../API/IMAPNotifierClass#4dimapnotifiernew`),
+since a bare-name anchor would collapse every constructor to `#new`. It is deliberately **version-less**: `https://developer.4d.com/docs/API/FileClass`
 rather than `.../docs/21-R3/API/FileClass`, because a version-pinned URL stops
 resolving once that release is superseded and would rot this binary on 4D's
 release schedule. `4D.Transporter` has no API page and so carries none.
