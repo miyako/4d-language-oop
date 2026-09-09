@@ -1,7 +1,7 @@
 repo=miyako/4d-static-docs
 branch=main
-commit=2a72872df2b1cad2f31e6a239d3be66766b3ff2d
-commit_date=2026-09-09T16:00:35+09:00
-commit_subject=Rewrite doc-example docPage to official permalinks too (#25)
-fetched_at=2026-09-09T07:00:27Z
+commit=a4a5b0d2269fdff118272cc8ec9eda38ef39c7b3
+commit_date=2026-09-09T16:40:01+09:00
+commit_subject=Deep-link OOP members to their own doc section (#29)
+fetched_at=2026-09-09T07:40:03Z
 files_vendored=4d-oop-ir.json,oop_doc_examples.json,oop_synth_manifest.json,oop_corpus_stats.json,methods/SynthOOP_*.4dm (502 files)
