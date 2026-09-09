@@ -1,0 +1,23 @@
+[package]
+name = "fourd-language-oop"
+version = "0.1.0"
+edition = "2021"
+description = "Deterministic natural-language lookup service for the 4D object (OOP) language class reference, backed by a build-time-embedded, compiler-verified class/member IR."
+license = "MIT"
+default-run = "4d-language-oop"
+
+[[bin]]
+name = "4d-language-oop"
+path = "src/main.rs"
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+tiny_http = "0.12"
+
+[build-dependencies]
+serde_json = "1"
+
+[profile.release]
+opt-level = 3
+lto = true
