@@ -289,6 +289,9 @@ fn print_member_body(m: &MemberResult, pad: &str) {
         );
     }
     println!("{pad}summary: {}", first_line(&m.summary));
+    if let Some(page) = &m.doc_page {
+        println!("{pad}docs: {page}");
+    }
 
     if let Some(dynamic) = &m.dynamic_member {
         // The 7 dynamic pseudo-members have no fixed name and no source line.
@@ -427,6 +430,9 @@ fn print_class_body(c: &ClassResult, pad: &str, max_members: usize) {
     }
     if !c.subclasses.is_empty() {
         println!("{pad}subclasses: {}", c.subclasses.join(", "));
+    }
+    if let Some(page) = &c.doc_page {
+        println!("{pad}docs: {page}");
     }
 
     // The single most common thing an agent gets wrong about 4D OOP, so it
