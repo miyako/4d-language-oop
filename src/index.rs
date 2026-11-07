@@ -11,8 +11,8 @@
 //!    query "order by", and "entity selection" must reach `EntitySelection`.
 //!    The vendored corpus statistics are computed under exactly this
 //!    tokenization, so the IDF table and the index agree by construction.
-//! 2. **Class-flooding control.** `WebServer` has 41 members, `Collection` 47,
-//!    `EntitySelection` 34. A naive query for "web server" returns 41
+//! 2. **Class-flooding control.** `WebServer` has 42 members, `Collection` 47,
+//!    `EntitySelection` 34. A naive query for "web server" returns 42
 //!    near-identical rows and buries everything else, so a class is capped at
 //!    3 member rows, and additionally emits a single *class card* when the
 //!    query names it or when enough of its members match. See [`search`].
@@ -61,7 +61,7 @@ pub const CLASS_COLLAPSE_THRESHOLD: usize = 5;
 pub const CANDIDATE_POOL: usize = 60;
 
 /// No stopword list, deliberately. `ln(N / df)` is exactly 0.0 for a token
-/// that appears in every member ("the", df 502) and near 0 for the rest of the
+/// that appears in every member ("the", df 528) and near 0 for the rest of the
 /// English function words, so IDF already does the job a hand-written list
 /// would only approximate. See README, "How matching works".
 fn idf(token: &str) -> f32 {
@@ -75,7 +75,7 @@ fn idf(token: &str) -> f32 {
 pub struct MemberRecord {
     pub ir: MemberIr,
     /// Verbatim text of this member's compiler-verified synthetic example.
-    /// Every one of the 502 members has one.
+    /// Every one of the 528 members has one.
     pub synth_raw: Option<&'static str>,
     /// Per-block line ranges into `synth_raw`, from the manifest.
     pub synth_blocks: Vec<SynthBlock>,
@@ -610,6 +610,18 @@ pub fn search(query: &str, limit: usize) -> Vec<Hit<'static>> {
         }
     }
 
+    // A qualified API spelling is an exact lookup, not a bag of words:
+    // Session.quotas must not lose to Session.hasPrivilege or a class card.
+    if query.contains('.') {
+        if let Some(member) = idx.resolve_member(query) {
+            let score = scores.get(member.ir.id.as_str()).copied().unwrap_or(0.0);
+            return vec![Hit::Member(member, score)]
+                .into_iter()
+                .take(limit)
+                .collect();
+        }
+    }
+
     let mut ranked: Vec<(&str, f32)> = scores.into_iter().collect();
     ranked.sort_by(|a, b| {
         b.1.partial_cmp(&a.1)
@@ -677,7 +689,7 @@ pub fn search(query: &str, limit: usize) -> Vec<Hit<'static>> {
         }
         // The per-class cap applies to every class, collapsed or not. A
         // collapsed class therefore contributes one card plus at most
-        // `CLASS_MEMBER_CAP` member rows -- never the 41 rows that made the
+        // `CLASS_MEMBER_CAP` member rows -- never the 42 rows that made the
         // rule necessary, but never zero either: collapsing `Collection` down
         // to only its card would hide `Collection.orderBy` from the query
         // "order a collection", which is the answer the caller wanted.

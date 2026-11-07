@@ -16,7 +16,7 @@ selection"* and get back:
    full typed overload / accessor objects from a schema-validated IR,
 3. **how to obtain an instance** of the receiver class, which is the single
    thing agents most often get wrong about 4D OOP, and
-4. a compiler-verified example.
+4. an example with a clean fixture-project `tool4d checkSyntax` verdict.
 
 This is a lookup index over generated data, not a language model: matching is
 pure deterministic keyword/alias/IDF scoring (see [How matching
@@ -28,32 +28,53 @@ file or network accesses.
 
 All syntax rules and examples come from
 [`miyako/4d-static-docs`](https://github.com/miyako/4d-static-docs), which
-extracts, schema-validates, and compiler-verifies (via `tool4d`) a full IR of
+extracts, schema-validates, and syntax-checks (via `tool4d`) a full IR of
 the 4D object-language class reference. This repo vendors a **pinned
-snapshot** of five of its generated artifacts under `data/vendor/`:
+snapshot** of its generated artifacts under `data/vendor/`:
 
 | File | Description |
 |---|---|
-| `4d-oop-ir.json` | The root IR: 502 members (258 functions, 225 properties, 19 constructors) across 50 classes, plus 37 enums and 685 relationships (`member_of`, `returns_instance_of`, `obtained_via`, `same_mechanism_family`). Each class carries `instantiation`, `superclass`, `isAbstract`/`isTemplate`/`isSingleton` and `sharedSemantics`. |
-| `oop_doc_examples.json` | 473 hand-written documentation examples harvested from the 4D docs, each attributed to a member and carrying its own provenance + `tool4d` verification verdict. |
+| `4d-oop-ir.json` | The root IR: 528 members (259 functions, 250 properties, 19 constructors) across 51 class records (46 built-in classes plus 5 namespace/template records), plus 38 enums and 725 relationships (`member_of`, `returns_instance_of`, `obtained_via`, `same_mechanism_family`). Each class carries `instantiation` and available class flags. |
+| `oop_doc_examples.json` | 523 harvested documentation blocks: 483 attributed and 40 unattributed. 499 source blocks were checked: 269 verified, 230 unverified. Non-4D fences are never surfaced as source code. |
 | `oop_synth_manifest.json` | Maps each **member id** to its generated example file and which overload/variant blocks it contains, with per-block line ranges. |
-| `methods/SynthOOP_<Name>.4dm` | 502 files — one per member — each a real 4D method body compiled and verified error-free by `tool4d`. |
+| `methods/SynthOOP_<Name>.4dm` | 528 files — one per member — with 968 generated blocks, all freshly checked clean (zero errors/warnings) by the upstream R5 fixture-project syntax gate. |
 | `oop_corpus_stats.json` | Token document-frequencies over the corpus, used to build the IDF table at compile time. |
+| `r5_snapshot.json` | Full upstream snapshot, SHA-256 bindings, compiler/docs provenance, introduction timeline and verification limitations. |
+| `r5_conflict_inventory.json` | Full upstream hash-bound conflict inventory, including explained hover discrepancies and gate limitations. |
 
 See `data/vendor/COMMIT` for exactly which `4d-static-docs` commit is
 currently pinned.
+
+This import pins **`1dfd4e7eb832d19361f8ec1f4801603899087ca3`**, a local
+committed feature snapshot of **21-R5 BETA**, not stable `main`. The compiler
+was **21 R5 build 21R5.100156**. `compilerVerified` means upstream performed
+`tool4d` experimental/checkSyntax checks in fixture projects, **not runtime
+execution, full-application compilation, or exhaustive arity proof**. Hover
+checks are separate evidence. This repository's Rust tests validate the
+embedded lookup and provenance; they do not rerun 4D.
+
+The +26 members include R4's `Session.quotas` and four `QuotaManagerClass`
+properties (`currentValues`, `defaultEntitySetTimeout`, `maxEntitySetTimeout`,
+`nbEntitySets`). **QuotaManagerClass already existed in R4**, although it was
+absent from this CLI's older pin. R5 adds `DataClass.getIndexes`, 15 further
+quota properties, `SMTPTransporter.certificate`/`certificateName`/
+`certificatePassword`, `Vector.precision`, and `WebServer.quotas`.
+`4D.Vector.new` now accepts optional precision. `Session.setPrivileges`
+returning Boolean is a documentation correction, not a newly introduced API.
+Quota properties omit `sinceVersion` in the IR; the snapshot's
+`oop.introducedInStableR4` and `oop.newInR5` lists retain their release origin.
 
 **Join on `member_id`, never on filename.** The `SynthOOP_*` file names have
 `.`/`:` replaced and are truncated to 4D's 31-character method-name limit
 with a hash suffix (`SynthOOP_WebSocketServer_t_f011.4dm`), so they are
 lossy. The manifest's `member_id` is the authoritative key, and a build-time
-assertion in `build.rs` fails the build if any of the 502 fails to resolve.
+assertion in `build.rs` fails the build if any of the 528 fails to resolve.
 
 ### What the corpus guarantees
 
-- **Every member has a compiler-verified example.** 218 members have a
-  documentation example (141 of those compiler-verified), 284 are
-  synthetic-only, and **0 have neither** — all 502 have a compiler-verified
+- **Every member has a syntax-checked fixture example.** 225 members have a
+  surfaced documentation example (147 with verified docs, 78 unverified-only),
+  303 are synthetic-only, and **0 have neither** — all 528 have a compiler-verified
   synthetic example. So a not-compiler-verified documentation example never
   has to stand alone.
 - **Inherited members are modelled once, on the declaring class.** `.exists`
@@ -73,7 +94,7 @@ cargo build --release
 ./target/release/4d-language-oop query "read a text file line by line"
 ```
 
-The resulting binary (`target/release/4d-language-oop`, ~3.1 MB stripped) is
+The resulting binary (`target/release/4d-language-oop`) is
 fully self-contained — it can be copied anywhere and run with no other files
 present.
 
@@ -91,6 +112,10 @@ present.
   pure function of the query; `--limit` only truncates, so raising it can
   only append rows, never reorder them.
 - `--json` — print the same JSON shape the HTTP server returns.
+- A resolvable qualified API spelling (e.g. `Session.quotas`,
+  `4D.QuotaManagerClass.nbSessions`, or inherited `4D.File.exists`) returns
+  exactly that member, bypassing fuzzy ranking and class-card collapse.
+  Natural-language scoring rules are unchanged; CLI `--limit` remains at least 1.
 
 Results are a mix of **member rows** and **class cards**; see
 [class-flooding control](#class-flooding-control).
@@ -155,6 +180,13 @@ $ curl "http://localhost:8080/lookup?q=sort+an+entity+selection&limit=3"
 ## Response shape
 
 Every result carries a `resultType` discriminator, `"member"` or `"class"`.
+Query remains a heterogeneous array, not a new envelope. Member/class cards,
+member listings and returns responses additionally carry a compact `snapshot`
+object with the source commit/ref, `version`, `status`, `compilerBuild`,
+`verificationScope`, IR SHA-256 and conflict-inventory SHA-256. Verified
+example blocks carry `verificationScope`; existing keys are retained.
+Text mode prints the BETA snapshot/build and the primary example's static-check
+scope, as well as any syntax warning.
 
 A **member** result includes the member's id/class/kind, its match score, the
 verbatim `rawSyntax` line(s) from the docs, the IR's typed `overloads` (for
@@ -201,7 +233,10 @@ anchor on their fully-qualified name (`.../API/IMAPNotifierClass#4dimapnotifiern
 since a bare-name anchor would collapse every constructor to `#new`. It is deliberately **version-less**: `https://developer.4d.com/docs/API/FileClass`
 rather than `.../docs/21-R3/API/FileClass`, because a version-pinned URL stops
 resolving once that release is superseded and would rot this binary on 4D's
-release schedule. `4D.Transporter` has no API page and so carries none.
+release schedule. R5 publishes `API/Transporter`, so the abstract shared base
+now carries its own page; its 11 members are still modelled once and inherited
+by the concrete transporters. Version-less links may eventually show newer
+docs than this embedded BETA snapshot.
 
 A **class** result carries `instantiation` (the raw IR recipes), a rendered
 `howToObtain`, `constructibleByUserCode` + `constructibilityNote`,
@@ -214,7 +249,7 @@ Per member, in strict order:
 
 1. `documentation example, compiler-verified`
 2. documentation example wrapped in a host class and then compiler-verified
-3. the compiler-verified **synthetic** example (all 502 members have one)
+3. the compiler-verified **synthetic** example (all 528 members have one)
 4. `documentation example, not compiler-verified` — only ever **alongside**
    the synthetic one, never instead of it, and clearly labelled
 
@@ -228,8 +263,8 @@ surfaced as code. Four members — `4D.HTTPRequest.new`, `Email.keywords`,
 blocks, and fall through to their synthetic example.
 
 **Synthetic examples carry a `placeholder_note`.** A synthetic body is
-generated to exercise every parameter combination for `tool4d`'s compiler
-check, not to be idiomatic. Its literal-looking tokens (`$result1`,
+generated to exercise selected overload/variant blocks for `tool4d`'s static
+syntax check, not to be idiomatic or prove exhaustive arity. Its literal-looking tokens (`$result1`,
 `$options3`, `[SynthTable]`, `SynthRelated`, `cs.SynthOOPHandler`,
 `SynthOOPCallback`) are auto-generated placeholders — callers, including code
 agents, must substitute their own receiver, values and names. This warning is
@@ -240,11 +275,12 @@ documentation examples carry their own `warning` field.
 
 ### Multi-variant properties
 
-Nine properties declare an **array** of types rather than one — `Email.bcc`,
+Ten properties declare an **array** of types rather than one — `Email.bcc`,
 `.cc`, `.from`, `.replyTo`, `.sender`, `.to` are each `Text | Object |
 Collection`; `Document.original` is `4D.File | 4D.Folder`;
 `SystemWorker.response` is `Text | Blob`; `WebServer.characterSet` is `Number
-| Text`. `accessorTypes` is **always** a list, and `multiVariant` is `true`
+| Text`; `SMTPTransporter.certificate` is `4D.File | Blob`.
+`accessorTypes` is **always** a list, and `multiVariant` is `true`
 for these, so no variant can be silently dropped. Text output labels them
 `MULTI-VARIANT -- all N alternatives are valid`.
 
@@ -256,7 +292,29 @@ Seven members are name *patterns*, not fixed names —
 `4D.classClassName`, `4D.classStoreName`, `WebForm.componentName`. They have
 no verbatim source line, so `rawSyntax` is empty; instead they carry the raw
 `dynamicMember` object with its `namePattern` and note, and are rendered from
-that. They still have compiler-verified synthetic examples.
+that. They still have compiler-verified synthetic stand-in examples, not proof
+that every possible dynamic name is valid.
+
+### Documented syntax versus compiler evidence
+
+Three explained hover discrepancies are preserved, not silently reconciled:
+
+- `4D.Folder.new` docs/hover show a trailing `*` rejected by the matched
+  compiler. Typed `overloads` intentionally omit it.
+- `Session.quotas` and `WebServer.quotas` docs/hover say `4D.QuotaManager`;
+  the compiler rejects that declaration and accepts **`4D.QuotaManagerClass`**.
+  Use the corrected `accessorTypes`/`accessor.type`. Only the real compiler type
+  resolves as a class; the invalid spelling is not registered as a type alias.
+  Obtain quota objects through those properties; there is no public constructor
+  or superclass. `howToObtain` and `returns` expose both property producers.
+
+These members (and producer rows in `returns`) carry `syntaxWarning`, also
+printed in text mode. Verbatim `rawSyntax` remains untouched and is **not**
+preferred over the typed contract when a warning is present. Ten multi-typed
+property hover-index gaps and seven dynamic stand-ins are separately recorded.
+TCP ports retain the documented **Integer** domain despite checkSyntax accepting
+Text/Collection (and Real) port expressions: that acceptance proves no runtime
+port behavior. Consult the full snapshot/inventory for evidence and limitations.
 
 ## How matching works
 
@@ -294,13 +352,12 @@ same query always returns the same result on any machine:
 
 ### Why there is no stopword list
 
-`IDF(token) = ln(N / df)` with `N = 502` and `df` from the corpus stats,
+`IDF(token) = ln(N / df)` with `N = 528` and `df` from the corpus stats,
 computed once at index-build time. Tokens with `idf <= 0` are dropped
 entirely, which is exactly what a stopword list would do — `the` has `df =
-502`, so its IDF is precisely `0.0`. IDF also handles the *domain* skew that
-a hand-written list could never guess: `function` has `df = 293`, because the
-docs phrase every summary as "The .x() function ...", while `imap` has `df =
-36`.
+528`, so its IDF is precisely `0.0`. IDF also handles the *domain* skew that
+a hand-written list could never guess: common documentation vocabulary such as
+`function` is discounted relative to rarer domain tokens such as `imap`.
 
 More importantly, a classic-style stopword list would eat `at`, `by` and
 `get` — which are real member-name tokens (`Collection.at`, `.orderBy`,
@@ -339,8 +396,8 @@ HOW TO OBTAIN AN INSTANCE:
 
 ### Class-flooding control
 
-`Collection` has 47 members, `WebServer` 41, `EntitySelection` 34. A naive
-query for "web server" returns 41 near-identical rows and buries everything
+`Collection` has 47 members, `WebServer` 42, `EntitySelection` 34. A naive
+query for "web server" returns 42 near-identical rows and buries everything
 else. Two rules prevent that, evaluated over a **fixed-size candidate pool**
 (60) so that decisions never depend on `--limit`:
 
@@ -374,11 +431,15 @@ with the documented script:
 scripts/refresh-vendor.sh <commit-sha> [path-to-local-4d-static-docs-clone]
 ```
 
-This overwrites `data/vendor/{4d-oop-ir.json,oop_doc_examples.json,oop_synth_manifest.json,oop_corpus_stats.json,methods/*.4dm}`,
+This reads committed Git blobs, never the source working tree, and overwrites
+`data/vendor/{4d-oop-ir.json,oop_doc_examples.json,oop_synth_manifest.json,oop_corpus_stats.json,r5_snapshot.json,r5_conflict_inventory.json,methods/*.4dm}`,
 rewrites `data/vendor/COMMIT` with the new pin + fetch timestamp, and prints a
 summary of members and classes added/removed versus the previous snapshot.
 Always pin to an explicit commit sha (never "latest") so the embedded snapshot
-is reproducible. After refreshing:
+is reproducible. It records `source_ref=explicit-commit` (not an assumed branch),
+verifies SHA-256 bindings for all four corpus JSON files, the conflict inventory
+and every synthetic method against the snapshot, and removes its repository-local
+scratch workspace. A supplied local commit requires no fetch. After refreshing:
 
 ```sh
 cargo test    # corpus-integrity + lookup regression tests
@@ -387,9 +448,13 @@ cargo test    # corpus-integrity + lookup regression tests
 review the diff, then commit `data/vendor/` together with the updated
 `data/vendor/COMMIT`.
 
-The regression suite is deliberately frozen against measured expectations, so
-a ranking shift always shows up as a test diff rather than silently changing
-what agents are told.
+The regression suite retains the prior natural-language expectations; all pass
+under R5. New guards cover exact API spellings, quota type/producers, the SMTP
+certificate union, precision and the verification boundary. Broad alias-driven
+queries remain ambiguous: `smtp certificate` includes the SMTP certificate
+property in the top five but can lead with `CryptoKey.pem`; `session quotas`
+can lead with `Session.hasPrivilege`. Use the qualified API query or `member`
+for a precise lookup, rather than treating a fuzzy ranking as a syntax verdict.
 
 ## Releases
 

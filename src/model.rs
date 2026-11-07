@@ -8,12 +8,48 @@ use crate::index::{self, ClassCardReason, ClassRecord, Hit, MemberRecord};
 use crate::ir::{DocExample, SynthBlock};
 use serde::Serialize;
 use serde_json::Value;
+use std::sync::OnceLock;
+
+fn snapshot() -> &'static Value {
+    static SNAPSHOT: OnceLock<Value> = OnceLock::new();
+    SNAPSHOT.get_or_init(|| {
+        serde_json::from_str(crate::data::SNAPSHOT_JSON).expect("invalid embedded R5 snapshot")
+    })
+}
+
+pub fn snapshot_provenance() -> Value {
+    let s = snapshot();
+    let commit = crate::data::COMMIT_TEXT
+        .lines()
+        .find_map(|line| line.strip_prefix("commit="))
+        .expect("embedded COMMIT missing pin");
+    serde_json::json!({
+        "sourceRepository": "miyako/4d-static-docs",
+        "sourceCommit": commit,
+        "sourceRef": "explicit-commit",
+        "version": s["version"],
+        "status": s["status"],
+        "compilerBuild": s["compilerBuild"],
+        "verificationScope": s["verificationScope"],
+        "irSha256": s["artifactsSha256"]["out/4d-oop-ir.json"],
+        "inventorySha256": s["artifactsSha256"]["out/r5_conflict_inventory.json"]
+    })
+}
+
+fn syntax_warning(id: &str) -> Option<String> {
+    snapshot()["oop"]["hoverDiscrepancies"]
+        .as_array()?
+        .iter()
+        .find(|entry| entry["id"].as_str() == Some(id))
+        .and_then(|entry| entry["reason"].as_str())
+        .map(str::to_owned)
+}
 
 // ---------------------------------------------------------------------------
 // Examples
 // ---------------------------------------------------------------------------
 
-const SYNTH_PROVENANCE: &str = "compiler-verified synthetic example (tool4d check-syntax via the 4d-static-docs pipeline's OOP stage O6); raw text, not idiomatic hand-written code";
+const SYNTH_PROVENANCE: &str = "compiler-verified synthetic example (tool4d check-syntax in the 21 R5 fixture project, build 21R5.100156); static syntax check only, not runtime execution, full-application compilation or exhaustive arity proof; raw text, not idiomatic hand-written code";
 
 /// Classic's hard-won lesson, carried over: without an explicit machine-readable
 /// warning, agents copied the synthesizer's placeholder tokens into real code
@@ -21,7 +57,7 @@ const SYNTH_PROVENANCE: &str = "compiler-verified synthetic example (tool4d chec
 /// classic's, so the token list is OOP-specific.
 const PLACEHOLDER_NOTE: &str = "Tokens such as $result1/$blobScal2/$options3, [SynthTable], SynthRelated, cs.SynthOOPHandler and SynthOOPCallback in `raw` are auto-generated placeholder variable names, table/dataclass references and stub class names from the check project -- substitute your own receiver expression, variable names, and table/field/class references when adapting this example; do not copy them verbatim.";
 
-const UNVERIFIED_DOC_WARNING: &str = "This documentation example is NOT compiler-verified: it failed `tool4d check-syntax`, usually because it references a project table, ORDA dataclass or user class that only exists in the doc page's imaginary database, or contains a literal `...` elision. It is supplied only alongside the compiler-verified synthetic example above, never instead of it -- read it for intent, take syntax from the verified example.";
+const UNVERIFIED_DOC_WARNING: &str = "This documentation example is NOT compiler-verified: it has no clean `tool4d check-syntax` verdict, usually because it references a project table, ORDA dataclass or user class that only exists in the doc page's imaginary database, or contains a literal `...` elision. It is supplied only alongside the compiler-verified synthetic example above, never instead of it -- read it for intent, use the typed IR and verified fixture for syntax, not runtime guarantees.";
 
 const WRAPPED_NOTE: &str = "This documentation example is a class-body fragment: it was compiler-verified only after being mechanically hosted inside a 4D class file. Reproduce that hosting (place it inside a class) when adapting it.";
 
@@ -31,7 +67,7 @@ const WRAPPED_NOTE: &str = "This documentation example is a class-body fragment:
 pub enum ExampleSource {
     /// Hand-written, harvested from the 4D documentation.
     Documentation,
-    /// Machine-synthesized to exercise every overload/variant, then compiled.
+    /// Machine-synthesized overload/variant fixtures, then syntax-checked.
     Synthetic,
 }
 
@@ -41,6 +77,8 @@ pub struct ExampleBlock {
     pub provenance: String,
     #[serde(rename = "compilerVerified")]
     pub compiler_verified: bool,
+    #[serde(rename = "verificationScope", skip_serializing_if = "Option::is_none")]
+    pub verification_scope: Option<&'static str>,
     pub raw: String,
     #[serde(rename = "docPage", skip_serializing_if = "Option::is_none")]
     pub doc_page: Option<String>,
@@ -71,7 +109,7 @@ pub struct ExampleBlock {
 /// `primary` follows the precedence rule:
 ///   1. documentation example, compiler-verified
 ///   2. documentation example, wrapped and compiler-verified
-///   3. compiler-verified synthetic example (all 502 members have one)
+///   3. compiler-verified synthetic example (all 528 members have one)
 ///   4. documentation example, not compiler-verified — **never primary**
 ///
 /// A not-compiler-verified doc example only ever appears in `alternates`,
@@ -92,6 +130,7 @@ fn synth_block(record: &MemberRecord) -> Option<ExampleBlock> {
         source: ExampleSource::Synthetic,
         provenance: SYNTH_PROVENANCE.to_string(),
         compiler_verified: true,
+        verification_scope: Some("tool4d checkSyntax in 21 R5 fixture projects (21R5.100156); not runtime, full-application compilation or exhaustive arity proof"),
         raw: raw.to_string(),
         doc_page: None,
         title: None,
@@ -114,6 +153,7 @@ fn doc_block(ex: &DocExample) -> ExampleBlock {
             ex.provenance.clone()
         },
         compiler_verified: verified,
+        verification_scope: verified.then_some("tool4d checkSyntax in 21 R5 fixture projects (21R5.100156); not runtime, full-application compilation or exhaustive arity proof"),
         raw: ex.code.clone(),
         doc_page: ex.doc_page.clone(),
         title: ex.title.clone(),
@@ -140,7 +180,7 @@ pub fn build_example(record: &MemberRecord) -> ExampleInfo {
     match verified_doc {
         // Tiers 1-2: a compiler-verified documentation example leads. The
         // synthetic one still follows as an alternate, because it is the only
-        // thing that exercises *every* overload and variant.
+        // fixture that exercises the generated overload/variant blocks.
         Some(best) => {
             let mut alternates: Vec<ExampleBlock> = record
                 .doc_examples
@@ -199,7 +239,7 @@ fn raw_syntax(record: &MemberRecord) -> Vec<String> {
         .collect()
 }
 
-/// The declared type(s) of a property. **Always a list**: 9 properties are
+/// The declared type(s) of a property. **Always a list**: 10 properties are
 /// multi-variant (`Email.bcc` is `Text | Object | Collection`) and rendering
 /// only the first is a bug this project has already been bitten by once.
 fn accessor_types(record: &MemberRecord) -> Vec<Value> {
@@ -215,6 +255,9 @@ fn accessor_types(record: &MemberRecord) -> Vec<Value> {
 
 #[derive(Debug, Serialize)]
 pub struct MemberResult {
+    pub snapshot: Value,
+    #[serde(rename = "syntaxWarning", skip_serializing_if = "Option::is_none")]
+    pub syntax_warning: Option<String>,
     #[serde(rename = "resultType")]
     pub result_type: &'static str,
     pub id: String,
@@ -327,6 +370,8 @@ pub fn build_member_result(record: &MemberRecord, score: Option<f32>) -> MemberR
     let types = accessor_types(record);
 
     MemberResult {
+        snapshot: snapshot_provenance(),
+        syntax_warning: syntax_warning(&record.ir.id),
         result_type: "member",
         id: record.ir.id.clone(),
         display_name: record.ir.display_name.clone(),
@@ -375,6 +420,7 @@ pub struct MemberSummary {
 
 #[derive(Debug, Serialize)]
 pub struct ClassResult {
+    pub snapshot: Value,
     #[serde(rename = "resultType")]
     pub result_type: &'static str,
     pub id: String,
@@ -556,6 +602,7 @@ pub fn build_class_result(
     }
 
     ClassResult {
+        snapshot: snapshot_provenance(),
         result_type: "class",
         id: cl.ir.id.clone(),
         display_name: cl.ir.display_name.clone(),
@@ -662,6 +709,7 @@ pub fn member_card(name: &str) -> Option<MemberResult> {
 /// Members of a class, optionally filtered by kind. Includes inherited members.
 #[derive(Debug, Serialize)]
 pub struct MembersListing {
+    pub snapshot: Value,
     #[serde(rename = "classId")]
     pub class_id: String,
     #[serde(rename = "typeName")]
@@ -683,6 +731,7 @@ pub fn members_listing(class_name: &str, kind: Option<&str>) -> Option<MembersLi
         .filter(|m| wanted.as_deref().is_none_or(|k| m.kind == k))
         .collect();
     Some(MembersListing {
+        snapshot: card.snapshot,
         class_id: card.id,
         type_name: card.type_name,
         is_abstract: card.is_abstract,
@@ -709,6 +758,8 @@ pub fn normalize_kind(kind: &str) -> String {
 
 #[derive(Debug, Serialize)]
 pub struct ProducerEntry {
+    #[serde(rename = "syntaxWarning", skip_serializing_if = "Option::is_none")]
+    pub syntax_warning: Option<String>,
     /// The relationship kinds that connect this producer to the class:
     /// `returns_instance_of` (its declared return type is this class) and/or
     /// `obtained_via` (an IR-curated "how to obtain one" edge).
@@ -727,6 +778,7 @@ pub struct ProducerEntry {
 
 #[derive(Debug, Serialize)]
 pub struct ReturnsResult {
+    pub snapshot: Value,
     #[serde(rename = "classId")]
     pub class_id: String,
     #[serde(rename = "typeName")]
@@ -774,6 +826,7 @@ pub fn returns_result(class_name: &str) -> Option<ReturnsResult> {
             order.push(producer.clone());
             let member = idx.members.get(&producer);
             ProducerEntry {
+                syntax_warning: syntax_warning(&producer),
                 relationships: Vec::new(),
                 summary: member.map(|m| m.ir.summary.clone()),
                 raw_syntax: member.map(raw_syntax).unwrap_or_default(),
@@ -801,6 +854,7 @@ pub fn returns_result(class_name: &str) -> Option<ReturnsResult> {
     producers.sort_by(|a, b| a.producer.cmp(&b.producer));
 
     Some(ReturnsResult {
+        snapshot: card.snapshot,
         class_id: card.id,
         type_name: card.type_name,
         is_abstract: card.is_abstract,

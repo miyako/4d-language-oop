@@ -23,7 +23,8 @@
           "comment_line": 8,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "543b581e60313d11e91afa8f8325f1d97ace7399d3bf6e77f53a168c4470fde6"
     },
     "Sources/Methods/SynthOOP_4D_CryptoKey_new.4dm": {
       "member_id": "4D.CryptoKey.new",
@@ -36,7 +37,8 @@
           "comment_line": 1,
           "lines": 3
         }
-      ]
+      ],
+      "sourceSha256": "dbcea18d9563f56dcfa65e12bf55aec5661020a671e3ca03c12dc9bf299fbe68"
     },
     "Sources/Methods/SynthOOP_4D_File_new.4dm": {
       "member_id": "4D.File.new",
@@ -151,7 +153,8 @@
           "comment_line": 52,
           "lines": 3
         }
-      ]
+      ],
+      "sourceSha256": "2801715b2d9775dfa3cfb9f141755da950f81e93e80677da7fd0d77ae51b9c58"
     },
     "Sources/Methods/SynthOOP_4D_Folder_new.4dm": {
       "member_id": "4D.Folder.new",
@@ -266,7 +269,8 @@
           "comment_line": 52,
           "lines": 3
         }
-      ]
+      ],
+      "sourceSha256": "d513fc4b3cac321e849241528beb0607e266e92ec9f4f70552da5c6a76b0a439"
     },
     "Sources/Methods/SynthOOP_4D_HTTPAgent_new.4dm": {
       "member_id": "4D.HTTPAgent.new",
@@ -285,7 +289,8 @@
           "comment_line": 4,
           "lines": 3
         }
-      ]
+      ],
+      "sourceSha256": "b6fc4c5506325de1212ad0fe23024110e2005de9d9f5d24862bc18ba7c646807"
     },
     "Sources/Methods/SynthOOP_4D_HTTPRequest_new.4dm": {
       "member_id": "4D.HTTPRequest.new",
@@ -304,7 +309,8 @@
           "comment_line": 4,
           "lines": 3
         }
-      ]
+      ],
+      "sourceSha256": "3938641e59835e9a941a90c69c291ececde3651bcd3db9209650b7d45a4c8d4f"
     },
     "Sources/Methods/SynthOOP_4D_IMAPNotifier_new.4dm": {
       "member_id": "4D.IMAPNotifier.new",
@@ -317,7 +323,8 @@
           "comment_line": 1,
           "lines": 3
         }
-      ]
+      ],
+      "sourceSha256": "898de91519cb227d281fe13652eba09975094e0d3aa41a424e782a20574a2c56"
     },
     "Sources/Methods/SynthOOP_4D_IMAPTransporter_new.4dm": {
       "member_id": "4D.IMAPTransporter.new",
@@ -330,7 +337,8 @@
           "comment_line": 1,
           "lines": 3
         }
-      ]
+      ],
+      "sourceSha256": "5bc199a2510fbf11fe40e9bfd910775e2625a0b14a45a1dd355f527288bc2bfc"
     },
     "Sources/Methods/SynthOOP_4D_MailAttachment_new.4dm": {
       "member_id": "4D.MailAttachment.new",
@@ -457,7 +465,8 @@
           "comment_line": 94,
           "lines": 3
         }
-      ]
+      ],
+      "sourceSha256": "348a879eb75563726f6fedf41b93443973931ebfcd0b7d8235a611de42fb4d37"
     },
     "Sources/Methods/SynthOOP_4D_Method_new.4dm": {
       "member_id": "4D.Method.new",
@@ -476,7 +485,8 @@
           "comment_line": 4,
           "lines": 3
         }
-      ]
+      ],
+      "sourceSha256": "6b2830a6bb29854aa9aebb1df42061726a390ddbb3c2d98a1a36853a8faf6a55"
     },
     "Sources/Methods/SynthOOP_4D_POP3Transporter_new.4dm": {
       "member_id": "4D.POP3Transporter.new",
@@ -489,7 +499,8 @@
           "comment_line": 1,
           "lines": 3
         }
-      ]
+      ],
+      "sourceSha256": "dc3eb69f58ceb986d12e78c530197a04f277c558ce3ef357f41b6bc402335b12"
     },
     "Sources/Methods/SynthOOP_4D_SMTPTransporter_new.4dm": {
       "member_id": "4D.SMTPTransporter.new",
@@ -502,7 +513,8 @@
           "comment_line": 1,
           "lines": 3
         }
-      ]
+      ],
+      "sourceSha256": "de996d22a7aa2988c8f3c59696a4e7b6464b6f5dc2636a6c5bbd722d8e16ef75"
     },
     "Sources/Methods/SynthOOP_4D_SystemWorker_new.4dm": {
       "member_id": "4D.SystemWorker.new",
@@ -521,7 +533,8 @@
           "comment_line": 4,
           "lines": 3
         }
-      ]
+      ],
+      "sourceSha256": "ce4316105bb3aff0ccaef4912ecee9b8f0a7d54cbec859d4385fa18f30289480"
     },
     "Sources/Methods/SynthOOP_4D_TCPConnection_new.4dm": {
       "member_id": "4D.TCPConnection.new",
@@ -534,7 +547,8 @@
           "comment_line": 1,
           "lines": 3
         }
-      ]
+      ],
+      "sourceSha256": "bc46153f5a4b9a0f63543348895e1e5b5d66a9c381f410700a4f4cf6857411eb"
     },
     "Sources/Methods/SynthOOP_4D_TCPListener_new.4dm": {
       "member_id": "4D.TCPListener.new",
@@ -547,7 +561,8 @@
           "comment_line": 1,
           "lines": 3
         }
-      ]
+      ],
+      "sourceSha256": "b478e2e7e4721d42b0cd4cd0d3893e67a10b6834ae6e786527b2b5d8a9d4c599"
     },
     "Sources/Methods/SynthOOP_4D_UDPSocket_new.4dm": {
       "member_id": "4D.UDPSocket.new",
@@ -578,7 +593,8 @@
           "comment_line": 10,
           "lines": 3
         }
-      ]
+      ],
+      "sourceSha256": "05aaa56feb9ed2157a0a027a15c6e0552a921d67d22a53b653c87b330d4bbee1"
     },
     "Sources/Methods/SynthOOP_4D_Vector_new.4dm": {
       "member_id": "4D.Vector.new",
@@ -590,8 +606,21 @@
           "variant": "default",
           "comment_line": 1,
           "lines": 3
+        },
+        {
+          "overload_index": 0,
+          "variant": "enum:4D.Vector.new.precision=mk double precision",
+          "comment_line": 4,
+          "lines": 3
+        },
+        {
+          "overload_index": 0,
+          "variant": "optional:omit-precision",
+          "comment_line": 7,
+          "lines": 3
         }
-      ]
+      ],
+      "sourceSha256": "541b13aacee9ec27ad832e0ce3bace0aaf1bfb01bd7b3ea0eeb6aed2fc519584"
     },
     "Sources/Methods/SynthOOP_4D_WebSocket_new.4dm": {
       "member_id": "4D.WebSocket.new",
@@ -610,7 +639,8 @@
           "comment_line": 4,
           "lines": 3
         }
-      ]
+      ],
+      "sourceSha256": "b4ce2c6f8d509babc6c096d88d3af2be44b0e8cdc4b11ebb68ff84fb0a687cc3"
     },
     "Sources/Methods/SynthOOP_4D_WebSocketServer_new.4dm": {
       "member_id": "4D.WebSocketServer.new",
@@ -629,7 +659,8 @@
           "comment_line": 4,
           "lines": 3
         }
-      ]
+      ],
+      "sourceSha256": "ef9ca08895987938934cd9094d1d4543619391297415e7dad1bc5630262d6fdc"
     },
     "Sources/Methods/SynthOOP_4D_classClassName.4dm": {
       "member_id": "4D.classClassName",
@@ -642,7 +673,8 @@
           "comment_line": 1,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "dd9fc4d291c73d62e176e2120491e96b370defdbf5f3e26a0ef2dd1b125f1cc9"
     },
     "Sources/Methods/SynthOOP_4D_classStoreName.4dm": {
       "member_id": "4D.classStoreName",
@@ -655,7 +687,8 @@
           "comment_line": 1,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "e3afd0df4f4d1d3b53c6a28c22f24c38f96d78fdadef7dcece7f50f485c5a521"
     },
     "Sources/Methods/SynthOOP_Blob_size.4dm": {
       "member_id": "Blob.size",
@@ -674,7 +707,8 @@
           "comment_line": 6,
           "lines": 3
         }
-      ]
+      ],
+      "sourceSha256": "4555eca661ab06cdf3876b3d70f011355189edd1c720306b8f34243fcb7954e3"
     },
     "Sources/Methods/SynthOOP_Blob_slice.4dm": {
       "member_id": "Blob.slice",
@@ -699,7 +733,8 @@
           "comment_line": 10,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "707f6f9b700caf786debbb0e604b51aaeba7f5aa4fc6435ddcd2a6fe4dff11b3"
     },
     "Sources/Methods/SynthOOP_Class_isSessionSi_e289.4dm": {
       "member_id": "Class.isSessionSingleton",
@@ -712,7 +747,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "b3352f9d79777270f5f94f165375bfe4332b32244f302c38be98f8b3c4c0e2b5"
     },
     "Sources/Methods/SynthOOP_Class_isShared.4dm": {
       "member_id": "Class.isShared",
@@ -725,7 +761,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "a5ee2eb6148034e53fa3c0f0655eabb1eff3415a2fc07be60408c281e6a84f6e"
     },
     "Sources/Methods/SynthOOP_Class_isSingleton.4dm": {
       "member_id": "Class.isSingleton",
@@ -738,7 +775,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "38f3c2bec10ac6ff0f68551c9ff075ba72f2327246f0c82f6285ed5b83ea8dc4"
     },
     "Sources/Methods/SynthOOP_Class_me.4dm": {
       "member_id": "Class.me",
@@ -751,7 +789,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "10a9285d32b63257d0aff9e50b8b29a82fac406c6388f9ba905401bda65cff0c"
     },
     "Sources/Methods/SynthOOP_Class_name.4dm": {
       "member_id": "Class.name",
@@ -764,7 +803,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "442e5e05835d3f5436bf7a17cbcc23ffcb59dfae1919ea828c62e8130109b250"
     },
     "Sources/Methods/SynthOOP_Class_new.4dm": {
       "member_id": "Class.new",
@@ -777,7 +817,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "6869bea8ee0fd847bb477791b690e80ff64dbbc6da1d25344e669deed6ab488f"
     },
     "Sources/Methods/SynthOOP_Class_superclass.4dm": {
       "member_id": "Class.superclass",
@@ -790,7 +831,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "2b400b35119f1d865c1763d71efa196fe00d7dceb4aa42e6e9d2425418acf6d5"
     },
     "Sources/Methods/SynthOOP_Collection_at.4dm": {
       "member_id": "Collection.at",
@@ -803,7 +845,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "29e722322b9b02fd0146a7f53fcbe295cf06e28447e88849e5328bc9569c7d5b"
     },
     "Sources/Methods/SynthOOP_Collection_average.4dm": {
       "member_id": "Collection.average",
@@ -822,7 +865,8 @@
           "comment_line": 6,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "7dff712e48f336ccad74a0d7551448540d943af6cd1b169fa7e626f622fbf369"
     },
     "Sources/Methods/SynthOOP_Collection_clear.4dm": {
       "member_id": "Collection.clear",
@@ -835,7 +879,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "93dce770645c1457148850f341ec208725029ee77a242006d9a5bcb580314d0b"
     },
     "Sources/Methods/SynthOOP_Collection_combine.4dm": {
       "member_id": "Collection.combine",
@@ -854,7 +899,8 @@
           "comment_line": 6,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "ea196d1f2b327f0ca32e230a4b6ca70451a94c494e4bc0620ec53ecf122d277e"
     },
     "Sources/Methods/SynthOOP_Collection_concat.4dm": {
       "member_id": "Collection.concat",
@@ -867,7 +913,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "92dcaf67e9a83f8f0a5e3026fe3037b6982e2b0d07a680bbb458b70ed5e6ee08"
     },
     "Sources/Methods/SynthOOP_Collection_copy.4dm": {
       "member_id": "Collection.copy",
@@ -916,7 +963,8 @@
           "comment_line": 26,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "95b50d2ba0b1ca23c4d5597e943e92ddbd3a033f3eda5a9782f01a7e05d704fc"
     },
     "Sources/Methods/SynthOOP_Collection_count.4dm": {
       "member_id": "Collection.count",
@@ -935,7 +983,8 @@
           "comment_line": 6,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "ac6561c421a6541233b95f2715c7c5606be130bdc8bc2245f031277cb6fa0501"
     },
     "Sources/Methods/SynthOOP_Collection_countValues.4dm": {
       "member_id": "Collection.countValues",
@@ -954,7 +1003,8 @@
           "comment_line": 6,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "ffe5f0853d0cf59144d5471a3b9c53c22cb58d503f8fc4167211bffeeb46500e"
     },
     "Sources/Methods/SynthOOP_Collection_distinct.4dm": {
       "member_id": "Collection.distinct",
@@ -997,7 +1047,8 @@
           "comment_line": 22,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "5427c72acdf3a3229127041aafbadb38bd560dba52f91fb8d6d2054d4de0d98b"
     },
     "Sources/Methods/SynthOOP_Collection_equal.4dm": {
       "member_id": "Collection.equal",
@@ -1016,7 +1067,8 @@
           "comment_line": 6,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "4d587be1a62eb0ed59ecdc2f64a2051e9b94f20f46da795d93db94b71f37dd9f"
     },
     "Sources/Methods/SynthOOP_Collection_every.4dm": {
       "member_id": "Collection.every",
@@ -1035,7 +1087,8 @@
           "comment_line": 8,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "fa920cfe56a167b5ba168fb6a88e7fcfb81cb5547e0401e6ce6d569f92615909"
     },
     "Sources/Methods/SynthOOP_Collection_extract.4dm": {
       "member_id": "Collection.extract",
@@ -1060,7 +1113,8 @@
           "comment_line": 10,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "aa999c3a9933301310bcf38b8c25ee9a6681c1dc55f30a6883d7f4b6d0c7d0c7"
     },
     "Sources/Methods/SynthOOP_Collection_fill.4dm": {
       "member_id": "Collection.fill",
@@ -1085,7 +1139,8 @@
           "comment_line": 10,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "48732485f1282085a752406219c42fbdfdbae7111ac84473a1404659ad5e48f4"
     },
     "Sources/Methods/SynthOOP_Collection_filter.4dm": {
       "member_id": "Collection.filter",
@@ -1104,7 +1159,8 @@
           "comment_line": 8,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "5c8c4e629af01298b72f9c5410d608e2c934e7ec7138067f8933934e1f1bbc6c"
     },
     "Sources/Methods/SynthOOP_Collection_find.4dm": {
       "member_id": "Collection.find",
@@ -1123,7 +1179,8 @@
           "comment_line": 8,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "c88cf10d2683222b623a23e3cdc4d701dfbecd107bbfe4f9ff1b14a311a142c4"
     },
     "Sources/Methods/SynthOOP_Collection_findIndex.4dm": {
       "member_id": "Collection.findIndex",
@@ -1142,7 +1199,8 @@
           "comment_line": 8,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "7ee6da3a44356816dc0f94ea21e1b9a492d0626e20f36fb5ee37a6f1d34a4c58"
     },
     "Sources/Methods/SynthOOP_Collection_first.4dm": {
       "member_id": "Collection.first",
@@ -1155,7 +1213,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "dbe609fc5d67e3baf6d6b6a5782dca605e0d5050b776e855961403588df0df36"
     },
     "Sources/Methods/SynthOOP_Collection_flat.4dm": {
       "member_id": "Collection.flat",
@@ -1174,7 +1233,8 @@
           "comment_line": 6,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "f3822233f922be04b6c38b81d2d3df0accdeac498cc3bf8210b6c855b37aa42a"
     },
     "Sources/Methods/SynthOOP_Collection_flatMap.4dm": {
       "member_id": "Collection.flatMap",
@@ -1193,7 +1253,8 @@
           "comment_line": 8,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "1e6e929198800b7080def17d8c08474f2e577f316c8e30b66c4861a8637c727e"
     },
     "Sources/Methods/SynthOOP_Collection_includes.4dm": {
       "member_id": "Collection.includes",
@@ -1212,7 +1273,8 @@
           "comment_line": 6,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "a13afe75d3047bdd97d7b3044e00b5cc31dceda5baa8279b6f254db7de23cf83"
     },
     "Sources/Methods/SynthOOP_Collection_indexOf.4dm": {
       "member_id": "Collection.indexOf",
@@ -1231,7 +1293,8 @@
           "comment_line": 6,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "e294cf7532291c1751f7a47ffbc803cd8ae2a26f790622f3712afd96903a7e50"
     },
     "Sources/Methods/SynthOOP_Collection_indices.4dm": {
       "member_id": "Collection.indices",
@@ -1244,7 +1307,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "b04e6cb528d23e0835a097bc95efc37e5b61e8eb08af242552b387b486c74438"
     },
     "Sources/Methods/SynthOOP_Collection_insert.4dm": {
       "member_id": "Collection.insert",
@@ -1257,7 +1321,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "29ca84ac8da1d726189fc62af6ffb3a7b11f264e585d823ab3105d4669d63b9b"
     },
     "Sources/Methods/SynthOOP_Collection_join.4dm": {
       "member_id": "Collection.join",
@@ -1276,7 +1341,8 @@
           "comment_line": 6,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "dc226bd70fe1f9d5795fd1d32a232a5c43c7be5d7d914fb81e45accf84b3afa8"
     },
     "Sources/Methods/SynthOOP_Collection_last.4dm": {
       "member_id": "Collection.last",
@@ -1289,7 +1355,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "92f7fd0816664541a702addb0c82bb4bea3b2ee09c395afd8a880e1437278ad8"
     },
     "Sources/Methods/SynthOOP_Collection_lastIndexOf.4dm": {
       "member_id": "Collection.lastIndexOf",
@@ -1308,7 +1375,8 @@
           "comment_line": 6,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "de3a50f9cb289739f9b1fe27c19268be923425fca14dd4f75cc1587786ac39ef"
     },
     "Sources/Methods/SynthOOP_Collection_length.4dm": {
       "member_id": "Collection.length",
@@ -1321,7 +1389,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "709561b7d401c7823db9054d0f0c7ee06a524b617045bb0fbaea0398be7091b2"
     },
     "Sources/Methods/SynthOOP_Collection_map.4dm": {
       "member_id": "Collection.map",
@@ -1340,7 +1409,8 @@
           "comment_line": 8,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "0fe29f4ed52e18b54077a35390131316c5cb969c3b266624b14d0e827a516245"
     },
     "Sources/Methods/SynthOOP_Collection_max.4dm": {
       "member_id": "Collection.max",
@@ -1359,7 +1429,8 @@
           "comment_line": 6,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "5cfee3729887a022c06c823853e8d6e631bb890e941f0b2c2a2979169144fdb7"
     },
     "Sources/Methods/SynthOOP_Collection_min.4dm": {
       "member_id": "Collection.min",
@@ -1378,7 +1449,8 @@
           "comment_line": 6,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "2fdaeea9df6735dbbd44d3670dd6f7cb4cf65fc78dc7e8c57d7ba6beb9f2d23f"
     },
     "Sources/Methods/SynthOOP_Collection_multiSort.4dm": {
       "member_id": "Collection.multiSort",
@@ -1403,7 +1475,8 @@
           "comment_line": 10,
           "lines": 6
         }
-      ]
+      ],
+      "sourceSha256": "c09267010c9991756db87108b73e04642faf56bf8b42f952912b0282f760313c"
     },
     "Sources/Methods/SynthOOP_Collection_orderBy.4dm": {
       "member_id": "Collection.orderBy",
@@ -1440,7 +1513,8 @@
           "comment_line": 18,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "8b0eca952ec126eab657aebfa8700cf53f42e14619713b366a1dc67ad41c9187"
     },
     "Sources/Methods/SynthOOP_Collection_orderB_6f50.4dm": {
       "member_id": "Collection.orderByMethod",
@@ -1459,7 +1533,8 @@
           "comment_line": 8,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "878e50f1311a0acc02cf63609b88ec554c84e47d0a483fa2faad7bfeb8c479ce"
     },
     "Sources/Methods/SynthOOP_Collection_pop.4dm": {
       "member_id": "Collection.pop",
@@ -1472,7 +1547,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "8332b71ff3a50a14f381b5f1eb8aae8fe82c36628952bec26911ddf60282c6bb"
     },
     "Sources/Methods/SynthOOP_Collection_push.4dm": {
       "member_id": "Collection.push",
@@ -1485,7 +1561,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "c24cda3dd471e1fc71f825f8ea2e4924baf5954370e180b4f0713016eeb48796"
     },
     "Sources/Methods/SynthOOP_Collection_query.4dm": {
       "member_id": "Collection.query",
@@ -1510,7 +1587,8 @@
           "comment_line": 10,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "2bcad1ecea343450e6a807d6b041b0083b12ee829ae4754b94c2f4ef7b9c4510"
     },
     "Sources/Methods/SynthOOP_Collection_reduce.4dm": {
       "member_id": "Collection.reduce",
@@ -1529,7 +1607,8 @@
           "comment_line": 8,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "f23f51c9e2b075d099988a3a7b8938104563a79e14d490be0abcb64b508d5bff"
     },
     "Sources/Methods/SynthOOP_Collection_reduceRight.4dm": {
       "member_id": "Collection.reduceRight",
@@ -1548,7 +1627,8 @@
           "comment_line": 8,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "9e8ecf79af9e6b7a94c7ecd8e9a416f2b926a4dc6f418426908de4abc6777f7b"
     },
     "Sources/Methods/SynthOOP_Collection_remove.4dm": {
       "member_id": "Collection.remove",
@@ -1567,7 +1647,8 @@
           "comment_line": 6,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "7ea1abdf68c7bfa7cf589218629390a5a4c71631176d5a81f370d1bbc356ec29"
     },
     "Sources/Methods/SynthOOP_Collection_resize.4dm": {
       "member_id": "Collection.resize",
@@ -1586,7 +1667,8 @@
           "comment_line": 6,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "727c8bf00ea98bf8d5f1fb4271983ba375ec70656eac90671c078c25dc60baa2"
     },
     "Sources/Methods/SynthOOP_Collection_reverse.4dm": {
       "member_id": "Collection.reverse",
@@ -1599,7 +1681,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "3ee1a6283423d876be4e6fb01bab7ba74b33142456fe3c97906b21d826b4eb20"
     },
     "Sources/Methods/SynthOOP_Collection_shift.4dm": {
       "member_id": "Collection.shift",
@@ -1612,7 +1695,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "8d662d3cc4e8977d2aad5dec3833d704e32613d892e0ebd36d6ade148056b250"
     },
     "Sources/Methods/SynthOOP_Collection_slice.4dm": {
       "member_id": "Collection.slice",
@@ -1631,7 +1715,8 @@
           "comment_line": 6,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "f84fb3315d713e386eeab0499609127b53588e35fde210e69b918c257ae56cb2"
     },
     "Sources/Methods/SynthOOP_Collection_some.4dm": {
       "member_id": "Collection.some",
@@ -1650,7 +1735,8 @@
           "comment_line": 8,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "a5b9ca0e93dffdeb4a99ca49eaea3f54feee18e4572e1f0456983f742b20301b"
     },
     "Sources/Methods/SynthOOP_Collection_sort.4dm": {
       "member_id": "Collection.sort",
@@ -1687,7 +1773,8 @@
           "comment_line": 20,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "0957723a060896733e400bc737f28cf09c7f108cc71e6a84d11599ffa4dfafbc"
     },
     "Sources/Methods/SynthOOP_Collection_sum.4dm": {
       "member_id": "Collection.sum",
@@ -1706,7 +1793,8 @@
           "comment_line": 6,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "83d7f6c64c86c1304c19d494fd8f47a89a83381aff3ddeb0e597bda1c8c844a6"
     },
     "Sources/Methods/SynthOOP_Collection_unshift.4dm": {
       "member_id": "Collection.unshift",
@@ -1719,7 +1807,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "1f124ab8d1ca75af24dfec9b6fbe6dcb080dcbdc66f4dede79fa75193d6d90c6"
     },
     "Sources/Methods/SynthOOP_CryptoKey_curve.4dm": {
       "member_id": "CryptoKey.curve",
@@ -1738,7 +1827,8 @@
           "comment_line": 6,
           "lines": 3
         }
-      ]
+      ],
+      "sourceSha256": "772c87ca32ede8330dfabb2c21b45927f2fc2dbd5adaacbb9baebfc031566c3d"
     },
     "Sources/Methods/SynthOOP_CryptoKey_decrypt.4dm": {
       "member_id": "CryptoKey.decrypt",
@@ -1751,7 +1841,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "2f3d312a2eac342b154d5895fe8441835bdaa258a66c327ddcf2a4fdb03bdeb2"
     },
     "Sources/Methods/SynthOOP_CryptoKey_encrypt.4dm": {
       "member_id": "CryptoKey.encrypt",
@@ -1764,7 +1855,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "c18f5df547294befdadaa87a14629be46a95ae2a5f0972c7e533b6481bcdcc26"
     },
     "Sources/Methods/SynthOOP_CryptoKey_getPriv_8b95.4dm": {
       "member_id": "CryptoKey.getPrivateKey",
@@ -1777,7 +1869,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "53cef1f96cc322950bb72eec34dfb2f9b84d117d97e9930032cbfe3632ecb223"
     },
     "Sources/Methods/SynthOOP_CryptoKey_getPublicKey.4dm": {
       "member_id": "CryptoKey.getPublicKey",
@@ -1790,7 +1883,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "d6dfdc1c86336d160df19223860f1dfa5a96c93919ebddec30067f486591468f"
     },
     "Sources/Methods/SynthOOP_CryptoKey_pem.4dm": {
       "member_id": "CryptoKey.pem",
@@ -1809,7 +1903,8 @@
           "comment_line": 6,
           "lines": 3
         }
-      ]
+      ],
+      "sourceSha256": "2e5b75eed4e13dd0c295bfc4935f7db6b5dfb6ab57a9e7e09aac7ac5c4d33511"
     },
     "Sources/Methods/SynthOOP_CryptoKey_sign.4dm": {
       "member_id": "CryptoKey.sign",
@@ -1828,7 +1923,8 @@
           "comment_line": 6,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "ca22315718aa5c16a63caa004f9aabb50ab641132c71bedf52dbed4a5f6d9280"
     },
     "Sources/Methods/SynthOOP_CryptoKey_size.4dm": {
       "member_id": "CryptoKey.size",
@@ -1847,7 +1943,8 @@
           "comment_line": 6,
           "lines": 3
         }
-      ]
+      ],
+      "sourceSha256": "d51a3c59cf8fd3b6d2cbe44d5f96ec8b560f1b6952867f705cecaa56da1502c7"
     },
     "Sources/Methods/SynthOOP_CryptoKey_type.4dm": {
       "member_id": "CryptoKey.type",
@@ -1866,7 +1963,8 @@
           "comment_line": 6,
           "lines": 3
         }
-      ]
+      ],
+      "sourceSha256": "d23b22600ab0e4cd1713bd6fe4f82208406cc972dd600fb39462ff8c497aeb5f"
     },
     "Sources/Methods/SynthOOP_CryptoKey_verify.4dm": {
       "member_id": "CryptoKey.verify",
@@ -1885,7 +1983,8 @@
           "comment_line": 6,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "2564096a90f80f461ae0b25d49864ad11eb39fb96f4adae5ffd30c7708a6590f"
     },
     "Sources/Methods/SynthOOP_DataClass_all.4dm": {
       "member_id": "DataClass.all",
@@ -1904,7 +2003,8 @@
           "comment_line": 6,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "553d91a12328ae5dddbc16c4e284fbeefdc91fa05e8cfcb0bccf891485b630d9"
     },
     "Sources/Methods/SynthOOP_DataClass_attribu_201c.4dm": {
       "member_id": "DataClass.attributeName",
@@ -1917,7 +2017,8 @@
           "comment_line": 1,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "838335330db167005e916864a5521460144dfea06befd2660cfe9bc03a19e6ae"
     },
     "Sources/Methods/SynthOOP_DataClass_clearRe_03ad.4dm": {
       "member_id": "DataClass.clearRemoteCache",
@@ -1930,7 +2031,8 @@
           "comment_line": 1,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "11ad94f4cdfac3b04fd737e7ece1e07800c9cc06a619c5b8e51189c502455b01"
     },
     "Sources/Methods/SynthOOP_DataClass_fromCol_bd89.4dm": {
       "member_id": "DataClass.fromCollection",
@@ -1949,7 +2051,8 @@
           "comment_line": 6,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "65fce032db9dc7f85db7e06e42f78c1d56f158b7fb351fef4ab63853d81bfe3d"
     },
     "Sources/Methods/SynthOOP_DataClass_get.4dm": {
       "member_id": "DataClass.get",
@@ -1980,7 +2083,8 @@
           "comment_line": 14,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "80106f13a4a6c2823f09fdd0d9534a9573a4f77d2df8d101c1040ddb00a1ae37"
     },
     "Sources/Methods/SynthOOP_DataClass_getCount.4dm": {
       "member_id": "DataClass.getCount",
@@ -1993,7 +2097,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "66149a30dc75af0c201f3a9c323661e967320dd61d744fc277c9c141ecd2cdf7"
     },
     "Sources/Methods/SynthOOP_DataClass_getDataStore.4dm": {
       "member_id": "DataClass.getDataStore",
@@ -2006,7 +2111,22 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "4637c6fc3f26ad89468b926cbb9f4d038481ab2848e81534a7b5dc1c3dd743e0"
+    },
+    "Sources/Methods/SynthOOP_DataClass_getIndexes.4dm": {
+      "member_id": "DataClass.getIndexes",
+      "kind": "oop_function",
+      "class_id": "DataClass",
+      "blocks": [
+        {
+          "overload_index": 0,
+          "variant": "default",
+          "comment_line": 1,
+          "lines": 5
+        }
+      ],
+      "sourceSha256": "fbcfa92b2f937d263e4ff17e1b863ac3e3ba7b29c682f56278878f4f77654b9f"
     },
     "Sources/Methods/SynthOOP_DataClass_getInfo.4dm": {
       "member_id": "DataClass.getInfo",
@@ -2019,7 +2139,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "70a6ca5cefe96ef947205c4a2478deee2695942a687a80d9827b94364bbae9f9"
     },
     "Sources/Methods/SynthOOP_DataClass_getRemo_783b.4dm": {
       "member_id": "DataClass.getRemoteCache",
@@ -2032,7 +2153,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "79dc0c7a5c033287cafb3782cac1ce6665b835b5e1ec522778e0ee034d6d8bb5"
     },
     "Sources/Methods/SynthOOP_DataClass_new.4dm": {
       "member_id": "DataClass.new",
@@ -2045,7 +2167,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "617fea0bce87e40199a58de82398fd4a5fdd0745f422f94a40a3799dae45dbb7"
     },
     "Sources/Methods/SynthOOP_DataClass_newSelection.4dm": {
       "member_id": "DataClass.newSelection",
@@ -2070,7 +2193,8 @@
           "comment_line": 10,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "54a385b6d8e9e69bf776d76d2a63ad8981ac959fae0ec19310f5bc4378aade1a"
     },
     "Sources/Methods/SynthOOP_DataClass_query.4dm": {
       "member_id": "DataClass.query",
@@ -2101,7 +2225,8 @@
           "comment_line": 14,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "fa8389773b2e872e976774b1f16544bdecc0ae09f3ee3aae7e5e3b0ae3962bca"
     },
     "Sources/Methods/SynthOOP_DataClass_setRemo_4400.4dm": {
       "member_id": "DataClass.setRemoteCacheSettings",
@@ -2114,7 +2239,8 @@
           "comment_line": 1,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "b8b3247accc3d4b8c1962f97ba524f5bfceba13c73761065ec225e002bc1bea2"
     },
     "Sources/Methods/SynthOOP_DataStore_cancelT_b105.4dm": {
       "member_id": "DataStore.cancelTransaction",
@@ -2127,7 +2253,8 @@
           "comment_line": 1,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "8d528005f4c21e476624f0adc499281a5e5f36b6cfd2db4d3c90439ae58ccbf9"
     },
     "Sources/Methods/SynthOOP_DataStore_clearAl_f177.4dm": {
       "member_id": "DataStore.clearAllRemoteContexts",
@@ -2140,7 +2267,8 @@
           "comment_line": 1,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "0034ac7814c5e7e6532a8491d3444a258b75825d440174d2da0926c99aff0cc4"
     },
     "Sources/Methods/SynthOOP_DataStore_datacla_a84d.4dm": {
       "member_id": "DataStore.dataclassName",
@@ -2153,7 +2281,8 @@
           "comment_line": 1,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "8214cbb5e724ad0a38192ec1635ce4b32842cda9deadeccea5211aecaa5df6b0"
     },
     "Sources/Methods/SynthOOP_DataStore_encrypt_4020.4dm": {
       "member_id": "DataStore.encryptionStatus",
@@ -2166,7 +2295,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "476fb510e310de3ae980d81446898130e117235c34fc415c686b3aea53226664"
     },
     "Sources/Methods/SynthOOP_DataStore_flushAndLock.4dm": {
       "member_id": "DataStore.flushAndLock",
@@ -2179,7 +2309,8 @@
           "comment_line": 1,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "78181c05d936f4ac3d03fc411eff018e0dae977df971fb59053bcbb93049cfdf"
     },
     "Sources/Methods/SynthOOP_DataStore_getAllR_5137.4dm": {
       "member_id": "DataStore.getAllRemoteContexts",
@@ -2192,7 +2323,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "ddcfc8c6a67c4f4d89123f88fa4628643b1414820c7be13e96c0269dd382f727"
     },
     "Sources/Methods/SynthOOP_DataStore_getGlob_f525.4dm": {
       "member_id": "DataStore.getGlobalStamp",
@@ -2205,7 +2337,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "21e011ae6ca558955a8829d878c72c117004c0e32f9f1cb1d748cec56e1dfdea"
     },
     "Sources/Methods/SynthOOP_DataStore_getInfo.4dm": {
       "member_id": "DataStore.getInfo",
@@ -2218,7 +2351,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "8d273568ff1a550ecfc74bae5c9a9d27494044e00cd3dd5843da1821a20e13da"
     },
     "Sources/Methods/SynthOOP_DataStore_getRemo_a7b2.4dm": {
       "member_id": "DataStore.getRemoteContextInfo",
@@ -2231,7 +2365,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "7234f746f9d64c4e580e2ea876d3281d5422a53b67c2e10eef03889e44d6b137"
     },
     "Sources/Methods/SynthOOP_DataStore_getRequ_9f0e.4dm": {
       "member_id": "DataStore.getRequestLog",
@@ -2244,7 +2379,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "4753ba8225bf768916cb4aea356cd3a4b6dbd1b1957dcf12a12d438ff68b0aa5"
     },
     "Sources/Methods/SynthOOP_DataStore_isAdmin_851c.4dm": {
       "member_id": "DataStore.isAdminProtected",
@@ -2257,7 +2393,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "c4e7a38277119adbbf8dd085a9ba331cfd7074d8ce20c8997985a8bb48cef4e5"
     },
     "Sources/Methods/SynthOOP_DataStore_locked.4dm": {
       "member_id": "DataStore.locked",
@@ -2270,7 +2407,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "710c4c2d4852d21245fc92751e9d33cadbd7b5ab46f2a317c24ed974359dd557"
     },
     "Sources/Methods/SynthOOP_DataStore_makeSel_d44c.4dm": {
       "member_id": "DataStore.makeSelectionsAlterable",
@@ -2283,7 +2421,8 @@
           "comment_line": 1,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "c0046a335340a4100631e811b819995ebdabcfdedd5e8ece9f182f04e6b5ecd7"
     },
     "Sources/Methods/SynthOOP_DataStore_provide_cbb7.4dm": {
       "member_id": "DataStore.provideDataKey",
@@ -2302,7 +2441,8 @@
           "comment_line": 6,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "920278c838a44760336f2a9c656fe23e948f00afc6250c94d8ea445d2b4cd7e8"
     },
     "Sources/Methods/SynthOOP_DataStore_setAdmi_2a41.4dm": {
       "member_id": "DataStore.setAdminProtection",
@@ -2315,7 +2455,8 @@
           "comment_line": 1,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "461251d9d478470e568d3b504acd5f80d9843c0de095e4a1143cc3597daa589c"
     },
     "Sources/Methods/SynthOOP_DataStore_setGlob_39a6.4dm": {
       "member_id": "DataStore.setGlobalStamp",
@@ -2328,7 +2469,8 @@
           "comment_line": 1,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "b1a595499c0d90351a0af37c56ba4871bec39e804e5ec1fd73f57092a083ad08"
     },
     "Sources/Methods/SynthOOP_DataStore_setRemo_fb0b.4dm": {
       "member_id": "DataStore.setRemoteContextInfo",
@@ -2407,7 +2549,8 @@
           "comment_line": 45,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "1e32a4ade08e631c53ffd9a64e78d130e9ced3d7ac0fbf49e101b2683b658b6f"
     },
     "Sources/Methods/SynthOOP_DataStore_startRe_cf50.4dm": {
       "member_id": "DataStore.startRequestLog",
@@ -2438,7 +2581,8 @@
           "comment_line": 15,
           "lines": 3
         }
-      ]
+      ],
+      "sourceSha256": "d37c2080de80c04a8cb88806cce16fa811bd275c02337fcc1925d5653899b157"
     },
     "Sources/Methods/SynthOOP_DataStore_startTr_16e7.4dm": {
       "member_id": "DataStore.startTransaction",
@@ -2451,7 +2595,8 @@
           "comment_line": 1,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "b8d7b158a3ca234f3071fe814621318063dd0d232826ba7d93853d269abeb7c7"
     },
     "Sources/Methods/SynthOOP_DataStore_stopReq_d32f.4dm": {
       "member_id": "DataStore.stopRequestLog",
@@ -2464,7 +2609,8 @@
           "comment_line": 1,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "bff5c0fa1f1c3e89900a4805c195a8cd44ed3faebacb88d4f37ab300a8c7061f"
     },
     "Sources/Methods/SynthOOP_DataStore_unlock.4dm": {
       "member_id": "DataStore.unlock",
@@ -2477,7 +2623,8 @@
           "comment_line": 1,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "1704c3f775f1aa700921c6c5df8c4299c2ef4c192457e57bf338d9fe4fb92855"
     },
     "Sources/Methods/SynthOOP_DataStore_validat_7971.4dm": {
       "member_id": "DataStore.validateTransaction",
@@ -2490,7 +2637,8 @@
           "comment_line": 1,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "ba60e0ae8efe150d780917f96afd9b715f2099a8feb66798551b2c5f7bd69f19"
     },
     "Sources/Methods/SynthOOP_Directory_copyTo.4dm": {
       "member_id": "Directory.copyTo",
@@ -2515,7 +2663,8 @@
           "comment_line": 16,
           "lines": 7
         }
-      ]
+      ],
+      "sourceSha256": "37a4b86f2878735196e178c73b2787ad8e244798da2f24dd5fac2f333b6d7919"
     },
     "Sources/Methods/SynthOOP_Directory_creationDate.4dm": {
       "member_id": "Directory.creationDate",
@@ -2528,7 +2677,8 @@
           "comment_line": 1,
           "lines": 6
         }
-      ]
+      ],
+      "sourceSha256": "ed9eca2cffcf1de50e2057b2a4b755d0702be0bbe445c0b02e414133693d433a"
     },
     "Sources/Methods/SynthOOP_Directory_creationTime.4dm": {
       "member_id": "Directory.creationTime",
@@ -2541,7 +2691,8 @@
           "comment_line": 1,
           "lines": 6
         }
-      ]
+      ],
+      "sourceSha256": "1b0d38c48fa79f7e1d893563aed7804bba1fde3dd181140b03276a4109a67f9c"
     },
     "Sources/Methods/SynthOOP_Directory_exists.4dm": {
       "member_id": "Directory.exists",
@@ -2554,7 +2705,8 @@
           "comment_line": 1,
           "lines": 6
         }
-      ]
+      ],
+      "sourceSha256": "77d0f6590d198a8993e459a2a67936b9d824a4bb73097690a5e1540adc85d17c"
     },
     "Sources/Methods/SynthOOP_Directory_extension.4dm": {
       "member_id": "Directory.extension",
@@ -2567,7 +2719,8 @@
           "comment_line": 1,
           "lines": 6
         }
-      ]
+      ],
+      "sourceSha256": "ea74e52273639ce9a3f2e9642f5e4672a0498f9a233e9c0f06f66b669e297e63"
     },
     "Sources/Methods/SynthOOP_Directory_file.4dm": {
       "member_id": "Directory.file",
@@ -2580,7 +2733,8 @@
           "comment_line": 1,
           "lines": 6
         }
-      ]
+      ],
+      "sourceSha256": "21db834f73a603e2c344e1088aac3e9933d8b7dd10100bb535092d1a2892f8a5"
     },
     "Sources/Methods/SynthOOP_Directory_files.4dm": {
       "member_id": "Directory.files",
@@ -2605,7 +2759,8 @@
           "comment_line": 12,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "15e2136b463902a9b4840076f6455c2eff30365e8a62c0215726c8ae21b468a9"
     },
     "Sources/Methods/SynthOOP_Directory_folder.4dm": {
       "member_id": "Directory.folder",
@@ -2618,7 +2773,8 @@
           "comment_line": 1,
           "lines": 6
         }
-      ]
+      ],
+      "sourceSha256": "ee319c0114d4a27343537737439f90c3f407446bf4621d07d2303db18dd7ff8b"
     },
     "Sources/Methods/SynthOOP_Directory_folders.4dm": {
       "member_id": "Directory.folders",
@@ -2643,7 +2799,8 @@
           "comment_line": 12,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "feb9167bf03d76bcf66157d3fd4fe148fb4bf1689e1655f0e837b20273a658d7"
     },
     "Sources/Methods/SynthOOP_Directory_fullName.4dm": {
       "member_id": "Directory.fullName",
@@ -2656,7 +2813,8 @@
           "comment_line": 1,
           "lines": 6
         }
-      ]
+      ],
+      "sourceSha256": "82913f022d5ba46a53a7bf7aadc0007798df4a1888d0b23c7bfd077b4176f646"
     },
     "Sources/Methods/SynthOOP_Directory_getIcon.4dm": {
       "member_id": "Directory.getIcon",
@@ -2675,7 +2833,8 @@
           "comment_line": 7,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "0fef8774fd7683033c238e0a27873774c28333b5b7947d7d08c0e7edbdac2d99"
     },
     "Sources/Methods/SynthOOP_Directory_hidden.4dm": {
       "member_id": "Directory.hidden",
@@ -2688,7 +2847,8 @@
           "comment_line": 1,
           "lines": 6
         }
-      ]
+      ],
+      "sourceSha256": "033138ca94699bb21385c6e1e4da54ed7dc8537787466455dc2ff0f6a04e60ca"
     },
     "Sources/Methods/SynthOOP_Directory_isAlias.4dm": {
       "member_id": "Directory.isAlias",
@@ -2701,7 +2861,8 @@
           "comment_line": 1,
           "lines": 6
         }
-      ]
+      ],
+      "sourceSha256": "a3cc029444d5f5364b0b85d01276ed0490885e7419e7e83cc70352fe1c0b2e3b"
     },
     "Sources/Methods/SynthOOP_Directory_isFile.4dm": {
       "member_id": "Directory.isFile",
@@ -2714,7 +2875,8 @@
           "comment_line": 1,
           "lines": 6
         }
-      ]
+      ],
+      "sourceSha256": "473077dd542951d1e7523ce26b7cc9c883915f3de767fcf253fae97d4d391a8a"
     },
     "Sources/Methods/SynthOOP_Directory_isFolder.4dm": {
       "member_id": "Directory.isFolder",
@@ -2727,7 +2889,8 @@
           "comment_line": 1,
           "lines": 6
         }
-      ]
+      ],
+      "sourceSha256": "cc4d3a9a6b792dc48a3d0ed9b1d73d153c77134f7aa3fa316e070513dfea7a63"
     },
     "Sources/Methods/SynthOOP_Directory_isPackage.4dm": {
       "member_id": "Directory.isPackage",
@@ -2740,7 +2903,8 @@
           "comment_line": 1,
           "lines": 6
         }
-      ]
+      ],
+      "sourceSha256": "ee2e182ccc473afbe0d8f27a815fe10d5581f59aae180d6f5bce469d045bc525"
     },
     "Sources/Methods/SynthOOP_Directory_modific_0779.4dm": {
       "member_id": "Directory.modificationDate",
@@ -2753,7 +2917,8 @@
           "comment_line": 1,
           "lines": 6
         }
-      ]
+      ],
+      "sourceSha256": "b1756dbbfc6f80abbd10b6b781f1f1950a49c768b0e79180db8f100e766d1237"
     },
     "Sources/Methods/SynthOOP_Directory_modific_b7a0.4dm": {
       "member_id": "Directory.modificationTime",
@@ -2766,7 +2931,8 @@
           "comment_line": 1,
           "lines": 6
         }
-      ]
+      ],
+      "sourceSha256": "c539e1bbace44a33298fd8fba9a97b813f0910ddd6011b0c61eb5452db8dcb4f"
     },
     "Sources/Methods/SynthOOP_Directory_name.4dm": {
       "member_id": "Directory.name",
@@ -2779,7 +2945,8 @@
           "comment_line": 1,
           "lines": 6
         }
-      ]
+      ],
+      "sourceSha256": "85ea137d35ec67c172d64d06ff0560675650d74421d564be90053eeab51e130b"
     },
     "Sources/Methods/SynthOOP_Directory_original.4dm": {
       "member_id": "Directory.original",
@@ -2792,7 +2959,8 @@
           "comment_line": 1,
           "lines": 6
         }
-      ]
+      ],
+      "sourceSha256": "56bcf6de3b5cad475927291836f1276c037f9bb3c6f5c3d8096a235c16773fad"
     },
     "Sources/Methods/SynthOOP_Directory_parent.4dm": {
       "member_id": "Directory.parent",
@@ -2805,7 +2973,8 @@
           "comment_line": 1,
           "lines": 6
         }
-      ]
+      ],
+      "sourceSha256": "195bc2781c88385122a008cc33ade1b3fc938ca99bd610600642d298c2242ad7"
     },
     "Sources/Methods/SynthOOP_Directory_path.4dm": {
       "member_id": "Directory.path",
@@ -2818,7 +2987,8 @@
           "comment_line": 1,
           "lines": 6
         }
-      ]
+      ],
+      "sourceSha256": "2a239b025bc3dd76af6c8d536e89341590032fc81d1e9a33ee792fa115eac577"
     },
     "Sources/Methods/SynthOOP_Directory_platformPath.4dm": {
       "member_id": "Directory.platformPath",
@@ -2831,7 +3001,8 @@
           "comment_line": 1,
           "lines": 6
         }
-      ]
+      ],
+      "sourceSha256": "6cfe2b0e1b3a03aca02ac36c46722c4489bb6a90c6975f089ede2bd33334b8c3"
     },
     "Sources/Methods/SynthOOP_Document_copyTo.4dm": {
       "member_id": "Document.copyTo",
@@ -2856,7 +3027,8 @@
           "comment_line": 16,
           "lines": 7
         }
-      ]
+      ],
+      "sourceSha256": "cbd6959c4f83229a4bd54aa7cbf1cb500064444df7e57c761675367efa4e1f92"
     },
     "Sources/Methods/SynthOOP_Document_creationDate.4dm": {
       "member_id": "Document.creationDate",
@@ -2869,7 +3041,8 @@
           "comment_line": 1,
           "lines": 6
         }
-      ]
+      ],
+      "sourceSha256": "a08903148967a010a639eb7700c03509bf8bbd54370e1460ead941fb37cff192"
     },
     "Sources/Methods/SynthOOP_Document_creationTime.4dm": {
       "member_id": "Document.creationTime",
@@ -2882,7 +3055,8 @@
           "comment_line": 1,
           "lines": 6
         }
-      ]
+      ],
+      "sourceSha256": "2c017e547e1e796680eeffdfa209b412437e4a0ef707e793df5acb050b349f9c"
     },
     "Sources/Methods/SynthOOP_Document_exists.4dm": {
       "member_id": "Document.exists",
@@ -2895,7 +3069,8 @@
           "comment_line": 1,
           "lines": 6
         }
-      ]
+      ],
+      "sourceSha256": "95bbc3b840b47970ed9e0831faee4d36d1a4fa57f237a159506b996cdf92da67"
     },
     "Sources/Methods/SynthOOP_Document_extension.4dm": {
       "member_id": "Document.extension",
@@ -2908,7 +3083,8 @@
           "comment_line": 1,
           "lines": 6
         }
-      ]
+      ],
+      "sourceSha256": "6ed46c2caebb826518f0e2b896c3a6654b04bcd16c65098c2fc6eeb2e1e05ed8"
     },
     "Sources/Methods/SynthOOP_Document_fullName.4dm": {
       "member_id": "Document.fullName",
@@ -2921,7 +3097,8 @@
           "comment_line": 1,
           "lines": 6
         }
-      ]
+      ],
+      "sourceSha256": "430ee36847ddbc3cfcdf5aa2983f8c20023a2c3f46773ba7acddffe9be21a3de"
     },
     "Sources/Methods/SynthOOP_Document_getContent.4dm": {
       "member_id": "Document.getContent",
@@ -2934,7 +3111,8 @@
           "comment_line": 1,
           "lines": 6
         }
-      ]
+      ],
+      "sourceSha256": "30879cb3acc2818764fbd666263f21c96464f7b0c16237b67d16a01424023db4"
     },
     "Sources/Methods/SynthOOP_Document_getIcon.4dm": {
       "member_id": "Document.getIcon",
@@ -2953,7 +3131,8 @@
           "comment_line": 7,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "abada7b6b17d1f7d6d56c61fe1d0df74a4354ae9a7e8e3492c144bb68fbaafb1"
     },
     "Sources/Methods/SynthOOP_Document_getText.4dm": {
       "member_id": "Document.getText",
@@ -2996,7 +3175,8 @@
           "comment_line": 27,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "41528e4f1b7f935cd7921d4389356155ea055e673f3b925aeca37ca3cb86c12c"
     },
     "Sources/Methods/SynthOOP_Document_hidden.4dm": {
       "member_id": "Document.hidden",
@@ -3015,7 +3195,8 @@
           "comment_line": 7,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "d8479c90b5e8cf547529f9f554aa36ad381608c670d77fa0a594e7168c3ce0e1"
     },
     "Sources/Methods/SynthOOP_Document_isAlias.4dm": {
       "member_id": "Document.isAlias",
@@ -3028,7 +3209,8 @@
           "comment_line": 1,
           "lines": 6
         }
-      ]
+      ],
+      "sourceSha256": "72e2e6928474c00d70b46e387657eca942f14e4c7c3358abcad9ffaeaa169423"
     },
     "Sources/Methods/SynthOOP_Document_isFile.4dm": {
       "member_id": "Document.isFile",
@@ -3041,7 +3223,8 @@
           "comment_line": 1,
           "lines": 6
         }
-      ]
+      ],
+      "sourceSha256": "69ef50105e894ce9e9ceb0ce98179bb0dc451132d4f8ea71e723d6c199a6effa"
     },
     "Sources/Methods/SynthOOP_Document_isFolder.4dm": {
       "member_id": "Document.isFolder",
@@ -3054,7 +3237,8 @@
           "comment_line": 1,
           "lines": 6
         }
-      ]
+      ],
+      "sourceSha256": "0c4182909f5a1c3df50c9b3b0730595f436895eb23252d517f766f75e15e9288"
     },
     "Sources/Methods/SynthOOP_Document_isWritable.4dm": {
       "member_id": "Document.isWritable",
@@ -3067,7 +3251,8 @@
           "comment_line": 1,
           "lines": 6
         }
-      ]
+      ],
+      "sourceSha256": "eba8c5668f8eb116c6c5a950738ed98009fb7bef582ae431e0b3cbae66bc74fb"
     },
     "Sources/Methods/SynthOOP_Document_modifica_d5b0.4dm": {
       "member_id": "Document.modificationDate",
@@ -3080,7 +3265,8 @@
           "comment_line": 1,
           "lines": 6
         }
-      ]
+      ],
+      "sourceSha256": "56175cb497a6d5fcef9e43e3e78813c5cdd0650ac4c55141641bffa7bbd9d7be"
     },
     "Sources/Methods/SynthOOP_Document_modifica_ad0a.4dm": {
       "member_id": "Document.modificationTime",
@@ -3093,7 +3279,8 @@
           "comment_line": 1,
           "lines": 6
         }
-      ]
+      ],
+      "sourceSha256": "95fee2d18666d41ccf89d5edc0a90b48b80a6f67eb0108ab9651d2379d1ff4ca"
     },
     "Sources/Methods/SynthOOP_Document_name.4dm": {
       "member_id": "Document.name",
@@ -3106,7 +3293,8 @@
           "comment_line": 1,
           "lines": 6
         }
-      ]
+      ],
+      "sourceSha256": "e4c716dd1bf0ab522045d5b356766f9893a1b88e968fc44d0e6c7d94ff2c700e"
     },
     "Sources/Methods/SynthOOP_Document_original.4dm": {
       "member_id": "Document.original",
@@ -3125,7 +3313,8 @@
           "comment_line": 7,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "7ae89df17c9bd2cfb4f84d0a1f00d80a644ffb844f9701397b565bc79d3fdb12"
     },
     "Sources/Methods/SynthOOP_Document_parent.4dm": {
       "member_id": "Document.parent",
@@ -3138,7 +3327,8 @@
           "comment_line": 1,
           "lines": 6
         }
-      ]
+      ],
+      "sourceSha256": "1afb99d584eaed821bed5697344cd2306a09357ec43329c416470ff0ff4a3df2"
     },
     "Sources/Methods/SynthOOP_Document_path.4dm": {
       "member_id": "Document.path",
@@ -3151,7 +3341,8 @@
           "comment_line": 1,
           "lines": 6
         }
-      ]
+      ],
+      "sourceSha256": "851797e0fbfd89eda8522c8e41791f582d2932f4f108db2e69a8f62c99ab9cdd"
     },
     "Sources/Methods/SynthOOP_Document_platformPath.4dm": {
       "member_id": "Document.platformPath",
@@ -3164,7 +3355,8 @@
           "comment_line": 1,
           "lines": 6
         }
-      ]
+      ],
+      "sourceSha256": "c09f2f2b263a41cd5333a9eab861da4a50c656f03be38083a02ad93a1ab81c4c"
     },
     "Sources/Methods/SynthOOP_Document_size.4dm": {
       "member_id": "Document.size",
@@ -3177,7 +3369,8 @@
           "comment_line": 1,
           "lines": 6
         }
-      ]
+      ],
+      "sourceSha256": "c01f162b82052d614f8ac4a5e7da3825a76e314cbd7a9ffbb2f7f98424ccf9d7"
     },
     "Sources/Methods/SynthOOP_Email_attachments.4dm": {
       "member_id": "Email.attachments",
@@ -3196,7 +3389,8 @@
           "comment_line": 6,
           "lines": 3
         }
-      ]
+      ],
+      "sourceSha256": "f6ee6c99598415a190cc2cb883dc72b6bffb159879346c625a07b092f949e93f"
     },
     "Sources/Methods/SynthOOP_Email_bcc.4dm": {
       "member_id": "Email.bcc",
@@ -3239,7 +3433,8 @@
           "comment_line": 20,
           "lines": 3
         }
-      ]
+      ],
+      "sourceSha256": "3d6e693bd3d541a9302968a60cdd4dae615cd103ec7c4beef866a22ef6d0a1f9"
     },
     "Sources/Methods/SynthOOP_Email_bodyStructure.4dm": {
       "member_id": "Email.bodyStructure",
@@ -3258,7 +3453,8 @@
           "comment_line": 6,
           "lines": 3
         }
-      ]
+      ],
+      "sourceSha256": "2d28f9f77d283ac6f3ec545a92c8c6c63931086154650f6279b287b4d850279e"
     },
     "Sources/Methods/SynthOOP_Email_bodyValues.4dm": {
       "member_id": "Email.bodyValues",
@@ -3277,7 +3473,8 @@
           "comment_line": 6,
           "lines": 3
         }
-      ]
+      ],
+      "sourceSha256": "dd7c3da9d57b79dc6271828e2779da991a5479d9780a6d49220ce7fb3c8aa174"
     },
     "Sources/Methods/SynthOOP_Email_cc.4dm": {
       "member_id": "Email.cc",
@@ -3320,7 +3517,8 @@
           "comment_line": 20,
           "lines": 3
         }
-      ]
+      ],
+      "sourceSha256": "14eb9d5d5e2f8fd6fc99df506551bc487232bd94365632929ed5f8d119144a9d"
     },
     "Sources/Methods/SynthOOP_Email_comments.4dm": {
       "member_id": "Email.comments",
@@ -3339,7 +3537,8 @@
           "comment_line": 6,
           "lines": 3
         }
-      ]
+      ],
+      "sourceSha256": "03658949c0309b828041ed58b9a695e0dae1bc02ecb313c3d2994321bf14861b"
     },
     "Sources/Methods/SynthOOP_Email_from.4dm": {
       "member_id": "Email.from",
@@ -3382,7 +3581,8 @@
           "comment_line": 20,
           "lines": 3
         }
-      ]
+      ],
+      "sourceSha256": "505f4596a1be479246bf1764eda36e9cc2806d7cf0b13ffdf43bbfc994ef9277"
     },
     "Sources/Methods/SynthOOP_Email_headers.4dm": {
       "member_id": "Email.headers",
@@ -3401,7 +3601,8 @@
           "comment_line": 6,
           "lines": 3
         }
-      ]
+      ],
+      "sourceSha256": "354539b6ad2062ffa0a28b884e8d834bcc3db15d29ca187a31b0073cbcc97c8a"
     },
     "Sources/Methods/SynthOOP_Email_htmlBody.4dm": {
       "member_id": "Email.htmlBody",
@@ -3420,7 +3621,8 @@
           "comment_line": 6,
           "lines": 3
         }
-      ]
+      ],
+      "sourceSha256": "80b96d0652eec6433b71402410c49827de369a5171e9e3f54fb82048326f553b"
     },
     "Sources/Methods/SynthOOP_Email_id.4dm": {
       "member_id": "Email.id",
@@ -3439,7 +3641,8 @@
           "comment_line": 6,
           "lines": 3
         }
-      ]
+      ],
+      "sourceSha256": "d88f5482ce4f5ae1d96b8b45f6d00c10dd89967b23322b3f911a12d9372eecca"
     },
     "Sources/Methods/SynthOOP_Email_inReplyTo.4dm": {
       "member_id": "Email.inReplyTo",
@@ -3458,7 +3661,8 @@
           "comment_line": 6,
           "lines": 3
         }
-      ]
+      ],
+      "sourceSha256": "64d4b99a4e7299eebaa1242cf87f96b12de3ef75e2c02e68bab88a27ea9e0a84"
     },
     "Sources/Methods/SynthOOP_Email_keywords.4dm": {
       "member_id": "Email.keywords",
@@ -3477,7 +3681,8 @@
           "comment_line": 6,
           "lines": 3
         }
-      ]
+      ],
+      "sourceSha256": "c8af5a20fbb947b4113c58dce945cfece3cfa14320b3419d8cfebd181ca00fa1"
     },
     "Sources/Methods/SynthOOP_Email_messageId.4dm": {
       "member_id": "Email.messageId",
@@ -3496,7 +3701,8 @@
           "comment_line": 6,
           "lines": 3
         }
-      ]
+      ],
+      "sourceSha256": "30e3f532728c351b0941c692d06eb9c03a81656032ccc303e182dfc1410963f2"
     },
     "Sources/Methods/SynthOOP_Email_receivedAt.4dm": {
       "member_id": "Email.receivedAt",
@@ -3515,7 +3721,8 @@
           "comment_line": 6,
           "lines": 3
         }
-      ]
+      ],
+      "sourceSha256": "e32a0c25d79131d3790d559af1d685fc12e50845f4f880cfe9ae9f74b0037209"
     },
     "Sources/Methods/SynthOOP_Email_references.4dm": {
       "member_id": "Email.references",
@@ -3534,7 +3741,8 @@
           "comment_line": 6,
           "lines": 3
         }
-      ]
+      ],
+      "sourceSha256": "48c744351a34131ccc6fb45ed681d6295de810b6fa06b93d540822adb94b341b"
     },
     "Sources/Methods/SynthOOP_Email_replyTo.4dm": {
       "member_id": "Email.replyTo",
@@ -3577,7 +3785,8 @@
           "comment_line": 20,
           "lines": 3
         }
-      ]
+      ],
+      "sourceSha256": "bc2b0009a003c62043c3e873debcd16c4acdf87f29b3bbcc354c04945860f2a9"
     },
     "Sources/Methods/SynthOOP_Email_sendAt.4dm": {
       "member_id": "Email.sendAt",
@@ -3596,7 +3805,8 @@
           "comment_line": 6,
           "lines": 3
         }
-      ]
+      ],
+      "sourceSha256": "41fc65c418187fd41414b8cb36331b2c76bcdca353caffd14528c1196815ecc0"
     },
     "Sources/Methods/SynthOOP_Email_sender.4dm": {
       "member_id": "Email.sender",
@@ -3639,7 +3849,8 @@
           "comment_line": 20,
           "lines": 3
         }
-      ]
+      ],
+      "sourceSha256": "b4be8e5c5e8879a273395a1ff3e9a656cac55ee818c8ae6e47d513a647c7d184"
     },
     "Sources/Methods/SynthOOP_Email_size.4dm": {
       "member_id": "Email.size",
@@ -3658,7 +3869,8 @@
           "comment_line": 6,
           "lines": 3
         }
-      ]
+      ],
+      "sourceSha256": "e01a21f04dd9207389999f5c756bd5da13e82823be70c293cf136f0b228005ef"
     },
     "Sources/Methods/SynthOOP_Email_subject.4dm": {
       "member_id": "Email.subject",
@@ -3677,7 +3889,8 @@
           "comment_line": 6,
           "lines": 3
         }
-      ]
+      ],
+      "sourceSha256": "cfa11702651542ebca20cd04a9beb2e7dc64b4fa6ca013f3246c79ce77fef608"
     },
     "Sources/Methods/SynthOOP_Email_textBody.4dm": {
       "member_id": "Email.textBody",
@@ -3696,7 +3909,8 @@
           "comment_line": 6,
           "lines": 3
         }
-      ]
+      ],
+      "sourceSha256": "8af27e17fdfa3963566d702d93d6140a4dadeed94b14f4d0ec6c11b6f8b89b07"
     },
     "Sources/Methods/SynthOOP_Email_to.4dm": {
       "member_id": "Email.to",
@@ -3739,7 +3953,8 @@
           "comment_line": 20,
           "lines": 3
         }
-      ]
+      ],
+      "sourceSha256": "04ece22bdc2f7556b24c704c88ed12ec5ea253536e0afce1034335555dfb610d"
     },
     "Sources/Methods/SynthOOP_Entity_attributeName.4dm": {
       "member_id": "Entity.attributeName",
@@ -3752,7 +3967,8 @@
           "comment_line": 1,
           "lines": 6
         }
-      ]
+      ],
+      "sourceSha256": "269472cb74f29a3a23d762b04cb3b55df92af7f002aa7077689c1c29204172a0"
     },
     "Sources/Methods/SynthOOP_Entity_clone.4dm": {
       "member_id": "Entity.clone",
@@ -3765,7 +3981,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "46bc920677b426ae462e0c9a08d4581c4bd66792f0f5510bf0caeff5c8698fda"
     },
     "Sources/Methods/SynthOOP_Entity_diff.4dm": {
       "member_id": "Entity.diff",
@@ -3784,7 +4001,8 @@
           "comment_line": 8,
           "lines": 6
         }
-      ]
+      ],
+      "sourceSha256": "c94c99ab00b302f38f13627694dbe3f15f91f8f4e8f0e326b7546b0ba4b58798"
     },
     "Sources/Methods/SynthOOP_Entity_drop.4dm": {
       "member_id": "Entity.drop",
@@ -3803,7 +4021,8 @@
           "comment_line": 6,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "f0815a7e807e7084f8310262066caea9212fb172e03c85cb116d684b8617b0cf"
     },
     "Sources/Methods/SynthOOP_Entity_first.4dm": {
       "member_id": "Entity.first",
@@ -3816,7 +4035,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "e171e20ad5adbfc9e05eb1713f6724e2e94c28d565f8a086604c87f1065391c1"
     },
     "Sources/Methods/SynthOOP_Entity_fromObject.4dm": {
       "member_id": "Entity.fromObject",
@@ -3829,7 +4049,8 @@
           "comment_line": 1,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "e970fc7b8b3e2075407ffa3dca84d13468cd207d484a6db17bf0191c0a97c3ca"
     },
     "Sources/Methods/SynthOOP_Entity_getDataClass.4dm": {
       "member_id": "Entity.getDataClass",
@@ -3842,7 +4063,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "e2d0e7810309a06e27fce30578acaea502f231a237a8bd62b81972b3dd737a10"
     },
     "Sources/Methods/SynthOOP_Entity_getKey.4dm": {
       "member_id": "Entity.getKey",
@@ -3861,7 +4083,8 @@
           "comment_line": 6,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "f38156a398d07a2748f8c945677110233d444534c6ca0a590cf7650e53005c74"
     },
     "Sources/Methods/SynthOOP_Entity_getRemoteC_bd50.4dm": {
       "member_id": "Entity.getRemoteContextAttributes",
@@ -3874,7 +4097,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "0c1a9d1ffc28b8decced4a979137aaaf7795b35a89fe96f6952572c2b733fb2a"
     },
     "Sources/Methods/SynthOOP_Entity_getSelection.4dm": {
       "member_id": "Entity.getSelection",
@@ -3887,7 +4111,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "6477bfacc12a3d71ddc8641358d9706b43f28c2bc062024ad72d04d6ca6ee303"
     },
     "Sources/Methods/SynthOOP_Entity_getStamp.4dm": {
       "member_id": "Entity.getStamp",
@@ -3900,7 +4125,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "e725b1d16a2636cb47389f641c3406fe79d644c550115961c38b5c43844d18b1"
     },
     "Sources/Methods/SynthOOP_Entity_indexOf.4dm": {
       "member_id": "Entity.indexOf",
@@ -3919,7 +4145,8 @@
           "comment_line": 8,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "73ee85546d1b4016919121268f071a4f13429f200064da087126fe9cf5f544e6"
     },
     "Sources/Methods/SynthOOP_Entity_isNew.4dm": {
       "member_id": "Entity.isNew",
@@ -3932,7 +4159,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "b5545b68f2d2baa274d15ec376717554f426eb26883cac7eaf134da9fdfea037"
     },
     "Sources/Methods/SynthOOP_Entity_last.4dm": {
       "member_id": "Entity.last",
@@ -3945,7 +4173,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "7ca252447725e9303d0cc71ac95f47154600857ab86b41c71b8223334a7193a2"
     },
     "Sources/Methods/SynthOOP_Entity_lock.4dm": {
       "member_id": "Entity.lock",
@@ -3964,7 +4193,8 @@
           "comment_line": 6,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "6b63f6f8bf3d4d2e326e16e97ec341e826305886b5fa0d7f561b9dcf8c469001"
     },
     "Sources/Methods/SynthOOP_Entity_next.4dm": {
       "member_id": "Entity.next",
@@ -3977,7 +4207,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "f92d2dd49828d537901034ddd0c991e6c88c301adb6d8dbdba30c1aa3210dd90"
     },
     "Sources/Methods/SynthOOP_Entity_previous.4dm": {
       "member_id": "Entity.previous",
@@ -3990,7 +4221,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "3083ea47adeeeddfa2b684fab783ed3bdc2a78b719c430e833599d73b9b6e531"
     },
     "Sources/Methods/SynthOOP_Entity_reload.4dm": {
       "member_id": "Entity.reload",
@@ -4003,7 +4235,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "6eaa17dd6edddaf05545b5d831cd77272b0e77331c37ae52a65fbb4127ea7fce"
     },
     "Sources/Methods/SynthOOP_Entity_save.4dm": {
       "member_id": "Entity.save",
@@ -4022,7 +4255,8 @@
           "comment_line": 6,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "3343142b45390313eedcf0b7d4b6226779c8eaa0511c3a23df1e80f058ef80e3"
     },
     "Sources/Methods/SynthOOP_Entity_toObject.4dm": {
       "member_id": "Entity.toObject",
@@ -4071,7 +4305,8 @@
           "comment_line": 26,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "5dd14a299905b4dc995e6256f086cf25f3c7ac9a8e4d7ea99854c85b5d71044c"
     },
     "Sources/Methods/SynthOOP_Entity_touched.4dm": {
       "member_id": "Entity.touched",
@@ -4084,7 +4319,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "532b9c3f629c12c1ec4b583eac3eb6057e66ccfdd97f9ce99b79d4b0eaf05f6d"
     },
     "Sources/Methods/SynthOOP_Entity_touchedAtt_41b1.4dm": {
       "member_id": "Entity.touchedAttributes",
@@ -4097,7 +4333,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "ce78f2920b2e3c791192f6cca41953c65d6b5d7a9b326155b9c1a409effd75d5"
     },
     "Sources/Methods/SynthOOP_Entity_unlock.4dm": {
       "member_id": "Entity.unlock",
@@ -4110,7 +4347,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "063a94574f8d29745769cca6a501d7f8efa9f6795493b81c8af1af310230d0d7"
     },
     "Sources/Methods/SynthOOP_EntitySelection_add.4dm": {
       "member_id": "EntitySelection.add",
@@ -4129,7 +4367,8 @@
           "comment_line": 8,
           "lines": 6
         }
-      ]
+      ],
+      "sourceSha256": "4584535d907b201a200922132149793d5ed4fb7bd71bc3d13eea45fd9c91e8a2"
     },
     "Sources/Methods/SynthOOP_EntitySelection_and.4dm": {
       "member_id": "EntitySelection.and",
@@ -4148,7 +4387,8 @@
           "comment_line": 8,
           "lines": 6
         }
-      ]
+      ],
+      "sourceSha256": "8c9c4b1628482e6d2328708710f1335968cf3dfa46ec4cca34667142d825d877"
     },
     "Sources/Methods/SynthOOP_EntitySelection_at.4dm": {
       "member_id": "EntitySelection.at",
@@ -4161,7 +4401,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "cbdfcbad892adffdf3b04474095d1006f77ca69965d619f538d2d1348d71b0ff"
     },
     "Sources/Methods/SynthOOP_EntitySelection_a_07f2.4dm": {
       "member_id": "EntitySelection.attributeName",
@@ -4174,7 +4415,8 @@
           "comment_line": 1,
           "lines": 6
         }
-      ]
+      ],
+      "sourceSha256": "80f3cef11a887d877b4fd3ee9b98410b3b15aa97624b7c9b10b20b2124c7ad34"
     },
     "Sources/Methods/SynthOOP_EntitySelection_a_979e.4dm": {
       "member_id": "EntitySelection.average",
@@ -4187,7 +4429,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "c52f5a3e3d6b379daf9434f597df9c21971e233dbe60b6f2e8eee860f0a2b7ec"
     },
     "Sources/Methods/SynthOOP_EntitySelection_clean.4dm": {
       "member_id": "EntitySelection.clean",
@@ -4200,7 +4443,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "a937574ee87699cedecddf08dfb25efcdb8c649ebd8ad7fb7dbe187cb626f367"
     },
     "Sources/Methods/SynthOOP_EntitySelection_c_524c.4dm": {
       "member_id": "EntitySelection.contains",
@@ -4213,7 +4457,8 @@
           "comment_line": 1,
           "lines": 7
         }
-      ]
+      ],
+      "sourceSha256": "bdea61899ed8960138439356ff5b16b74073a8dcdc16302234387efefea4dd28"
     },
     "Sources/Methods/SynthOOP_EntitySelection_copy.4dm": {
       "member_id": "EntitySelection.copy",
@@ -4232,7 +4477,8 @@
           "comment_line": 6,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "fa480b5ffa63ee795554139c6226022332d509d990866c53ef8c0b1ee27baca1"
     },
     "Sources/Methods/SynthOOP_EntitySelection_count.4dm": {
       "member_id": "EntitySelection.count",
@@ -4245,7 +4491,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "c905a569d3f548a51179bfa66867a23395f574c1e547f32386ac7b3532ef42a4"
     },
     "Sources/Methods/SynthOOP_EntitySelection_d_aacc.4dm": {
       "member_id": "EntitySelection.distinct",
@@ -4270,7 +4517,8 @@
           "comment_line": 10,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "33d58ce510a6d6b84274e15e3a925c721175cacfe91a14497797ca24c53ec3c1"
     },
     "Sources/Methods/SynthOOP_EntitySelection_d_bb7d.4dm": {
       "member_id": "EntitySelection.distinctPaths",
@@ -4283,7 +4531,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "1af503e84403b392b7980e5acae357a2be67242fc59572c8de121f258252b6f0"
     },
     "Sources/Methods/SynthOOP_EntitySelection_drop.4dm": {
       "member_id": "EntitySelection.drop",
@@ -4302,7 +4551,8 @@
           "comment_line": 6,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "8dd6ce27be9beb2654d938fa7e33c4410ee8824133e4fa192e3afee90f1216fd"
     },
     "Sources/Methods/SynthOOP_EntitySelection_e_1a6a.4dm": {
       "member_id": "EntitySelection.extract",
@@ -4327,7 +4577,8 @@
           "comment_line": 10,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "6e8d414b0bad33dda56db29dfc18b8508d4f0ee68515e92fb8b72b0fb82ea61a"
     },
     "Sources/Methods/SynthOOP_EntitySelection_first.4dm": {
       "member_id": "EntitySelection.first",
@@ -4340,7 +4591,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "fb200286bc1eac1f64c2a4a8b9b3a1ac3e09e1aac551e7a18443e8d82ccf5178"
     },
     "Sources/Methods/SynthOOP_EntitySelection_g_0ee7.4dm": {
       "member_id": "EntitySelection.getDataClass",
@@ -4353,7 +4605,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "4cc20d0d48c53f096d4a314f31a89a8784c0359e742fc2df6ab9c9adcb7edbc8"
     },
     "Sources/Methods/SynthOOP_EntitySelection_g_39ed.4dm": {
       "member_id": "EntitySelection.getRemoteContextAttributes",
@@ -4366,7 +4619,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "2359951dfd2da64e29291a88e5fda411da77504f308a65cec1d52150053fa5fe"
     },
     "Sources/Methods/SynthOOP_EntitySelection_i_5280.4dm": {
       "member_id": "EntitySelection.isAlterable",
@@ -4379,7 +4633,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "b284c77eff05294ad6bb02ae97da133bfa47b63f9a80e0b776fb6ba94337fda1"
     },
     "Sources/Methods/SynthOOP_EntitySelection_i_8f1d.4dm": {
       "member_id": "EntitySelection.isOrdered",
@@ -4392,7 +4647,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "2e99b3fe74b5d29d46aa089139e488ae5ec5c84d05c56a58c81dd47950378e20"
     },
     "Sources/Methods/SynthOOP_EntitySelection_last.4dm": {
       "member_id": "EntitySelection.last",
@@ -4405,7 +4661,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "7fa6ee3d68f1baffb690d4002fc95be470b54fd0fba245d4f8ced4293fa9e246"
     },
     "Sources/Methods/SynthOOP_EntitySelection_length.4dm": {
       "member_id": "EntitySelection.length",
@@ -4424,7 +4681,8 @@
           "comment_line": 6,
           "lines": 3
         }
-      ]
+      ],
+      "sourceSha256": "58da5c7c6efdbbd4206b3f69b4350a756a2e6f5cd7fc438f535f586482949664"
     },
     "Sources/Methods/SynthOOP_EntitySelection_max.4dm": {
       "member_id": "EntitySelection.max",
@@ -4437,7 +4695,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "310e25b9d5238f6b65133850ce4093508279896494be01553a38a1924da4a9d9"
     },
     "Sources/Methods/SynthOOP_EntitySelection_min.4dm": {
       "member_id": "EntitySelection.min",
@@ -4450,7 +4709,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "ad8c3af89a5eccb664a26478cf38855170138ab868b6234ff423c8d3043c82f7"
     },
     "Sources/Methods/SynthOOP_EntitySelection_minus.4dm": {
       "member_id": "EntitySelection.minus",
@@ -4481,7 +4741,8 @@
           "comment_line": 20,
           "lines": 6
         }
-      ]
+      ],
+      "sourceSha256": "60f85a811f1a0624e89a9964976411c501f8d51266f03ae65d88098286dba348"
     },
     "Sources/Methods/SynthOOP_EntitySelection_or.4dm": {
       "member_id": "EntitySelection.or",
@@ -4500,7 +4761,8 @@
           "comment_line": 8,
           "lines": 6
         }
-      ]
+      ],
+      "sourceSha256": "943ba4f597c60b0f617e4372a2a9ba529d80eaae599998614d2777fa62107692"
     },
     "Sources/Methods/SynthOOP_EntitySelection_o_624d.4dm": {
       "member_id": "EntitySelection.orderBy",
@@ -4519,7 +4781,8 @@
           "comment_line": 6,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "328e355e39331af39879f81f0246efd13ab28a6f4fc84de109f52eea65a4d93e"
     },
     "Sources/Methods/SynthOOP_EntitySelection_o_b27b.4dm": {
       "member_id": "EntitySelection.orderByFormula",
@@ -4574,7 +4837,8 @@
           "comment_line": 30,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "8c4343acefa6c87f675579eb666579d93bc262b677ddfc30b0f45941d8921005"
     },
     "Sources/Methods/SynthOOP_EntitySelection_query.4dm": {
       "member_id": "EntitySelection.query",
@@ -4605,7 +4869,8 @@
           "comment_line": 14,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "6a46bb62f60ac167999593530a5a2154f4cc765657d3ecef9d4ab997cc6b36ef"
     },
     "Sources/Methods/SynthOOP_EntitySelection_q_167b.4dm": {
       "member_id": "EntitySelection.queryPath",
@@ -4624,7 +4889,8 @@
           "comment_line": 6,
           "lines": 3
         }
-      ]
+      ],
+      "sourceSha256": "f2bdbd3fbcd4f964ce25a8750916a6d45162ce4e7cd7d9bc96541f935e54c21f"
     },
     "Sources/Methods/SynthOOP_EntitySelection_q_d38b.4dm": {
       "member_id": "EntitySelection.queryPlan",
@@ -4643,7 +4909,8 @@
           "comment_line": 6,
           "lines": 3
         }
-      ]
+      ],
+      "sourceSha256": "7fe5adf44f63eccdf3adc62aef7de9c0cd091f53f5318ed2141639b52f11862f"
     },
     "Sources/Methods/SynthOOP_EntitySelection_r_d16a.4dm": {
       "member_id": "EntitySelection.refresh",
@@ -4656,7 +4923,8 @@
           "comment_line": 1,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "fa0602db83baa390ea92e4fcf6d7373dcf68ddd253b59a9134befc6dfa6f3912"
     },
     "Sources/Methods/SynthOOP_EntitySelection_s_aadb.4dm": {
       "member_id": "EntitySelection.selected",
@@ -4669,7 +4937,8 @@
           "comment_line": 1,
           "lines": 7
         }
-      ]
+      ],
+      "sourceSha256": "aecb6edcbf8114a118b08573ab2381f3785c99b8155f7b1ebaadbcbcb9eca3c4"
     },
     "Sources/Methods/SynthOOP_EntitySelection_slice.4dm": {
       "member_id": "EntitySelection.slice",
@@ -4688,7 +4957,8 @@
           "comment_line": 6,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "f90a7c6766cdcfd3876306b7f7a74c6674e0cb96c08ce0412fc9dfbd618bbce7"
     },
     "Sources/Methods/SynthOOP_EntitySelection_sum.4dm": {
       "member_id": "EntitySelection.sum",
@@ -4701,7 +4971,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "3b7e9c79c8488720024f0e6cb30dacef29e4349a8ed653759d6998afb13ffc96"
     },
     "Sources/Methods/SynthOOP_EntitySelection_t_4b0a.4dm": {
       "member_id": "EntitySelection.toCollection",
@@ -4798,7 +5069,8 @@
           "comment_line": 58,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "9ce95f479a07ab9742e72a04654894e195317a5093104c7581d9c381a4642e77"
     },
     "Sources/Methods/SynthOOP_File_create.4dm": {
       "member_id": "File.create",
@@ -4811,7 +5083,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "1e556163b1f029ee85cb8fb4171f234343201f0a6accff6557119a5b516b324e"
     },
     "Sources/Methods/SynthOOP_File_createAlias.4dm": {
       "member_id": "File.createAlias",
@@ -4836,7 +5109,8 @@
           "comment_line": 14,
           "lines": 6
         }
-      ]
+      ],
+      "sourceSha256": "f60d71f3b611eab0820972e86b6cb19d8bb591ded7049dfb438325d85e2663bf"
     },
     "Sources/Methods/SynthOOP_File_delete.4dm": {
       "member_id": "File.delete",
@@ -4849,7 +5123,8 @@
           "comment_line": 1,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "f6376b7871bbc019efc77b19d29d657b352baf743abbf1d4c8228613a6c7d73b"
     },
     "Sources/Methods/SynthOOP_File_getAppInfo.4dm": {
       "member_id": "File.getAppInfo",
@@ -4862,7 +5137,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "cbde448fe407be7648d795f8443937de67baaeb39690121eeca01dbcc9bd49d1"
     },
     "Sources/Methods/SynthOOP_File_moveTo.4dm": {
       "member_id": "File.moveTo",
@@ -4881,7 +5157,8 @@
           "comment_line": 8,
           "lines": 6
         }
-      ]
+      ],
+      "sourceSha256": "6b70db8f9bf81824dc1403f0c1ec4b5d59d08a2f1faade8cef03e00d8d067620"
     },
     "Sources/Methods/SynthOOP_File_open.4dm": {
       "member_id": "File.open",
@@ -4912,7 +5189,8 @@
           "comment_line": 14,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "386e71e36cbb9c6b8253882d050c4a065ed61e05cb02a4a48fdad0748030c24c"
     },
     "Sources/Methods/SynthOOP_File_rename.4dm": {
       "member_id": "File.rename",
@@ -4925,7 +5203,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "b2b7517674fb0d346cf95ada5b1b643376e75f501dc93eaf3634ce092aa8c421"
     },
     "Sources/Methods/SynthOOP_File_setAppInfo.4dm": {
       "member_id": "File.setAppInfo",
@@ -4938,7 +5217,8 @@
           "comment_line": 1,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "08b080206dafaad712ee31f81a8be1754cf0b3cdc34a2dcf8fe636f120f15a9a"
     },
     "Sources/Methods/SynthOOP_File_setContent.4dm": {
       "member_id": "File.setContent",
@@ -4951,7 +5231,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "2fc28ddd09cb202bc424642c04b551d47444a37dff7f3047520c613a577f9b1c"
     },
     "Sources/Methods/SynthOOP_File_setText.4dm": {
       "member_id": "File.setText",
@@ -4994,7 +5275,8 @@
           "comment_line": 17,
           "lines": 3
         }
-      ]
+      ],
+      "sourceSha256": "d222cd9261a217aed36b3e130f9dcde78fba0874f7e215f98613c48d82d8b2fe"
     },
     "Sources/Methods/SynthOOP_FileHandle_breakM_fe92.4dm": {
       "member_id": "FileHandle.breakModeRead",
@@ -5007,7 +5289,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "48e75d82638842310367d83040c41de7366e3dd6e82cab02ec7f9e4e49f2043d"
     },
     "Sources/Methods/SynthOOP_FileHandle_breakM_23f9.4dm": {
       "member_id": "FileHandle.breakModeWrite",
@@ -5020,7 +5303,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "81b07006cc95abfe78994c0089fd386ba86ac372ecffad4c6aeb893f82806411"
     },
     "Sources/Methods/SynthOOP_FileHandle_charset.4dm": {
       "member_id": "FileHandle.charset",
@@ -5033,7 +5317,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "7bf138e89140f2fd636b60acc37a7bbf3d9ddf29abe1b4c2c5bc901cca30c44f"
     },
     "Sources/Methods/SynthOOP_FileHandle_eof.4dm": {
       "member_id": "FileHandle.eof",
@@ -5046,7 +5331,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "0ef8175784d943543cc481df935583a22e7286dc56e611be456c05def00d5bf6"
     },
     "Sources/Methods/SynthOOP_FileHandle_file.4dm": {
       "member_id": "FileHandle.file",
@@ -5059,7 +5345,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "2e7623f163cb814c9e934a1a882d49c443c7611e53c09cdfe03aed7dd64ab41f"
     },
     "Sources/Methods/SynthOOP_FileHandle_getSize.4dm": {
       "member_id": "FileHandle.getSize",
@@ -5072,7 +5359,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "68caa7bb4e28cad90f96e38be60970dd08ba4655c5add9a01ac6023afc9eca27"
     },
     "Sources/Methods/SynthOOP_FileHandle_mode.4dm": {
       "member_id": "FileHandle.mode",
@@ -5085,7 +5373,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "920f69142327be8176dd3b1dcc265d3370ec08957e65307eaba89bfee5a09491"
     },
     "Sources/Methods/SynthOOP_FileHandle_offset.4dm": {
       "member_id": "FileHandle.offset",
@@ -5104,7 +5393,8 @@
           "comment_line": 6,
           "lines": 3
         }
-      ]
+      ],
+      "sourceSha256": "5b8747101809667ac0cd2af2db39f38f704ca0fd3a972e51b310903ae05306d4"
     },
     "Sources/Methods/SynthOOP_FileHandle_readBlob.4dm": {
       "member_id": "FileHandle.readBlob",
@@ -5117,7 +5407,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "72be34519ce90348d129e88d6b4e5feeeeb20f01958f89fab505c82162feca33"
     },
     "Sources/Methods/SynthOOP_FileHandle_readLine.4dm": {
       "member_id": "FileHandle.readLine",
@@ -5130,7 +5421,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "7d2475c4f213a65c1b5e3d81c34f5880b82532dfcb0ce906896ec590c4c98491"
     },
     "Sources/Methods/SynthOOP_FileHandle_readText.4dm": {
       "member_id": "FileHandle.readText",
@@ -5149,7 +5441,8 @@
           "comment_line": 6,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "a38d18aea973f52014bd9f6f88898d869cf3cda07e8edb681cd42923db980f31"
     },
     "Sources/Methods/SynthOOP_FileHandle_setSize.4dm": {
       "member_id": "FileHandle.setSize",
@@ -5162,7 +5455,8 @@
           "comment_line": 1,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "ea49652af1d1513056dfd7a29136dee943ad8e475be0519bcdadd465d5b9e55c"
     },
     "Sources/Methods/SynthOOP_FileHandle_writeBlob.4dm": {
       "member_id": "FileHandle.writeBlob",
@@ -5175,7 +5469,8 @@
           "comment_line": 1,
           "lines": 6
         }
-      ]
+      ],
+      "sourceSha256": "34f003383dec9f1b07ec7659177c58fb1ec369815b434e89f7c4d1d1ecc20254"
     },
     "Sources/Methods/SynthOOP_FileHandle_writeLine.4dm": {
       "member_id": "FileHandle.writeLine",
@@ -5188,7 +5483,8 @@
           "comment_line": 1,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "1b97aa14074df8a492d641cc0b655697cf569b331eb44277a22ad022d6fc73c7"
     },
     "Sources/Methods/SynthOOP_FileHandle_writeText.4dm": {
       "member_id": "FileHandle.writeText",
@@ -5201,7 +5497,8 @@
           "comment_line": 1,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "a51e65eeff40c76068c578ad34424b40169e92616261893ae4df5d1a43c03167"
     },
     "Sources/Methods/SynthOOP_Folder_create.4dm": {
       "member_id": "Folder.create",
@@ -5214,7 +5511,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "d5b282de6d22e37cb57cac773aaa977415551e3d82645484faffadee34527161"
     },
     "Sources/Methods/SynthOOP_Folder_createAlias.4dm": {
       "member_id": "Folder.createAlias",
@@ -5239,7 +5537,8 @@
           "comment_line": 14,
           "lines": 6
         }
-      ]
+      ],
+      "sourceSha256": "ffd6254a72749371ff16756f59abedbad722f3a7d59d6f9901c9c762eff21919"
     },
     "Sources/Methods/SynthOOP_Folder_delete.4dm": {
       "member_id": "Folder.delete",
@@ -5258,7 +5557,8 @@
           "comment_line": 5,
           "lines": 3
         }
-      ]
+      ],
+      "sourceSha256": "a8e8065dab746d49063a9ec7b691d5f042f021d7954f0d385c7cec9fa2699c4c"
     },
     "Sources/Methods/SynthOOP_Folder_moveTo.4dm": {
       "member_id": "Folder.moveTo",
@@ -5277,7 +5577,8 @@
           "comment_line": 8,
           "lines": 6
         }
-      ]
+      ],
+      "sourceSha256": "41bcf703400eb753bb1ef5e4fd7545283add51deee8e177b0bec0298e0215617"
     },
     "Sources/Methods/SynthOOP_Folder_rename.4dm": {
       "member_id": "Folder.rename",
@@ -5290,7 +5591,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "545eb35582c28a1dc020e43c8d8fc361a3b7e1868c036504bc36fac4a65ba180"
     },
     "Sources/Methods/SynthOOP_Function_apply.4dm": {
       "member_id": "Function.apply",
@@ -5315,7 +5617,8 @@
           "comment_line": 12,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "be91120d708eaeffa14f8d9e42691620ff10707d176cea3690ff640e10f5a508"
     },
     "Sources/Methods/SynthOOP_Function_call.4dm": {
       "member_id": "Function.call",
@@ -5334,7 +5637,8 @@
           "comment_line": 7,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "b52b9be0d50e11d122a59cda527885d732850750c8e7f160b0280cce3d09c7fa"
     },
     "Sources/Methods/SynthOOP_Function_source.4dm": {
       "member_id": "Function.source",
@@ -5347,7 +5651,8 @@
           "comment_line": 1,
           "lines": 6
         }
-      ]
+      ],
+      "sourceSha256": "65f8da8aa479d3c86daee29724f3844dee434f0bec96d28d97c8c6e0ec917826"
     },
     "Sources/Methods/SynthOOP_HTTPAgent_freeSoc_aaf7.4dm": {
       "member_id": "HTTPAgent.freeSocketsCount",
@@ -5366,7 +5671,8 @@
           "comment_line": 6,
           "lines": 3
         }
-      ]
+      ],
+      "sourceSha256": "475a0ecf97956afcf9117cef1fb9318b4d2203e28a4d0533db5d307162907208"
     },
     "Sources/Methods/SynthOOP_HTTPAgent_params.4dm": {
       "member_id": "HTTPAgent.params",
@@ -5385,7 +5691,8 @@
           "comment_line": 6,
           "lines": 3
         }
-      ]
+      ],
+      "sourceSha256": "3d7f95000c98fe1057599ab25d4eae8f677db1de01e86d3b98196b4da279eae3"
     },
     "Sources/Methods/SynthOOP_HTTPAgent_request_0568.4dm": {
       "member_id": "HTTPAgent.requestsCount",
@@ -5404,7 +5711,8 @@
           "comment_line": 6,
           "lines": 3
         }
-      ]
+      ],
+      "sourceSha256": "b532463ff95c3c9b900a41f47bb46676a44df7ceb928059c9b7ca04385bed9a6"
     },
     "Sources/Methods/SynthOOP_HTTPRequest_agent.4dm": {
       "member_id": "HTTPRequest.agent",
@@ -5423,7 +5731,8 @@
           "comment_line": 6,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "98b072595a272449793ad3ddfcf26dccf220b9014283f7b991413a14175a3de3"
     },
     "Sources/Methods/SynthOOP_HTTPRequest_dataType.4dm": {
       "member_id": "HTTPRequest.dataType",
@@ -5442,7 +5751,8 @@
           "comment_line": 6,
           "lines": 3
         }
-      ]
+      ],
+      "sourceSha256": "bd27615ab55ffafcd2c6924131b743ee18eda85306a8ecd8fb0c094ae3f89ab7"
     },
     "Sources/Methods/SynthOOP_HTTPRequest_encoding.4dm": {
       "member_id": "HTTPRequest.encoding",
@@ -5461,7 +5771,8 @@
           "comment_line": 6,
           "lines": 3
         }
-      ]
+      ],
+      "sourceSha256": "de04e9e603d340125c02c49692bdd9370309d477cac0ede11121c37960b059d4"
     },
     "Sources/Methods/SynthOOP_HTTPRequest_errors.4dm": {
       "member_id": "HTTPRequest.errors",
@@ -5480,7 +5791,8 @@
           "comment_line": 6,
           "lines": 3
         }
-      ]
+      ],
+      "sourceSha256": "231a3d0a3509f932c45fba4670591b3566104449d1b52a134a5473ab37138bf7"
     },
     "Sources/Methods/SynthOOP_HTTPRequest_headers.4dm": {
       "member_id": "HTTPRequest.headers",
@@ -5499,7 +5811,8 @@
           "comment_line": 6,
           "lines": 3
         }
-      ]
+      ],
+      "sourceSha256": "5c3072cbc3748c812512d983e12d43a6240c56d34173e3aa182fce9f2c883439"
     },
     "Sources/Methods/SynthOOP_HTTPRequest_method.4dm": {
       "member_id": "HTTPRequest.method",
@@ -5518,7 +5831,8 @@
           "comment_line": 6,
           "lines": 3
         }
-      ]
+      ],
+      "sourceSha256": "8a1bb20589cc6bd728f63574e7eaa43964dedfda58d8d80d04b7a41f0cfbb505"
     },
     "Sources/Methods/SynthOOP_HTTPRequest_protocol.4dm": {
       "member_id": "HTTPRequest.protocol",
@@ -5537,7 +5851,8 @@
           "comment_line": 6,
           "lines": 3
         }
-      ]
+      ],
+      "sourceSha256": "03b1873fee07162338b618e437a26bd8a8d1cfe470ddb5106cc55a449cebcab6"
     },
     "Sources/Methods/SynthOOP_HTTPRequest_response.4dm": {
       "member_id": "HTTPRequest.response",
@@ -5556,7 +5871,8 @@
           "comment_line": 6,
           "lines": 3
         }
-      ]
+      ],
+      "sourceSha256": "61130203d87b27fd129be432b8deb8b4e3afd6c16bd1cb5c701e88897b2bfe71"
     },
     "Sources/Methods/SynthOOP_HTTPRequest_retur_3926.4dm": {
       "member_id": "HTTPRequest.returnResponseBody",
@@ -5575,7 +5891,8 @@
           "comment_line": 6,
           "lines": 3
         }
-      ]
+      ],
+      "sourceSha256": "5ecb784601d5c1dbe0782d40c34c24006a0ed74eb2fd2c3c187f09ad4f76eddb"
     },
     "Sources/Methods/SynthOOP_HTTPRequest_terminate.4dm": {
       "member_id": "HTTPRequest.terminate",
@@ -5588,7 +5905,8 @@
           "comment_line": 1,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "cdc25b007442fd3c8aa08a442b6c2ba4cbf889bcc923e777ecba345bb3d033c1"
     },
     "Sources/Methods/SynthOOP_HTTPRequest_terminated.4dm": {
       "member_id": "HTTPRequest.terminated",
@@ -5607,7 +5925,8 @@
           "comment_line": 6,
           "lines": 3
         }
-      ]
+      ],
+      "sourceSha256": "b51e9187c7f0e8437f49d5254baeaa710028294275fa0eec9ef118293817db62"
     },
     "Sources/Methods/SynthOOP_HTTPRequest_timeout.4dm": {
       "member_id": "HTTPRequest.timeout",
@@ -5626,7 +5945,8 @@
           "comment_line": 6,
           "lines": 3
         }
-      ]
+      ],
+      "sourceSha256": "a90f102c99c11003b4218c4b0c594fd492807c0caefeab03af24ab0a859c7b87"
     },
     "Sources/Methods/SynthOOP_HTTPRequest_url.4dm": {
       "member_id": "HTTPRequest.url",
@@ -5645,7 +5965,8 @@
           "comment_line": 6,
           "lines": 3
         }
-      ]
+      ],
+      "sourceSha256": "5420cb119964f31e8f3aaaceb90e0cb1d269080be5ceded46077895b7a0af45a"
     },
     "Sources/Methods/SynthOOP_HTTPRequest_wait.4dm": {
       "member_id": "HTTPRequest.wait",
@@ -5664,7 +5985,8 @@
           "comment_line": 6,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "9c93cea8d0535b0e5bcef5fbf99a7e0a13a585f06cfafbaf2414a137073194fd"
     },
     "Sources/Methods/SynthOOP_IMAPNotifier_isStarted.4dm": {
       "member_id": "IMAPNotifier.isStarted",
@@ -5677,7 +5999,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "85929d15392d2b8461fa70ff56fde0a7e0e53f1ddc00959d6aa4cbcbc16e3754"
     },
     "Sources/Methods/SynthOOP_IMAPNotifier_start.4dm": {
       "member_id": "IMAPNotifier.start",
@@ -5690,7 +6013,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "5d8ba7cdd0acf0f11553d3be3479ea8c43d8909c14c7bdf240c5d6c8f0ed4f00"
     },
     "Sources/Methods/SynthOOP_IMAPNotifier_stop.4dm": {
       "member_id": "IMAPNotifier.stop",
@@ -5703,7 +6027,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "5297902ce37513d6360ad0226ac6e51c16a58266d92044789b9d8934d524c89b"
     },
     "Sources/Methods/SynthOOP_IMAPTransporter_a_be2e.4dm": {
       "member_id": "IMAPTransporter.addFlags",
@@ -5716,7 +6041,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "852ac8eecf3e9e5dd9d515cd2d295ff0e45e308f38a1fe0dbc4f570f8225e237"
     },
     "Sources/Methods/SynthOOP_IMAPTransporter_append.4dm": {
       "member_id": "IMAPTransporter.append",
@@ -5729,7 +6055,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "ca641595456cea6240d07dcc9c0aacd1443b04cbae3e52d208d09cf3d691925b"
     },
     "Sources/Methods/SynthOOP_IMAPTransporter_c_88c0.4dm": {
       "member_id": "IMAPTransporter.checkConnectionDelay",
@@ -5748,7 +6075,8 @@
           "comment_line": 6,
           "lines": 3
         }
-      ]
+      ],
+      "sourceSha256": "b723754164edff98d4a00e3d48486e99373ea432a8434036e97bb4d2787f3fab"
     },
     "Sources/Methods/SynthOOP_IMAPTransporter_copy.4dm": {
       "member_id": "IMAPTransporter.copy",
@@ -5767,7 +6095,8 @@
           "comment_line": 6,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "b6da3618ab8012ce3495804777c4b42e87ea3223e2148b8eb89730d53c8dd380"
     },
     "Sources/Methods/SynthOOP_IMAPTransporter_c_990e.4dm": {
       "member_id": "IMAPTransporter.createBox",
@@ -5780,7 +6109,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "c858908e26aa674e587e563dd1bcb6474a324560144936f1de8949e7dc7d55ca"
     },
     "Sources/Methods/SynthOOP_IMAPTransporter_delete.4dm": {
       "member_id": "IMAPTransporter.delete",
@@ -5799,7 +6129,8 @@
           "comment_line": 6,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "0b170b172b4f7fa1c1a03e02be5d09bee0fb92219297fa901980108bc40abd60"
     },
     "Sources/Methods/SynthOOP_IMAPTransporter_d_1b79.4dm": {
       "member_id": "IMAPTransporter.deleteBox",
@@ -5812,7 +6143,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "c3f1afb57ae016ca0c3cfc0454ce8116bc010b452726a8c1b878ab1ffc7a3eab"
     },
     "Sources/Methods/SynthOOP_IMAPTransporter_e_119f.4dm": {
       "member_id": "IMAPTransporter.expunge",
@@ -5825,7 +6157,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "edf7ab045c38d7f7ade74ac1214a11563df4be522db69fa42c40d70dde71e65f"
     },
     "Sources/Methods/SynthOOP_IMAPTransporter_g_9227.4dm": {
       "member_id": "IMAPTransporter.getBoxInfo",
@@ -5844,7 +6177,8 @@
           "comment_line": 6,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "3228c0400a221532076b4fb091385d2b015dbddf230e57f45d574a0eac51a5dd"
     },
     "Sources/Methods/SynthOOP_IMAPTransporter_g_3fa8.4dm": {
       "member_id": "IMAPTransporter.getBoxList",
@@ -5863,7 +6197,8 @@
           "comment_line": 6,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "7a1f245d9f222a66f2a0ef0abb5d927509aed6da2a083ace08f4f0861d0aed54"
     },
     "Sources/Methods/SynthOOP_IMAPTransporter_g_6579.4dm": {
       "member_id": "IMAPTransporter.getDelimiter",
@@ -5876,7 +6211,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "ded0bb1ebc4231f1b6f7871ce23002bc00dc97984d18708bde0a8d4c00b80571"
     },
     "Sources/Methods/SynthOOP_IMAPTransporter_g_0bfb.4dm": {
       "member_id": "IMAPTransporter.getMIMEAsBlob",
@@ -5907,7 +6243,8 @@
           "comment_line": 14,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "1867cdbcb9de2309f6a6cd683dfe61847655c5b42f334a279ec33e8e42de2d7c"
     },
     "Sources/Methods/SynthOOP_IMAPTransporter_g_3a59.4dm": {
       "member_id": "IMAPTransporter.getMail",
@@ -5938,7 +6275,8 @@
           "comment_line": 14,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "24b42cfea2fdd6ff8fe4ffd72721115b81eba4e950834135846200ca4a808b4c"
     },
     "Sources/Methods/SynthOOP_IMAPTransporter_g_3356.4dm": {
       "member_id": "IMAPTransporter.getMails",
@@ -5969,7 +6307,8 @@
           "comment_line": 14,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "7d822b31248a3a4a0553517ecc02949863eec4520ba2d45d82e9229bc1455aed"
     },
     "Sources/Methods/SynthOOP_IMAPTransporter_move.4dm": {
       "member_id": "IMAPTransporter.move",
@@ -5988,7 +6327,8 @@
           "comment_line": 6,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "ec54212ed3f1e4f7cc57e4c57a3d2f57c16282f41477d305b12f96a2f779100a"
     },
     "Sources/Methods/SynthOOP_IMAPTransporter_n_bf76.4dm": {
       "member_id": "IMAPTransporter.notifier",
@@ -6001,7 +6341,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "6cd423f4c8ebd58fe237e294a957e94203f3c2e14ebe7a05995ad7936ddbfb8e"
     },
     "Sources/Methods/SynthOOP_IMAPTransporter_n_5ffb.4dm": {
       "member_id": "IMAPTransporter.numToID",
@@ -6014,7 +6355,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "2db272eab516d980a72a7aaa123fffe8b236483db4bb3fa0439cd8749917884a"
     },
     "Sources/Methods/SynthOOP_IMAPTransporter_r_8d50.4dm": {
       "member_id": "IMAPTransporter.removeFlags",
@@ -6027,7 +6369,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "3d764d67aaef60970a4b4fc66cccc58921205408194c23fc19c7f6a0983071df"
     },
     "Sources/Methods/SynthOOP_IMAPTransporter_r_c506.4dm": {
       "member_id": "IMAPTransporter.renameBox",
@@ -6040,7 +6383,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "6f71274ca8ec7bad0d307ecb619eaf2eb3992bfe058ced4aa909061f134de73b"
     },
     "Sources/Methods/SynthOOP_IMAPTransporter_s_a26d.4dm": {
       "member_id": "IMAPTransporter.searchMails",
@@ -6053,7 +6397,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "3e838b708532b543b8d4867985e549239070766a73aab180af78a878d8a4e9cf"
     },
     "Sources/Methods/SynthOOP_IMAPTransporter_s_6aee.4dm": {
       "member_id": "IMAPTransporter.selectBox",
@@ -6078,7 +6423,8 @@
           "comment_line": 10,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "0179e8df972e97ecdc48f2f1895e8eeae593684654a56933a2a4a904e923e60a"
     },
     "Sources/Methods/SynthOOP_IMAPTransporter_s_87c4.4dm": {
       "member_id": "IMAPTransporter.subscribe",
@@ -6091,7 +6437,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "5985b7d9bbd85fafc68c38e15d79edde92c71d88ee1827d18f8e241783fbf75f"
     },
     "Sources/Methods/SynthOOP_IMAPTransporter_u_8071.4dm": {
       "member_id": "IMAPTransporter.unsubscribe",
@@ -6104,7 +6451,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "0f647525c2be65b4ddb94ce029277ca87013877f02d0da0ef7b4745575d1fdee"
     },
     "Sources/Methods/SynthOOP_IncomingMessage_g_a4a3.4dm": {
       "member_id": "IncomingMessage.getBlob",
@@ -6117,7 +6465,8 @@
           "comment_line": 1,
           "lines": 6
         }
-      ]
+      ],
+      "sourceSha256": "77a87d66606311075bce03b6a5752b49c4c54836000a3d1269b66e8f3ab6468a"
     },
     "Sources/Methods/SynthOOP_IncomingMessage_g_0f14.4dm": {
       "member_id": "IncomingMessage.getHeader",
@@ -6130,7 +6479,8 @@
           "comment_line": 1,
           "lines": 6
         }
-      ]
+      ],
+      "sourceSha256": "a939d19542608802c50bb25fdd2510c2732f1dca67ac3ffa35ced3a42a3def89"
     },
     "Sources/Methods/SynthOOP_IncomingMessage_g_00a5.4dm": {
       "member_id": "IncomingMessage.getJSON",
@@ -6143,7 +6493,8 @@
           "comment_line": 1,
           "lines": 6
         }
-      ]
+      ],
+      "sourceSha256": "9aaa0825c4212c5082e11ad5db21e88d197a0362f5e32396c03181f8aca32889"
     },
     "Sources/Methods/SynthOOP_IncomingMessage_g_1cc9.4dm": {
       "member_id": "IncomingMessage.getPicture",
@@ -6156,7 +6507,8 @@
           "comment_line": 1,
           "lines": 6
         }
-      ]
+      ],
+      "sourceSha256": "818f54f1441204b6be46bc664fd00bb397a4183c2a74aa18f239e9f7b9745c9d"
     },
     "Sources/Methods/SynthOOP_IncomingMessage_g_f154.4dm": {
       "member_id": "IncomingMessage.getText",
@@ -6169,7 +6521,8 @@
           "comment_line": 1,
           "lines": 6
         }
-      ]
+      ],
+      "sourceSha256": "291f4e84714b5a87b43840a15bf540a3b2ca837ac4aa8679e27530b8c7453307"
     },
     "Sources/Methods/SynthOOP_IncomingMessage_h_96df.4dm": {
       "member_id": "IncomingMessage.headers",
@@ -6182,7 +6535,8 @@
           "comment_line": 1,
           "lines": 6
         }
-      ]
+      ],
+      "sourceSha256": "463829a07c2cf7ac0563bbcc5787317f811e9702efb882a9572c7a71f774a450"
     },
     "Sources/Methods/SynthOOP_IncomingMessage_url.4dm": {
       "member_id": "IncomingMessage.url",
@@ -6195,7 +6549,8 @@
           "comment_line": 1,
           "lines": 6
         }
-      ]
+      ],
+      "sourceSha256": "4683e73aa0e1e528c2d5fcdd6c0a12b52df48d864dba08a092360ac4025043e5"
     },
     "Sources/Methods/SynthOOP_IncomingMessage_u_87fa.4dm": {
       "member_id": "IncomingMessage.urlPath",
@@ -6208,7 +6563,8 @@
           "comment_line": 1,
           "lines": 6
         }
-      ]
+      ],
+      "sourceSha256": "6b3429992d308d1095fab9b17b89e95f5c7aa910fd5fdf1b6b82ec51511dd2dc"
     },
     "Sources/Methods/SynthOOP_IncomingMessage_u_8603.4dm": {
       "member_id": "IncomingMessage.urlQuery",
@@ -6221,7 +6577,8 @@
           "comment_line": 1,
           "lines": 6
         }
-      ]
+      ],
+      "sourceSha256": "2216c96d882fd82efd09232746532d02ed16a33b9e81239f64eb1f3240049f5a"
     },
     "Sources/Methods/SynthOOP_IncomingMessage_verb.4dm": {
       "member_id": "IncomingMessage.verb",
@@ -6234,7 +6591,8 @@
           "comment_line": 1,
           "lines": 6
         }
-      ]
+      ],
+      "sourceSha256": "4cc8a1e0d84fe42c4b14c1de0bad07b23014958b5f22bdc645d0cb144b2098cd"
     },
     "Sources/Methods/SynthOOP_MailAttachment_cid.4dm": {
       "member_id": "MailAttachment.cid",
@@ -6253,7 +6611,8 @@
           "comment_line": 6,
           "lines": 3
         }
-      ]
+      ],
+      "sourceSha256": "2e440d05c4aee79df28b4ca7159cef50a3eb57871c5571b3d669c7b81a78139b"
     },
     "Sources/Methods/SynthOOP_MailAttachment_di_34cd.4dm": {
       "member_id": "MailAttachment.disposition",
@@ -6272,7 +6631,8 @@
           "comment_line": 6,
           "lines": 3
         }
-      ]
+      ],
+      "sourceSha256": "e4d36c8eabd52cb0cd708b71ca2df1355c3564f738b0026ce23a03d2ecaf7ff4"
     },
     "Sources/Methods/SynthOOP_MailAttachment_ge_0705.4dm": {
       "member_id": "MailAttachment.getContent",
@@ -6285,7 +6645,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "a23ba779d32b679b5ad4c34135a172301d82879019576dc12240b4aa0eb69974"
     },
     "Sources/Methods/SynthOOP_MailAttachment_name.4dm": {
       "member_id": "MailAttachment.name",
@@ -6304,7 +6665,8 @@
           "comment_line": 6,
           "lines": 3
         }
-      ]
+      ],
+      "sourceSha256": "41acda41c1848171cb907e1adef6536a636be9872183d5f6a721877e9d64ec20"
     },
     "Sources/Methods/SynthOOP_MailAttachment_path.4dm": {
       "member_id": "MailAttachment.path",
@@ -6323,7 +6685,8 @@
           "comment_line": 6,
           "lines": 3
         }
-      ]
+      ],
+      "sourceSha256": "53f89db8bd1b77366cd96226472102a9f934bada27c20d4f3a619e8997294be7"
     },
     "Sources/Methods/SynthOOP_MailAttachment_pl_6dee.4dm": {
       "member_id": "MailAttachment.platformPath",
@@ -6342,7 +6705,8 @@
           "comment_line": 6,
           "lines": 3
         }
-      ]
+      ],
+      "sourceSha256": "ab18c268b21cf871f96f75208c84c6a2eb26906e40d019b3d4af0ec8ad830769"
     },
     "Sources/Methods/SynthOOP_MailAttachment_size.4dm": {
       "member_id": "MailAttachment.size",
@@ -6361,7 +6725,8 @@
           "comment_line": 6,
           "lines": 3
         }
-      ]
+      ],
+      "sourceSha256": "52128d57da521a8e6ef428a72d497a238056632ee7064377e57e928a1f9f8fb1"
     },
     "Sources/Methods/SynthOOP_MailAttachment_type.4dm": {
       "member_id": "MailAttachment.type",
@@ -6380,7 +6745,8 @@
           "comment_line": 6,
           "lines": 3
         }
-      ]
+      ],
+      "sourceSha256": "bfc13316b0e667056f616579d5c6f56032e0536f08780031916509ceaab0e4e8"
     },
     "Sources/Methods/SynthOOP_Method_checkSyntax.4dm": {
       "member_id": "Method.checkSyntax",
@@ -6393,7 +6759,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "44ae435f78a34499e75aaa8901047b96ec64a565829b6906a84e69565c34c246"
     },
     "Sources/Methods/SynthOOP_Method_name.4dm": {
       "member_id": "Method.name",
@@ -6406,7 +6773,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "09f273d74a9ace374114521c21fdf6ee75d7c00820e73c92c013b5e20da25146"
     },
     "Sources/Methods/SynthOOP_OutgoingMessage_body.4dm": {
       "member_id": "OutgoingMessage.body",
@@ -6425,7 +6793,8 @@
           "comment_line": 6,
           "lines": 3
         }
-      ]
+      ],
+      "sourceSha256": "d4f200c2c85bf69df57eb8e194b5a9a0c65ff1df30af203998d68ef94104e4f1"
     },
     "Sources/Methods/SynthOOP_OutgoingMessage_h_cf12.4dm": {
       "member_id": "OutgoingMessage.headers",
@@ -6438,7 +6807,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "c45ae727e6b12bec6c1c21c5e74f75e726f11e9be012126b0a969388515fcf4c"
     },
     "Sources/Methods/SynthOOP_OutgoingMessage_s_f1c7.4dm": {
       "member_id": "OutgoingMessage.setBody",
@@ -6451,7 +6821,8 @@
           "comment_line": 1,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "fe8a2033439f8f1e0a69b248e712cca0cc77ef9d5ea03f06ef486d2a4bf4dd2c"
     },
     "Sources/Methods/SynthOOP_OutgoingMessage_s_b4d3.4dm": {
       "member_id": "OutgoingMessage.setHeader",
@@ -6464,7 +6835,8 @@
           "comment_line": 1,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "27392cbc154c8f6662ac0bd7c89acc2133474f1b0656e3c44bd2c1195dfe8434"
     },
     "Sources/Methods/SynthOOP_OutgoingMessage_s_f6d7.4dm": {
       "member_id": "OutgoingMessage.setStatus",
@@ -6477,7 +6849,8 @@
           "comment_line": 1,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "fcc459820b79e38fc58ac1f65a1ef5c8ebcb269653722c79f1800964dc6a5d79"
     },
     "Sources/Methods/SynthOOP_OutgoingMessage_status.4dm": {
       "member_id": "OutgoingMessage.status",
@@ -6496,7 +6869,8 @@
           "comment_line": 6,
           "lines": 3
         }
-      ]
+      ],
+      "sourceSha256": "98948918fae89bb06420fd1b39272b44849045e004b4513727ce31ddf7002895"
     },
     "Sources/Methods/SynthOOP_POP3Transporter_delete.4dm": {
       "member_id": "POP3Transporter.delete",
@@ -6509,7 +6883,8 @@
           "comment_line": 1,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "23d043983fe30a1dbcb017261e2054e0276961d2cacb2430c68944bda729fa63"
     },
     "Sources/Methods/SynthOOP_POP3Transporter_g_d14c.4dm": {
       "member_id": "POP3Transporter.getBoxInfo",
@@ -6522,7 +6897,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "3918c7ed7d0418dc93174210359dc6a0ee2ef068c1eb77b005b9772e7dc8a50f"
     },
     "Sources/Methods/SynthOOP_POP3Transporter_g_e633.4dm": {
       "member_id": "POP3Transporter.getMIMEAsBlob",
@@ -6535,7 +6911,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "20bb408b466c725d1c2c0a3f9f36a9de16620531d9545a761ab24f7fae3899a4"
     },
     "Sources/Methods/SynthOOP_POP3Transporter_g_bb57.4dm": {
       "member_id": "POP3Transporter.getMail",
@@ -6554,7 +6931,8 @@
           "comment_line": 6,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "81acc819440408d1e61a66a98abc8b0942e4bb00d3c4050c5894582affd8e87d"
     },
     "Sources/Methods/SynthOOP_POP3Transporter_g_16ce.4dm": {
       "member_id": "POP3Transporter.getMailInfo",
@@ -6567,7 +6945,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "0eb8f20c76f592cdfd0d6b7ca8de4301562ac7278e6a948e0725167815e9df12"
     },
     "Sources/Methods/SynthOOP_POP3Transporter_g_63be.4dm": {
       "member_id": "POP3Transporter.getMailInfoList",
@@ -6580,7 +6959,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "750adbc23ad84e12296d88f9bfa7e8a23b0a10e0daed9fa0383898c890fc0107"
     },
     "Sources/Methods/SynthOOP_POP3Transporter_u_12d7.4dm": {
       "member_id": "POP3Transporter.undeleteAll",
@@ -6593,7 +6973,454 @@
           "comment_line": 1,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "81cdfaeded1c43fed386d12f598193abbfefbfb2e9b6d7acb655e907088fb0be"
+    },
+    "Sources/Methods/SynthOOP_QuotaManagerClass_c66a.4dm": {
+      "member_id": "QuotaManagerClass.currentValues",
+      "kind": "oop_property",
+      "class_id": "QuotaManagerClass",
+      "blocks": [
+        {
+          "overload_index": 0,
+          "variant": "read",
+          "comment_line": 1,
+          "lines": 5
+        }
+      ],
+      "sourceSha256": "4d176d92a8376b59843ce6edece281ce02bf9de20cea07d090c6234caeb71849"
+    },
+    "Sources/Methods/SynthOOP_QuotaManagerClass_ca92.4dm": {
+      "member_id": "QuotaManagerClass.defaultEntitySetTimeout",
+      "kind": "oop_property",
+      "class_id": "QuotaManagerClass",
+      "blocks": [
+        {
+          "overload_index": 0,
+          "variant": "read",
+          "comment_line": 1,
+          "lines": 5
+        },
+        {
+          "overload_index": 0,
+          "variant": "write",
+          "comment_line": 6,
+          "lines": 3
+        }
+      ],
+      "sourceSha256": "a794595a080429434ee7698962397844fe4b61835d3f25bfa716b057e43cc9b6"
+    },
+    "Sources/Methods/SynthOOP_QuotaManagerClass_c8a7.4dm": {
+      "member_id": "QuotaManagerClass.inBytesPerHour",
+      "kind": "oop_property",
+      "class_id": "QuotaManagerClass",
+      "blocks": [
+        {
+          "overload_index": 0,
+          "variant": "read",
+          "comment_line": 1,
+          "lines": 5
+        },
+        {
+          "overload_index": 0,
+          "variant": "write",
+          "comment_line": 6,
+          "lines": 3
+        }
+      ],
+      "sourceSha256": "45d4a0a2f81616cfb57757ef65d5b554d64246d2fd0ec3d7012097305d3725be"
+    },
+    "Sources/Methods/SynthOOP_QuotaManagerClass_d28e.4dm": {
+      "member_id": "QuotaManagerClass.inBytesPerHourPerSession",
+      "kind": "oop_property",
+      "class_id": "QuotaManagerClass",
+      "blocks": [
+        {
+          "overload_index": 0,
+          "variant": "read",
+          "comment_line": 1,
+          "lines": 5
+        },
+        {
+          "overload_index": 0,
+          "variant": "write",
+          "comment_line": 6,
+          "lines": 3
+        }
+      ],
+      "sourceSha256": "c0adcb4fe3d31f0e3e81119fbe604b1ec3c218aaff7ff67c516a1ba4ed3e71c7"
+    },
+    "Sources/Methods/SynthOOP_QuotaManagerClass_4439.4dm": {
+      "member_id": "QuotaManagerClass.inBytesPerMin",
+      "kind": "oop_property",
+      "class_id": "QuotaManagerClass",
+      "blocks": [
+        {
+          "overload_index": 0,
+          "variant": "read",
+          "comment_line": 1,
+          "lines": 5
+        },
+        {
+          "overload_index": 0,
+          "variant": "write",
+          "comment_line": 6,
+          "lines": 3
+        }
+      ],
+      "sourceSha256": "127183449828de9a61ae6db968223d8ed05938ed50d0761816d7a70119ae9ecd"
+    },
+    "Sources/Methods/SynthOOP_QuotaManagerClass_90f9.4dm": {
+      "member_id": "QuotaManagerClass.inBytesPerMinPerSession",
+      "kind": "oop_property",
+      "class_id": "QuotaManagerClass",
+      "blocks": [
+        {
+          "overload_index": 0,
+          "variant": "read",
+          "comment_line": 1,
+          "lines": 5
+        },
+        {
+          "overload_index": 0,
+          "variant": "write",
+          "comment_line": 6,
+          "lines": 3
+        }
+      ],
+      "sourceSha256": "592b344bf3ac2edcadd0b940c52dc1bba14cf30d8bf014dad127087612ebde26"
+    },
+    "Sources/Methods/SynthOOP_QuotaManagerClass_93c4.4dm": {
+      "member_id": "QuotaManagerClass.maxEntitySetTimeout",
+      "kind": "oop_property",
+      "class_id": "QuotaManagerClass",
+      "blocks": [
+        {
+          "overload_index": 0,
+          "variant": "read",
+          "comment_line": 1,
+          "lines": 5
+        },
+        {
+          "overload_index": 0,
+          "variant": "write",
+          "comment_line": 6,
+          "lines": 3
+        }
+      ],
+      "sourceSha256": "6db60f3b2ea095d9f8482359bf065016f3958f4e7aad2d10f646511ed38248d7"
+    },
+    "Sources/Methods/SynthOOP_QuotaManagerClass_9abf.4dm": {
+      "member_id": "QuotaManagerClass.nbEntitySets",
+      "kind": "oop_property",
+      "class_id": "QuotaManagerClass",
+      "blocks": [
+        {
+          "overload_index": 0,
+          "variant": "read",
+          "comment_line": 1,
+          "lines": 5
+        },
+        {
+          "overload_index": 0,
+          "variant": "write",
+          "comment_line": 6,
+          "lines": 3
+        }
+      ],
+      "sourceSha256": "e50b663fab10d087bc733512740c570b8bbbb67d363dafb11cc62c717a300a43"
+    },
+    "Sources/Methods/SynthOOP_QuotaManagerClass_db67.4dm": {
+      "member_id": "QuotaManagerClass.nbEntitySetsPerSession",
+      "kind": "oop_property",
+      "class_id": "QuotaManagerClass",
+      "blocks": [
+        {
+          "overload_index": 0,
+          "variant": "read",
+          "comment_line": 1,
+          "lines": 5
+        },
+        {
+          "overload_index": 0,
+          "variant": "write",
+          "comment_line": 6,
+          "lines": 3
+        }
+      ],
+      "sourceSha256": "f3fe61cc64666c4be4dcd795f00a0e48f0990279523691b26552ebfcd2af28a2"
+    },
+    "Sources/Methods/SynthOOP_QuotaManagerClass_35cf.4dm": {
+      "member_id": "QuotaManagerClass.nbGuestSessions",
+      "kind": "oop_property",
+      "class_id": "QuotaManagerClass",
+      "blocks": [
+        {
+          "overload_index": 0,
+          "variant": "read",
+          "comment_line": 1,
+          "lines": 5
+        },
+        {
+          "overload_index": 0,
+          "variant": "write",
+          "comment_line": 6,
+          "lines": 3
+        }
+      ],
+      "sourceSha256": "dc492097df3b79c119f0f342de408f23599c5bf2415708ea7cf1ff3b92f067d6"
+    },
+    "Sources/Methods/SynthOOP_QuotaManagerClass_7302.4dm": {
+      "member_id": "QuotaManagerClass.nbRequestsPerHour",
+      "kind": "oop_property",
+      "class_id": "QuotaManagerClass",
+      "blocks": [
+        {
+          "overload_index": 0,
+          "variant": "read",
+          "comment_line": 1,
+          "lines": 5
+        },
+        {
+          "overload_index": 0,
+          "variant": "write",
+          "comment_line": 6,
+          "lines": 3
+        }
+      ],
+      "sourceSha256": "975c4ce9f6f18e3723dbd77cf57ba5fa1690366f04612ff29b79a35e9875596f"
+    },
+    "Sources/Methods/SynthOOP_QuotaManagerClass_1323.4dm": {
+      "member_id": "QuotaManagerClass.nbRequestsPerHourPerSession",
+      "kind": "oop_property",
+      "class_id": "QuotaManagerClass",
+      "blocks": [
+        {
+          "overload_index": 0,
+          "variant": "read",
+          "comment_line": 1,
+          "lines": 5
+        },
+        {
+          "overload_index": 0,
+          "variant": "write",
+          "comment_line": 6,
+          "lines": 3
+        }
+      ],
+      "sourceSha256": "1eff6bfb971e2f093ac38751411b17e7847afc68eb8e8e20c69889b38a2e833d"
+    },
+    "Sources/Methods/SynthOOP_QuotaManagerClass_faf0.4dm": {
+      "member_id": "QuotaManagerClass.nbRequestsPerMin",
+      "kind": "oop_property",
+      "class_id": "QuotaManagerClass",
+      "blocks": [
+        {
+          "overload_index": 0,
+          "variant": "read",
+          "comment_line": 1,
+          "lines": 5
+        },
+        {
+          "overload_index": 0,
+          "variant": "write",
+          "comment_line": 6,
+          "lines": 3
+        }
+      ],
+      "sourceSha256": "7eff3c0385d9eaf7329b4a55f24cf0a9a6521d2527d035a5c60023045487610e"
+    },
+    "Sources/Methods/SynthOOP_QuotaManagerClass_008d.4dm": {
+      "member_id": "QuotaManagerClass.nbRequestsPerMinPerSession",
+      "kind": "oop_property",
+      "class_id": "QuotaManagerClass",
+      "blocks": [
+        {
+          "overload_index": 0,
+          "variant": "read",
+          "comment_line": 1,
+          "lines": 5
+        },
+        {
+          "overload_index": 0,
+          "variant": "write",
+          "comment_line": 6,
+          "lines": 3
+        }
+      ],
+      "sourceSha256": "833e7904ec4b67bbbaf9088a69facc3dc9ad4c159c57a5c44c755783565a41c4"
+    },
+    "Sources/Methods/SynthOOP_QuotaManagerClass_19fe.4dm": {
+      "member_id": "QuotaManagerClass.nbSessions",
+      "kind": "oop_property",
+      "class_id": "QuotaManagerClass",
+      "blocks": [
+        {
+          "overload_index": 0,
+          "variant": "read",
+          "comment_line": 1,
+          "lines": 5
+        },
+        {
+          "overload_index": 0,
+          "variant": "write",
+          "comment_line": 6,
+          "lines": 3
+        }
+      ],
+      "sourceSha256": "d0edc48f03589bb12f6dd86f78c9616459db53e88e3ec8c4b72cdeb5c12d9dd8"
+    },
+    "Sources/Methods/SynthOOP_QuotaManagerClass_e527.4dm": {
+      "member_id": "QuotaManagerClass.outBytesPerHour",
+      "kind": "oop_property",
+      "class_id": "QuotaManagerClass",
+      "blocks": [
+        {
+          "overload_index": 0,
+          "variant": "read",
+          "comment_line": 1,
+          "lines": 5
+        },
+        {
+          "overload_index": 0,
+          "variant": "write",
+          "comment_line": 6,
+          "lines": 3
+        }
+      ],
+      "sourceSha256": "ad10332af5fe13291301bc6d2eb3307d2445dacca50236ddabe212cf16ed4f1b"
+    },
+    "Sources/Methods/SynthOOP_QuotaManagerClass_8383.4dm": {
+      "member_id": "QuotaManagerClass.outBytesPerHourPerSession",
+      "kind": "oop_property",
+      "class_id": "QuotaManagerClass",
+      "blocks": [
+        {
+          "overload_index": 0,
+          "variant": "read",
+          "comment_line": 1,
+          "lines": 5
+        },
+        {
+          "overload_index": 0,
+          "variant": "write",
+          "comment_line": 6,
+          "lines": 3
+        }
+      ],
+      "sourceSha256": "7e65a38f201f8a4cd99d041943a19eee3344bc9549f35c6449757622f9b9871a"
+    },
+    "Sources/Methods/SynthOOP_QuotaManagerClass_4e08.4dm": {
+      "member_id": "QuotaManagerClass.outBytesPerMin",
+      "kind": "oop_property",
+      "class_id": "QuotaManagerClass",
+      "blocks": [
+        {
+          "overload_index": 0,
+          "variant": "read",
+          "comment_line": 1,
+          "lines": 5
+        },
+        {
+          "overload_index": 0,
+          "variant": "write",
+          "comment_line": 6,
+          "lines": 3
+        }
+      ],
+      "sourceSha256": "6f1f0f1e60e83e52677c4fad23ed401f1dee3707745d0fc5bfa013c8147f7b7f"
+    },
+    "Sources/Methods/SynthOOP_QuotaManagerClass_63c6.4dm": {
+      "member_id": "QuotaManagerClass.outBytesPerMinPerSession",
+      "kind": "oop_property",
+      "class_id": "QuotaManagerClass",
+      "blocks": [
+        {
+          "overload_index": 0,
+          "variant": "read",
+          "comment_line": 1,
+          "lines": 5
+        },
+        {
+          "overload_index": 0,
+          "variant": "write",
+          "comment_line": 6,
+          "lines": 3
+        }
+      ],
+      "sourceSha256": "40445ea10c6a3ab8c12e07858b219f49b2309c40e6b8d192332f2db21535f0e7"
+    },
+    "Sources/Methods/SynthOOP_SMTPTransporter_c_f913.4dm": {
+      "member_id": "SMTPTransporter.certificate",
+      "kind": "oop_property",
+      "class_id": "SMTPTransporter",
+      "blocks": [
+        {
+          "overload_index": 0,
+          "variant": "read:4D.File",
+          "comment_line": 1,
+          "lines": 5
+        },
+        {
+          "overload_index": 0,
+          "variant": "write:4D.File",
+          "comment_line": 6,
+          "lines": 5
+        },
+        {
+          "overload_index": 1,
+          "variant": "read:Blob",
+          "comment_line": 11,
+          "lines": 4
+        },
+        {
+          "overload_index": 1,
+          "variant": "write:Blob",
+          "comment_line": 15,
+          "lines": 4
+        }
+      ],
+      "sourceSha256": "1f654cb3f0775a2bbf3b420fba2741a787f9941312035fd696361077c2b6ab73"
+    },
+    "Sources/Methods/SynthOOP_SMTPTransporter_c_5734.4dm": {
+      "member_id": "SMTPTransporter.certificateName",
+      "kind": "oop_property",
+      "class_id": "SMTPTransporter",
+      "blocks": [
+        {
+          "overload_index": 0,
+          "variant": "read",
+          "comment_line": 1,
+          "lines": 5
+        },
+        {
+          "overload_index": 0,
+          "variant": "write",
+          "comment_line": 6,
+          "lines": 3
+        }
+      ],
+      "sourceSha256": "d9bc3d12d0d697b44665e64900d0c78ba8c3135a1c29195b08185b17f4116397"
+    },
+    "Sources/Methods/SynthOOP_SMTPTransporter_c_301c.4dm": {
+      "member_id": "SMTPTransporter.certificatePassword",
+      "kind": "oop_property",
+      "class_id": "SMTPTransporter",
+      "blocks": [
+        {
+          "overload_index": 0,
+          "variant": "read",
+          "comment_line": 1,
+          "lines": 5
+        },
+        {
+          "overload_index": 0,
+          "variant": "write",
+          "comment_line": 6,
+          "lines": 3
+        }
+      ],
+      "sourceSha256": "0092493f5d626df0b608a379bebb95cace235d27d3ddd91a567a0c72ff485445"
     },
     "Sources/Methods/SynthOOP_SMTPTransporter_k_a59a.4dm": {
       "member_id": "SMTPTransporter.keepAlive",
@@ -6612,7 +7439,8 @@
           "comment_line": 6,
           "lines": 3
         }
-      ]
+      ],
+      "sourceSha256": "fedff45e7dbd2330f288f61ab761e5d8451cb8fde249941fb4776b38ad9d629f"
     },
     "Sources/Methods/SynthOOP_SMTPTransporter_send.4dm": {
       "member_id": "SMTPTransporter.send",
@@ -6625,7 +7453,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "2f5f059433fe8cdb04226ce595100a869dc2ee4c6b1547a3de42c54ee979f645"
     },
     "Sources/Methods/SynthOOP_Session_clearPriv_4882.4dm": {
       "member_id": "Session.clearPrivileges",
@@ -6638,7 +7467,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "e1ad6f9c4c104a66bb1a51c837488a8a707ed77df1f30ccb9b5767d9eb8cf83a"
     },
     "Sources/Methods/SynthOOP_Session_createOTP.4dm": {
       "member_id": "Session.createOTP",
@@ -6657,7 +7487,8 @@
           "comment_line": 6,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "66e976cdb42b0f4213bf301e94f33b05335d5d01eac37f316c250ef37a16f015"
     },
     "Sources/Methods/SynthOOP_Session_demote.4dm": {
       "member_id": "Session.demote",
@@ -6670,7 +7501,8 @@
           "comment_line": 1,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "3a24647677aa5a520f58ac7001bec0ec4301464e9defbcc2767603d8689d9907"
     },
     "Sources/Methods/SynthOOP_Session_expirationDate.4dm": {
       "member_id": "Session.expirationDate",
@@ -6683,7 +7515,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "64da826aa18653aad637befac0cc11888a313d0866bd6c1ff3b7c12c6dd9d6d1"
     },
     "Sources/Methods/SynthOOP_Session_getPrivileges.4dm": {
       "member_id": "Session.getPrivileges",
@@ -6696,7 +7529,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "a9ca1fa8b5af2d84c3e6ec9d9c673887cda04653b042c5e0ba325e39aed208dc"
     },
     "Sources/Methods/SynthOOP_Session_hasPrivilege.4dm": {
       "member_id": "Session.hasPrivilege",
@@ -6709,7 +7543,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "a61c7581fa2dcef92d2654bd7d97d987aaa838d783d7ce503ff62e108b8f617a"
     },
     "Sources/Methods/SynthOOP_Session_id.4dm": {
       "member_id": "Session.id",
@@ -6728,7 +7563,8 @@
           "comment_line": 6,
           "lines": 3
         }
-      ]
+      ],
+      "sourceSha256": "d6f22534cfa2def00d69edf125a547d77d42b933f335ab0ba1c35e82d1a707fb"
     },
     "Sources/Methods/SynthOOP_Session_idleTimeout.4dm": {
       "member_id": "Session.idleTimeout",
@@ -6747,7 +7583,8 @@
           "comment_line": 6,
           "lines": 3
         }
-      ]
+      ],
+      "sourceSha256": "44fb66d32c022361f1fa5c32b61b3a6828bfef80ee8081cc907e50f60874fcf4"
     },
     "Sources/Methods/SynthOOP_Session_info.4dm": {
       "member_id": "Session.info",
@@ -6759,14 +7596,9 @@
           "variant": "read",
           "comment_line": 1,
           "lines": 5
-        },
-        {
-          "overload_index": 0,
-          "variant": "write",
-          "comment_line": 6,
-          "lines": 3
         }
-      ]
+      ],
+      "sourceSha256": "bb9f6cf47b38d720b0d21baea62dafcc35c42f37c1e54201a0bb9b1f56761f21"
     },
     "Sources/Methods/SynthOOP_Session_isGuest.4dm": {
       "member_id": "Session.isGuest",
@@ -6779,7 +7611,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "ffb871fbca913edeb131a03c0bd7525d8ad8a17ab2d9bb33f2af224a580f2d0b"
     },
     "Sources/Methods/SynthOOP_Session_promote.4dm": {
       "member_id": "Session.promote",
@@ -6792,7 +7625,22 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "5c1ef4bd6b06bb9c8d65eb3dbcdb4de91fb7334306e7df4ee8298bbf223140c3"
+    },
+    "Sources/Methods/SynthOOP_Session_quotas.4dm": {
+      "member_id": "Session.quotas",
+      "kind": "oop_property",
+      "class_id": "Session",
+      "blocks": [
+        {
+          "overload_index": 0,
+          "variant": "read",
+          "comment_line": 1,
+          "lines": 5
+        }
+      ],
+      "sourceSha256": "269eb755135913704a780485c2c92ed9624e6abba03df64fc75ac23662218372"
     },
     "Sources/Methods/SynthOOP_Session_restore.4dm": {
       "member_id": "Session.restore",
@@ -6805,7 +7653,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "318e6eb70632541540449ef72af74dfb53a4339fac63dee777f7af43ce6e47bb"
     },
     "Sources/Methods/SynthOOP_Session_setPrivileges.4dm": {
       "member_id": "Session.setPrivileges",
@@ -6822,15 +7671,16 @@
           "overload_index": 1,
           "variant": "default",
           "comment_line": 6,
-          "lines": 3
+          "lines": 4
         },
         {
           "overload_index": 2,
           "variant": "default",
-          "comment_line": 9,
+          "comment_line": 10,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "f58b75f0a4416819fca621765a00a1dfac73343a695e5d169108c2b1adec2072"
     },
     "Sources/Methods/SynthOOP_Session_storage.4dm": {
       "member_id": "Session.storage",
@@ -6843,7 +7693,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "1add5623ab9850f1c3d49cbbc55338795990b62a00fb3fa3ae60dfcaaffb0ad4"
     },
     "Sources/Methods/SynthOOP_Session_userName.4dm": {
       "member_id": "Session.userName",
@@ -6856,7 +7707,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "fe45e5617601cc902b5bf29f045d7467f6a4bb26f87f926f1caedb899d56e49b"
     },
     "Sources/Methods/SynthOOP_Signal_description.4dm": {
       "member_id": "Signal.description",
@@ -6875,7 +7727,8 @@
           "comment_line": 6,
           "lines": 3
         }
-      ]
+      ],
+      "sourceSha256": "38f46d40bc1117b042966f535266db610ca5e50aac55634dda0a0246b4ea9dbf"
     },
     "Sources/Methods/SynthOOP_Signal_signaled.4dm": {
       "member_id": "Signal.signaled",
@@ -6888,7 +7741,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "ee62c527978d2c6210a5c1f302940b77ce0f9b414f2bd23b8dcfa1cf2805abf0"
     },
     "Sources/Methods/SynthOOP_Signal_trigger.4dm": {
       "member_id": "Signal.trigger",
@@ -6901,7 +7755,8 @@
           "comment_line": 1,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "0bda0a1227ed035c7c764ed5298c7909ac8ba89797004cbb1faedec1bf052d59"
     },
     "Sources/Methods/SynthOOP_Signal_wait.4dm": {
       "member_id": "Signal.wait",
@@ -6920,7 +7775,8 @@
           "comment_line": 6,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "6d319bcf375a5a16acc9e8c3c88644321bde5c6beefbd342efc569abf4a89f0b"
     },
     "Sources/Methods/SynthOOP_SystemWorker_clos_93b1.4dm": {
       "member_id": "SystemWorker.closeInput",
@@ -6933,7 +7789,8 @@
           "comment_line": 1,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "8b1486fc33a76f205202d5582c68048d085775deb31df9b0ce37ec2cce9f337a"
     },
     "Sources/Methods/SynthOOP_SystemWorker_comm_6776.4dm": {
       "member_id": "SystemWorker.commandLine",
@@ -6946,7 +7803,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "a40fda15a88bea0f3bfc56cdcf8c764b3241be728299daed6133a0e0ffe72b19"
     },
     "Sources/Methods/SynthOOP_SystemWorker_curr_2531.4dm": {
       "member_id": "SystemWorker.currentDirectory",
@@ -6965,7 +7823,8 @@
           "comment_line": 6,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "b9d7274539722544f0332ea4deecbeac5c64894a411cb117aedda9d2129ec177"
     },
     "Sources/Methods/SynthOOP_SystemWorker_dataType.4dm": {
       "member_id": "SystemWorker.dataType",
@@ -6978,7 +7837,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "fa9673e375880e35ef98362cbb3c5ab3a477093e56d31da0addae821a7740950"
     },
     "Sources/Methods/SynthOOP_SystemWorker_encoding.4dm": {
       "member_id": "SystemWorker.encoding",
@@ -6991,7 +7851,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "21e7497663bf90b215558bc84ac35c96a8a7d3456fd8306d3960db1889ca8210"
     },
     "Sources/Methods/SynthOOP_SystemWorker_errors.4dm": {
       "member_id": "SystemWorker.errors",
@@ -7010,7 +7871,8 @@
           "comment_line": 6,
           "lines": 3
         }
-      ]
+      ],
+      "sourceSha256": "fa11c20dec1e6d8abb3a5dc805798d86cdcc46d3677694581a809531eaa0b233"
     },
     "Sources/Methods/SynthOOP_SystemWorker_exitCode.4dm": {
       "member_id": "SystemWorker.exitCode",
@@ -7023,7 +7885,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "251b81923d5d40df49cc8d568b3aeeae5f0df77454b5a07817fcf315158809da"
     },
     "Sources/Methods/SynthOOP_SystemWorker_hide_a2fa.4dm": {
       "member_id": "SystemWorker.hideWindow",
@@ -7042,7 +7905,8 @@
           "comment_line": 6,
           "lines": 3
         }
-      ]
+      ],
+      "sourceSha256": "36c1d9a7777591f564815dd7282a3ebf8882fdc7aadd65e1ac9f283ad7f9ad42"
     },
     "Sources/Methods/SynthOOP_SystemWorker_pid.4dm": {
       "member_id": "SystemWorker.pid",
@@ -7055,7 +7919,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "2e6d6d54258c4c66a4dd25f3d27d64ceb44b75ff9f78738ad02a3f394cecd743"
     },
     "Sources/Methods/SynthOOP_SystemWorker_post_b2e6.4dm": {
       "member_id": "SystemWorker.postMessage",
@@ -7074,7 +7939,8 @@
           "comment_line": 5,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "73559c142d10bef6606d4625559fc00e68b402710b92a8a0cdd5f6538f36baaf"
     },
     "Sources/Methods/SynthOOP_SystemWorker_response.4dm": {
       "member_id": "SystemWorker.response",
@@ -7093,7 +7959,8 @@
           "comment_line": 6,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "828bf5a41196016ba2d85dd5b66e62070a31e148b103c0d6b938e3cd30b44923"
     },
     "Sources/Methods/SynthOOP_SystemWorker_resp_dc2c.4dm": {
       "member_id": "SystemWorker.responseError",
@@ -7112,7 +7979,8 @@
           "comment_line": 6,
           "lines": 3
         }
-      ]
+      ],
+      "sourceSha256": "4b33832a05d8d2f275ea13c9db2216026fa59280fef3d9fd1df47c9437fff25e"
     },
     "Sources/Methods/SynthOOP_SystemWorker_terminate.4dm": {
       "member_id": "SystemWorker.terminate",
@@ -7125,7 +7993,8 @@
           "comment_line": 1,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "564cfcf66fa2d3a6de54aa6f98930bb728aafb878c9fed7f5a00e81c96e7f1f5"
     },
     "Sources/Methods/SynthOOP_SystemWorker_term_783a.4dm": {
       "member_id": "SystemWorker.terminated",
@@ -7138,7 +8007,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "269438cf3a6ec72056817fc6dc7b771c4dd0abb48e990408f42019ce7f0704a1"
     },
     "Sources/Methods/SynthOOP_SystemWorker_timeout.4dm": {
       "member_id": "SystemWorker.timeout",
@@ -7151,7 +8021,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "7a6f7414f44da37ee6cb349e4deabdbf43ea41547e3468df0606957f25089eeb"
     },
     "Sources/Methods/SynthOOP_SystemWorker_wait.4dm": {
       "member_id": "SystemWorker.wait",
@@ -7170,7 +8041,8 @@
           "comment_line": 6,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "1029ecec4967ff5915aea79f70cc786b82deaf76975b1772ec5ddf7be9c50a11"
     },
     "Sources/Methods/SynthOOP_TCPConnection_address.4dm": {
       "member_id": "TCPConnection.address",
@@ -7189,7 +8061,8 @@
           "comment_line": 6,
           "lines": 3
         }
-      ]
+      ],
+      "sourceSha256": "6ac464270016827755bc2fdd6d72a511c11676eee0267de7c635aa3b537b55f8"
     },
     "Sources/Methods/SynthOOP_TCPConnection_closed.4dm": {
       "member_id": "TCPConnection.closed",
@@ -7208,7 +8081,8 @@
           "comment_line": 6,
           "lines": 3
         }
-      ]
+      ],
+      "sourceSha256": "6f0ce90ab1362d26d4ea7cf2363f58142ea2db54f0c7735c1cd9fccacdf514ed"
     },
     "Sources/Methods/SynthOOP_TCPConnection_errors.4dm": {
       "member_id": "TCPConnection.errors",
@@ -7227,7 +8101,8 @@
           "comment_line": 6,
           "lines": 3
         }
-      ]
+      ],
+      "sourceSha256": "72f511d6619d86985f6b8a04df8fea442f93196b38235605f5a76dc96e89936c"
     },
     "Sources/Methods/SynthOOP_TCPConnection_listener.4dm": {
       "member_id": "TCPConnection.listener",
@@ -7240,7 +8115,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "6da69b4d7ef6b4825077dce286878f7adcdcc22227d617e97691c82707446ae5"
     },
     "Sources/Methods/SynthOOP_TCPConnection_noDelay.4dm": {
       "member_id": "TCPConnection.noDelay",
@@ -7253,7 +8129,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "e149db983815c59c37930c96c34081166200c8894b9064344b43bf56fef580ae"
     },
     "Sources/Methods/SynthOOP_TCPConnection_port.4dm": {
       "member_id": "TCPConnection.port",
@@ -7266,7 +8143,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "7963ce2278297d8fe53a8a4c8147090254fbbcf956fccbfe5f4a25066faffe55"
     },
     "Sources/Methods/SynthOOP_TCPConnection_send.4dm": {
       "member_id": "TCPConnection.send",
@@ -7279,7 +8157,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "1a9a95740657b7cee97ef12f6c4ea7d895afeca376317e2860db78a856501482"
     },
     "Sources/Methods/SynthOOP_TCPConnection_shutdown.4dm": {
       "member_id": "TCPConnection.shutdown",
@@ -7292,7 +8171,8 @@
           "comment_line": 1,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "cf908de1514fa92e3fa813c765c5b47f29d88ab0484234b7c3636acb026d82a5"
     },
     "Sources/Methods/SynthOOP_TCPConnection_wait.4dm": {
       "member_id": "TCPConnection.wait",
@@ -7311,7 +8191,8 @@
           "comment_line": 5,
           "lines": 3
         }
-      ]
+      ],
+      "sourceSha256": "729f941e2f54d6bf9228dec4591de61980b8c0d76fa56854c4f0f52a1df88afc"
     },
     "Sources/Methods/SynthOOP_TCPEvent_address.4dm": {
       "member_id": "TCPEvent.address",
@@ -7330,7 +8211,8 @@
           "comment_line": 7,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "0963d9382c4f38375b3b0ab616c2526f905e6b3e7e8644e1a83fdff88afc954c"
     },
     "Sources/Methods/SynthOOP_TCPEvent_data.4dm": {
       "member_id": "TCPEvent.data",
@@ -7349,7 +8231,8 @@
           "comment_line": 7,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "ebef3beaa175470b0d410efe968303ccb091f6caa96124a0a95c481d63f05768"
     },
     "Sources/Methods/SynthOOP_TCPEvent_port.4dm": {
       "member_id": "TCPEvent.port",
@@ -7368,7 +8251,8 @@
           "comment_line": 7,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "c5c2027b844ef118ee9d17f97568359f2d7df3dbced01a8c0e879158d4c578aa"
     },
     "Sources/Methods/SynthOOP_TCPEvent_type.4dm": {
       "member_id": "TCPEvent.type",
@@ -7387,7 +8271,8 @@
           "comment_line": 7,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "f87647f777628a41ab1463bfecd93aee6e1c45bccc27be13bb793f83c38ceb08"
     },
     "Sources/Methods/SynthOOP_TCPListener_errors.4dm": {
       "member_id": "TCPListener.errors",
@@ -7406,7 +8291,8 @@
           "comment_line": 6,
           "lines": 3
         }
-      ]
+      ],
+      "sourceSha256": "849a5e2bf7f6ac5e52384e7eee30d11c3d7ed4443af4e83f0747b16dfea759a7"
     },
     "Sources/Methods/SynthOOP_TCPListener_port.4dm": {
       "member_id": "TCPListener.port",
@@ -7419,7 +8305,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "fc0b96d58ec1b8c98adb46e79c420fe1505fd473a9e0bbdf0c72d50d4a199f63"
     },
     "Sources/Methods/SynthOOP_TCPListener_terminate.4dm": {
       "member_id": "TCPListener.terminate",
@@ -7432,7 +8319,8 @@
           "comment_line": 1,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "4c614a3ab036ad1e7bfad14170f359f1f3f602627d786f2df514a8869e67cfb2"
     },
     "Sources/Methods/SynthOOP_Transporter_accep_0d84.4dm": {
       "member_id": "Transporter.acceptUnsecureConnection",
@@ -7451,7 +8339,8 @@
           "comment_line": 7,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "f39a35eca815b80a2693d15c143d01d2e07cdbac7ed5e4dc99600d96ac8c8dbd"
     },
     "Sources/Methods/SynthOOP_Transporter_authe_9aba.4dm": {
       "member_id": "Transporter.authenticationMode",
@@ -7470,7 +8359,8 @@
           "comment_line": 7,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "7064f6abc494c0752afeee75e6572d495cca6dbe83f91d2352133a42c2d4ce82"
     },
     "Sources/Methods/SynthOOP_Transporter_bodyC_7421.4dm": {
       "member_id": "Transporter.bodyCharset",
@@ -7489,7 +8379,8 @@
           "comment_line": 7,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "8f1246b09b13ce439115b5749f3e47b764c5e4b13cf3216526dbf3dda2edcea0"
     },
     "Sources/Methods/SynthOOP_Transporter_check_7184.4dm": {
       "member_id": "Transporter.checkConnection",
@@ -7502,7 +8393,8 @@
           "comment_line": 1,
           "lines": 6
         }
-      ]
+      ],
+      "sourceSha256": "28690fd87599bc88b5b2d0ab56b21321333aedc609e4c583c0b7c8bcfc910969"
     },
     "Sources/Methods/SynthOOP_Transporter_conne_d5fc.4dm": {
       "member_id": "Transporter.connectionTimeOut",
@@ -7521,7 +8413,8 @@
           "comment_line": 7,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "f66baea9d5f36b17c6b89fc8af9635c68015d951c845ec86127ab615ae8a3416"
     },
     "Sources/Methods/SynthOOP_Transporter_heade_d604.4dm": {
       "member_id": "Transporter.headerCharset",
@@ -7540,7 +8433,8 @@
           "comment_line": 7,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "a8edfbf4f3ff957cbf6a5b2a7fed80428dafb46a634bbe90c6616734c22c78ff"
     },
     "Sources/Methods/SynthOOP_Transporter_host.4dm": {
       "member_id": "Transporter.host",
@@ -7559,7 +8453,8 @@
           "comment_line": 7,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "857ad39d280e45a3ff45469684526b4efafc6e8cac20670447d565c0a3f2777a"
     },
     "Sources/Methods/SynthOOP_Transporter_logFile.4dm": {
       "member_id": "Transporter.logFile",
@@ -7578,7 +8473,8 @@
           "comment_line": 7,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "0b329a9b5c658df73eadf7410fd27a128a970c39a851e538cffa88bf0f099fcf"
     },
     "Sources/Methods/SynthOOP_Transporter_port.4dm": {
       "member_id": "Transporter.port",
@@ -7597,7 +8493,8 @@
           "comment_line": 7,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "05a6d0672098cdedaf49451f0de2e3c033a57e1db78b4b9ee10c3d68ef78910a"
     },
     "Sources/Methods/SynthOOP_Transporter_sendT_4bbb.4dm": {
       "member_id": "Transporter.sendTimeOut",
@@ -7616,7 +8513,8 @@
           "comment_line": 7,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "7a9ed2ee80de680e823682b8d555091fa36f93f7a0e717dc8b5c9b66c82f46d8"
     },
     "Sources/Methods/SynthOOP_Transporter_user.4dm": {
       "member_id": "Transporter.user",
@@ -7635,7 +8533,8 @@
           "comment_line": 7,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "8ab18402c825c9622fead9616460959e27946ba5a31a83601ec8cfbbb11d9f8d"
     },
     "Sources/Methods/SynthOOP_UDPEvent_address.4dm": {
       "member_id": "UDPEvent.address",
@@ -7654,7 +8553,8 @@
           "comment_line": 7,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "2c8fa05cb9608d83a1d35fe1447cf2702bc35f95f08d3501efacd9e999a4e71d"
     },
     "Sources/Methods/SynthOOP_UDPEvent_data.4dm": {
       "member_id": "UDPEvent.data",
@@ -7673,7 +8573,8 @@
           "comment_line": 7,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "c7719d83855bb266b22076d5610d14802ed6a0b727ffb07ee35d128f13424f77"
     },
     "Sources/Methods/SynthOOP_UDPEvent_port.4dm": {
       "member_id": "UDPEvent.port",
@@ -7692,7 +8593,8 @@
           "comment_line": 7,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "b859d37e581bc1edc1001cb38d8ef786031ea1e72e30c4025b7418c8fcd6f8c3"
     },
     "Sources/Methods/SynthOOP_UDPEvent_type.4dm": {
       "member_id": "UDPEvent.type",
@@ -7711,7 +8613,8 @@
           "comment_line": 7,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "3dc6e5f61df5d23358f00aaceddead9d191698f29b4444296ec2cf493476f6f1"
     },
     "Sources/Methods/SynthOOP_UDPSocket_errors.4dm": {
       "member_id": "UDPSocket.errors",
@@ -7730,7 +8633,8 @@
           "comment_line": 6,
           "lines": 3
         }
-      ]
+      ],
+      "sourceSha256": "6cde853382d3fe8ffc61912993e5fbf740efa0c5768f2e79d94758551ad007a2"
     },
     "Sources/Methods/SynthOOP_UDPSocket_port.4dm": {
       "member_id": "UDPSocket.port",
@@ -7743,7 +8647,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "de751ab7819f314ec5b580180f65439368efce0e011dc498a320340f522a32de"
     },
     "Sources/Methods/SynthOOP_UDPSocket_send.4dm": {
       "member_id": "UDPSocket.send",
@@ -7756,7 +8661,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "cf3cba54676f836a1e5a7e27ddca4be92a88bb4fd6226541f3431362b982ba3c"
     },
     "Sources/Methods/SynthOOP_Vector_cosineSimi_7a17.4dm": {
       "member_id": "Vector.cosineSimilarity",
@@ -7769,7 +8675,8 @@
           "comment_line": 1,
           "lines": 7
         }
-      ]
+      ],
+      "sourceSha256": "47fb3a2d4243d4bf319ba3e492ff7af665940aecdab1480420010c130e1c8aac"
     },
     "Sources/Methods/SynthOOP_Vector_dotSimilarity.4dm": {
       "member_id": "Vector.dotSimilarity",
@@ -7782,7 +8689,8 @@
           "comment_line": 1,
           "lines": 7
         }
-      ]
+      ],
+      "sourceSha256": "8a5a99355fb8481e65935b9cc85b8337dbd6ec1ef4fe4971785de6a39e3bf244"
     },
     "Sources/Methods/SynthOOP_Vector_euclideanD_3d4b.4dm": {
       "member_id": "Vector.euclideanDistance",
@@ -7795,7 +8703,8 @@
           "comment_line": 1,
           "lines": 7
         }
-      ]
+      ],
+      "sourceSha256": "e4021a65c7593f12f0d00222b180414b8e37cff81953079658b19903a6919587"
     },
     "Sources/Methods/SynthOOP_Vector_length.4dm": {
       "member_id": "Vector.length",
@@ -7807,14 +8716,23 @@
           "variant": "read",
           "comment_line": 1,
           "lines": 5
-        },
+        }
+      ],
+      "sourceSha256": "7a01f1fbcd31664cbd205cfc82e88a9832c8e22ff23d53ec777884508d22f731"
+    },
+    "Sources/Methods/SynthOOP_Vector_precision.4dm": {
+      "member_id": "Vector.precision",
+      "kind": "oop_property",
+      "class_id": "Vector",
+      "blocks": [
         {
           "overload_index": 0,
-          "variant": "write",
-          "comment_line": 6,
-          "lines": 3
+          "variant": "read",
+          "comment_line": 1,
+          "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "1dd4d997a76670a8cecca1bd8b7083381c487f41fffb69c17bf5bb72562706a3"
     },
     "Sources/Methods/SynthOOP_Vector_toCollection.4dm": {
       "member_id": "Vector.toCollection",
@@ -7827,7 +8745,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "6f973aa831350370ea47d68292a3939b8eb7f2def4efbeb2c2654d7d669f98d3"
     },
     "Sources/Methods/SynthOOP_WebForm_componentName.4dm": {
       "member_id": "WebForm.componentName",
@@ -7840,7 +8759,8 @@
           "comment_line": 1,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "14663a2f9d9547885780f478302ea82c1a2f5c5bee6b40c5d7f5a67e3b617f77"
     },
     "Sources/Methods/SynthOOP_WebForm_disableState.4dm": {
       "member_id": "WebForm.disableState",
@@ -7853,7 +8773,8 @@
           "comment_line": 1,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "e5d2076ba3dcc98559d88554c4ac6ecfe42e98f39a1a4c6e0307bcbf1e602dcd"
     },
     "Sources/Methods/SynthOOP_WebForm_enableState.4dm": {
       "member_id": "WebForm.enableState",
@@ -7866,7 +8787,8 @@
           "comment_line": 1,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "99367b7cccfa5a6a40f8b083a5e26d50e577fbe9a867efd49bc55d66ca115938"
     },
     "Sources/Methods/SynthOOP_WebForm_setError.4dm": {
       "member_id": "WebForm.setError",
@@ -7879,7 +8801,8 @@
           "comment_line": 1,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "be4672bab63ffa0ce191c727711e3a73eefd71531815f6d525bfe55688a134a8"
     },
     "Sources/Methods/SynthOOP_WebForm_setMessage.4dm": {
       "member_id": "WebForm.setMessage",
@@ -7892,7 +8815,8 @@
           "comment_line": 1,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "b687853617a3eb3bf435c7c53c9a2cd81fb3921bc256553c6a0513e144904837"
     },
     "Sources/Methods/SynthOOP_WebForm_setWarning.4dm": {
       "member_id": "WebForm.setWarning",
@@ -7905,7 +8829,8 @@
           "comment_line": 1,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "a4f73d8d92eb58df3e1e1f24f28da2057800aa02a85d7683cd2310cc98f3ee6a"
     },
     "Sources/Methods/SynthOOP_WebFormItem_addCS_2c30.4dm": {
       "member_id": "WebFormItem.addCSSClass",
@@ -7918,7 +8843,8 @@
           "comment_line": 1,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "82d89a8c53cd8c6d33f26a142504659af5a2ff98486aa432e1370add7d93205e"
     },
     "Sources/Methods/SynthOOP_WebFormItem_hide.4dm": {
       "member_id": "WebFormItem.hide",
@@ -7931,7 +8857,8 @@
           "comment_line": 1,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "9e5dcaac3ae9eda6d32b35335bc145481f2c9777fc1dbdab9702511026d5bb2d"
     },
     "Sources/Methods/SynthOOP_WebFormItem_remov_3ce8.4dm": {
       "member_id": "WebFormItem.removeCSSClass",
@@ -7944,7 +8871,8 @@
           "comment_line": 1,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "72850d2904ecf51968ec7febf4e4c4063cfd62de6c8b0545843b9d9f2c66fb6a"
     },
     "Sources/Methods/SynthOOP_WebFormItem_show.4dm": {
       "member_id": "WebFormItem.show",
@@ -7957,7 +8885,8 @@
           "comment_line": 1,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "100a2dc3917425119ca6911af4e9a0ae578e100c2f4796b1804a033765eff531"
     },
     "Sources/Methods/SynthOOP_WebServer_CORSEnabled.4dm": {
       "member_id": "WebServer.CORSEnabled",
@@ -7976,7 +8905,8 @@
           "comment_line": 6,
           "lines": 3
         }
-      ]
+      ],
+      "sourceSha256": "1e460a64582d30a16ec5f8afce5342fbb69cfdc5b56316bf89bb53ad4b86c234"
     },
     "Sources/Methods/SynthOOP_WebServer_CORSSettings.4dm": {
       "member_id": "WebServer.CORSSettings",
@@ -7995,7 +8925,8 @@
           "comment_line": 6,
           "lines": 3
         }
-      ]
+      ],
+      "sourceSha256": "cdb7ed3f408fc66452f0eb541008bb0acfa1206c0161b3f39235e94a2d564dcd"
     },
     "Sources/Methods/SynthOOP_WebServer_HSTSEnabled.4dm": {
       "member_id": "WebServer.HSTSEnabled",
@@ -8014,7 +8945,8 @@
           "comment_line": 6,
           "lines": 3
         }
-      ]
+      ],
+      "sourceSha256": "0f12ff37c4a456ae47453158f523801326e96fc2404e42d82654db15b04e9ce6"
     },
     "Sources/Methods/SynthOOP_WebServer_HSTSMaxAge.4dm": {
       "member_id": "WebServer.HSTSMaxAge",
@@ -8033,7 +8965,8 @@
           "comment_line": 6,
           "lines": 3
         }
-      ]
+      ],
+      "sourceSha256": "da9b1133aa53c61ecdf9873bd71008b0fc6e5bfb9954edd99da03ac22ec00562"
     },
     "Sources/Methods/SynthOOP_WebServer_HTTPCom_aadc.4dm": {
       "member_id": "WebServer.HTTPCompressionLevel",
@@ -8052,7 +8985,8 @@
           "comment_line": 6,
           "lines": 3
         }
-      ]
+      ],
+      "sourceSha256": "95afd4d25302437951f52f2d0f05bb0b24ee04c994caab78e9bf004b91b4dd6f"
     },
     "Sources/Methods/SynthOOP_WebServer_HTTPCom_b58c.4dm": {
       "member_id": "WebServer.HTTPCompressionThreshold",
@@ -8071,7 +9005,8 @@
           "comment_line": 6,
           "lines": 3
         }
-      ]
+      ],
+      "sourceSha256": "75a3152cc6e0c40ea3bc5dff45acf3dbee8cefdf31793058891eeaa1243c13d0"
     },
     "Sources/Methods/SynthOOP_WebServer_HTTPEnabled.4dm": {
       "member_id": "WebServer.HTTPEnabled",
@@ -8090,7 +9025,8 @@
           "comment_line": 6,
           "lines": 3
         }
-      ]
+      ],
+      "sourceSha256": "35a62c0fe5c3feefc1ec1dcfc87febef75d7c73362d6b6efd73b61f5cfa0d50e"
     },
     "Sources/Methods/SynthOOP_WebServer_HTTPPort.4dm": {
       "member_id": "WebServer.HTTPPort",
@@ -8109,7 +9045,8 @@
           "comment_line": 6,
           "lines": 3
         }
-      ]
+      ],
+      "sourceSha256": "66d83318ce313425c53ea2ebdaaa800a0008a61a678720ad14e5b74cd8294c4f"
     },
     "Sources/Methods/SynthOOP_WebServer_HTTPSEnabled.4dm": {
       "member_id": "WebServer.HTTPSEnabled",
@@ -8128,7 +9065,8 @@
           "comment_line": 6,
           "lines": 3
         }
-      ]
+      ],
+      "sourceSha256": "1556eaeb081a3a307c27f493c633510c7916b8c3b029356535d48d329b87f8c1"
     },
     "Sources/Methods/SynthOOP_WebServer_HTTPSPort.4dm": {
       "member_id": "WebServer.HTTPSPort",
@@ -8147,7 +9085,8 @@
           "comment_line": 6,
           "lines": 3
         }
-      ]
+      ],
+      "sourceSha256": "95890b8deb73c0b1317e32f2de90c93924c42fbdbc22d0dad7e8d7bfa25c46b9"
     },
     "Sources/Methods/SynthOOP_WebServer_HTTPTrace.4dm": {
       "member_id": "WebServer.HTTPTrace",
@@ -8166,7 +9105,8 @@
           "comment_line": 6,
           "lines": 3
         }
-      ]
+      ],
+      "sourceSha256": "2ff83543164e46e6aeaafd76852cb7fe541c064d9c7330fe27c1c1f8321cd96c"
     },
     "Sources/Methods/SynthOOP_WebServer_IPAddre_e48f.4dm": {
       "member_id": "WebServer.IPAddressToListen",
@@ -8185,7 +9125,8 @@
           "comment_line": 6,
           "lines": 3
         }
-      ]
+      ],
+      "sourceSha256": "b553f6002644648e765a7f2b068ef283154d1a55a05963583ec39613a9830656"
     },
     "Sources/Methods/SynthOOP_WebServer_accessK_5141.4dm": {
       "member_id": "WebServer.accessKeyDefined",
@@ -8204,7 +9145,8 @@
           "comment_line": 6,
           "lines": 3
         }
-      ]
+      ],
+      "sourceSha256": "38fcf31d377f4fdcbdecba12f746c0de932ab34c4dbdcc1369010ea949e25b51"
     },
     "Sources/Methods/SynthOOP_WebServer_certifi_b4b1.4dm": {
       "member_id": "WebServer.certificateFolder",
@@ -8223,7 +9165,8 @@
           "comment_line": 6,
           "lines": 3
         }
-      ]
+      ],
+      "sourceSha256": "57bb04f6398f1f1c411d24fe64039c5c551f29210105e6ddb3004232fdd4bf23"
     },
     "Sources/Methods/SynthOOP_WebServer_characterSet.4dm": {
       "member_id": "WebServer.characterSet",
@@ -8254,7 +9197,8 @@
           "comment_line": 13,
           "lines": 3
         }
-      ]
+      ],
+      "sourceSha256": "371eca80ee1fdba611632daa85e5244ada1c8597b0916eec484f167dc2f26f0f"
     },
     "Sources/Methods/SynthOOP_WebServer_cipherSuite.4dm": {
       "member_id": "WebServer.cipherSuite",
@@ -8273,7 +9217,8 @@
           "comment_line": 6,
           "lines": 3
         }
-      ]
+      ],
+      "sourceSha256": "279f160d373dce6a7bc35d230b2e73de494ad30ed0f9a99acd8f470c1d4f7efe"
     },
     "Sources/Methods/SynthOOP_WebServer_debugLog.4dm": {
       "member_id": "WebServer.debugLog",
@@ -8292,7 +9237,8 @@
           "comment_line": 6,
           "lines": 3
         }
-      ]
+      ],
+      "sourceSha256": "4589685b2a45bebaae2b4489008026acc8a89ea3adc2f247c47f80104bf46095"
     },
     "Sources/Methods/SynthOOP_WebServer_default_f88f.4dm": {
       "member_id": "WebServer.defaultHomepage",
@@ -8311,7 +9257,8 @@
           "comment_line": 6,
           "lines": 3
         }
-      ]
+      ],
+      "sourceSha256": "763fe2463ebb16d2e32a1693f954e603a6ea1f6d163b55f025c6266ae79fe276"
     },
     "Sources/Methods/SynthOOP_WebServer_handlers.4dm": {
       "member_id": "WebServer.handlers",
@@ -8324,7 +9271,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "2dfb7487ed111dda7e7df8b0192a02a2e6456c418290b1590270737989ce5f7d"
     },
     "Sources/Methods/SynthOOP_WebServer_inactiv_766d.4dm": {
       "member_id": "WebServer.inactiveProcessTimeout",
@@ -8343,7 +9291,8 @@
           "comment_line": 6,
           "lines": 3
         }
-      ]
+      ],
+      "sourceSha256": "8c5afe8675649a03060071df7d1d4636e6b6dc276152062800cf19b0de663649"
     },
     "Sources/Methods/SynthOOP_WebServer_inactiv_2d2a.4dm": {
       "member_id": "WebServer.inactiveSessionTimeout",
@@ -8362,7 +9311,8 @@
           "comment_line": 6,
           "lines": 3
         }
-      ]
+      ],
+      "sourceSha256": "052e4cb22f44ced2f53e2b14f06fa076c81f41de306ef0429cb35018025fdacb"
     },
     "Sources/Methods/SynthOOP_WebServer_isRunning.4dm": {
       "member_id": "WebServer.isRunning",
@@ -8375,7 +9325,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "d9388cdb3996783362dbbf4508a9e4659883fbb4c3cf2248fae23fc0ec3ca653"
     },
     "Sources/Methods/SynthOOP_WebServer_keepSession.4dm": {
       "member_id": "WebServer.keepSession",
@@ -8394,7 +9345,8 @@
           "comment_line": 6,
           "lines": 3
         }
-      ]
+      ],
+      "sourceSha256": "7b19dec58a4e6b1058b1322afb12163e4db5e43d93ca61e6ee5e09a8ab53cfd1"
     },
     "Sources/Methods/SynthOOP_WebServer_logRecording.4dm": {
       "member_id": "WebServer.logRecording",
@@ -8413,7 +9365,8 @@
           "comment_line": 6,
           "lines": 3
         }
-      ]
+      ],
+      "sourceSha256": "75d661f3cbccdce7af6868006b170843c4fecdbff6b11e77767fb307b3ac419a"
     },
     "Sources/Methods/SynthOOP_WebServer_maxConc_fe89.4dm": {
       "member_id": "WebServer.maxConcurrentProcesses",
@@ -8432,7 +9385,8 @@
           "comment_line": 6,
           "lines": 3
         }
-      ]
+      ],
+      "sourceSha256": "34b6bef855dc77a6cc28fa2508cf0dc830cd020d9eb49f70d6dfb6ccb551de60"
     },
     "Sources/Methods/SynthOOP_WebServer_maxRequ_5e4b.4dm": {
       "member_id": "WebServer.maxRequestSize",
@@ -8451,7 +9405,8 @@
           "comment_line": 6,
           "lines": 3
         }
-      ]
+      ],
+      "sourceSha256": "83f50a3e6fae55700ddca3e14620a96bfb8e18b56ea8ef2e9d0033625b79ba4c"
     },
     "Sources/Methods/SynthOOP_WebServer_maxSessions.4dm": {
       "member_id": "WebServer.maxSessions",
@@ -8470,7 +9425,8 @@
           "comment_line": 6,
           "lines": 3
         }
-      ]
+      ],
+      "sourceSha256": "c63aed4ad792ee20d560ee2069a9ad25ba9d74520467859ba690a94fe1c1f84e"
     },
     "Sources/Methods/SynthOOP_WebServer_minTLSV_cc0d.4dm": {
       "member_id": "WebServer.minTLSVersion",
@@ -8489,7 +9445,8 @@
           "comment_line": 6,
           "lines": 3
         }
-      ]
+      ],
+      "sourceSha256": "2cc474dc528ff1c347b7a27950fda08f68911ce4e85b5449ae6c24b73234abd3"
     },
     "Sources/Methods/SynthOOP_WebServer_name.4dm": {
       "member_id": "WebServer.name",
@@ -8502,7 +9459,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "9544918d5f2c839e7f637f7047a7e2cb208a6661fe0f7dbd1fe7b3b816c9d8c4"
     },
     "Sources/Methods/SynthOOP_WebServer_openSSL_7097.4dm": {
       "member_id": "WebServer.openSSLVersion",
@@ -8515,7 +9473,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "cad692e79d19883e6bf7e52f849a81bb78dcead7e5dc8dc4497e29ffb574f3fe"
     },
     "Sources/Methods/SynthOOP_WebServer_perfect_9946.4dm": {
       "member_id": "WebServer.perfectForwardSecrecy",
@@ -8528,7 +9487,22 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "5284ee9d8f5184cf5fb2d6deedcb9e8c2d826a0917b4559273f72234f53d05e7"
+    },
+    "Sources/Methods/SynthOOP_WebServer_quotas.4dm": {
+      "member_id": "WebServer.quotas",
+      "kind": "oop_property",
+      "class_id": "WebServer",
+      "blocks": [
+        {
+          "overload_index": 0,
+          "variant": "read",
+          "comment_line": 1,
+          "lines": 5
+        }
+      ],
+      "sourceSha256": "79134311769a284a4c674c8aca001c68ca3e9d7e6587c88b7d20a543ff56f1de"
     },
     "Sources/Methods/SynthOOP_WebServer_rootFolder.4dm": {
       "member_id": "WebServer.rootFolder",
@@ -8547,7 +9521,8 @@
           "comment_line": 6,
           "lines": 3
         }
-      ]
+      ],
+      "sourceSha256": "1a7370fed1ccc1419d0f58c456a2eff8929a92952ea716c2a963d18675c5f7cc"
     },
     "Sources/Methods/SynthOOP_WebServer_rules.4dm": {
       "member_id": "WebServer.rules",
@@ -8560,7 +9535,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "790fd27dd82c1cb919ed5b50a5e245ce60cbf0f442bea2f55fc582baadc3bbab"
     },
     "Sources/Methods/SynthOOP_WebServer_scalabl_07aa.4dm": {
       "member_id": "WebServer.scalableSession",
@@ -8579,7 +9555,8 @@
           "comment_line": 6,
           "lines": 3
         }
-      ]
+      ],
+      "sourceSha256": "aa721f8eeb6d85832d4cb3d6c6962b651e4bc2ae94a6c203762a700ffaff1de1"
     },
     "Sources/Methods/SynthOOP_WebServer_session_11e2.4dm": {
       "member_id": "WebServer.sessionCookieDomain",
@@ -8598,7 +9575,8 @@
           "comment_line": 6,
           "lines": 3
         }
-      ]
+      ],
+      "sourceSha256": "98f68ac67f5012164d644e7e1172d67214a6a91ae06f1da6bd01264a89b0402c"
     },
     "Sources/Methods/SynthOOP_WebServer_session_1441.4dm": {
       "member_id": "WebServer.sessionCookieName",
@@ -8611,7 +9589,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "19aa70c541a9d86cf98b363055377651065b95909f17f68d6426ce78be92e553"
     },
     "Sources/Methods/SynthOOP_WebServer_session_ea80.4dm": {
       "member_id": "WebServer.sessionCookiePath",
@@ -8630,7 +9609,8 @@
           "comment_line": 6,
           "lines": 3
         }
-      ]
+      ],
+      "sourceSha256": "90da6b3253e9bb0e2df4bfdca1ee3f9b7ea0e36481c82403ce550dc31b77fd5c"
     },
     "Sources/Methods/SynthOOP_WebServer_session_e701.4dm": {
       "member_id": "WebServer.sessionCookieSameSite",
@@ -8649,7 +9629,8 @@
           "comment_line": 6,
           "lines": 3
         }
-      ]
+      ],
+      "sourceSha256": "0128f0f109548f534d3d8d03cd887f6766a8699d06828dd38a8a0e664f49f0d7"
     },
     "Sources/Methods/SynthOOP_WebServer_session_e162.4dm": {
       "member_id": "WebServer.sessionIPAddressValidation",
@@ -8668,7 +9649,8 @@
           "comment_line": 6,
           "lines": 3
         }
-      ]
+      ],
+      "sourceSha256": "c940a397e6c96cb00ad2138ad9586703c1e5f4993b13bd1e65127b80c83694d3"
     },
     "Sources/Methods/SynthOOP_WebServer_start.4dm": {
       "member_id": "WebServer.start",
@@ -8687,7 +9669,8 @@
           "comment_line": 6,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "c3f53ca7b7c2084a8826a5b7afce25fa61d946c8ef23ea8bf09b2541834964da"
     },
     "Sources/Methods/SynthOOP_WebServer_stop.4dm": {
       "member_id": "WebServer.stop",
@@ -8700,7 +9683,8 @@
           "comment_line": 1,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "30aa09515f5e2bb646492e56f0b4dfcbcafcd6664fed260a7ad5fa9fe3a9bf2a"
     },
     "Sources/Methods/SynthOOP_WebSocket_dataType.4dm": {
       "member_id": "WebSocket.dataType",
@@ -8713,7 +9697,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "04a004d7e0f63ab5db77570d4087aec7349ef48f5d9629053fc77844b12960d0"
     },
     "Sources/Methods/SynthOOP_WebSocket_handler.4dm": {
       "member_id": "WebSocket.handler",
@@ -8726,7 +9711,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "e64b74189b17e9b65380bcacc264ffe3b8cb31f64467e1a1b37035123b60a122"
     },
     "Sources/Methods/SynthOOP_WebSocket_id.4dm": {
       "member_id": "WebSocket.id",
@@ -8739,7 +9725,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "28665ef0284c0da6515f42e06e99b850109e1dd2c4e29a2cdc366f57d2263cf4"
     },
     "Sources/Methods/SynthOOP_WebSocket_send.4dm": {
       "member_id": "WebSocket.send",
@@ -8764,7 +9751,8 @@
           "comment_line": 9,
           "lines": 3
         }
-      ]
+      ],
+      "sourceSha256": "e639f41e2af3eef50ac24d7345f3dd53367b8a4b1d1b80c983147cf768b7a55f"
     },
     "Sources/Methods/SynthOOP_WebSocket_status.4dm": {
       "member_id": "WebSocket.status",
@@ -8777,7 +9765,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "f1aef9b0de4cb47740fd09bdaf766d0601d90c31a3150ed61636c7047b3d89dc"
     },
     "Sources/Methods/SynthOOP_WebSocket_terminate.4dm": {
       "member_id": "WebSocket.terminate",
@@ -8802,7 +9791,8 @@
           "comment_line": 8,
           "lines": 3
         }
-      ]
+      ],
+      "sourceSha256": "7c471343763179494838d820a3ba9a39514cc067cca5e200a2cf774ed3dab17d"
     },
     "Sources/Methods/SynthOOP_WebSocket_url.4dm": {
       "member_id": "WebSocket.url",
@@ -8815,7 +9805,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "2a288a697518ec94150e0a8e5d6b145360871beee8be40da31a8f30b3ad212c4"
     },
     "Sources/Methods/SynthOOP_WebSocketConnecti_91d8.4dm": {
       "member_id": "WebSocketConnection.handler",
@@ -8834,7 +9825,8 @@
           "comment_line": 7,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "85242a2b0469de55e91e23bc87152b2f5c2155a4ad4a38682fe86603ab01a836"
     },
     "Sources/Methods/SynthOOP_WebSocketConnection_id.4dm": {
       "member_id": "WebSocketConnection.id",
@@ -8847,7 +9839,8 @@
           "comment_line": 1,
           "lines": 6
         }
-      ]
+      ],
+      "sourceSha256": "892faa2cd24cc5ab5fa244fb68a7c2ddfcb948056ce97c95ecde6d397581038a"
     },
     "Sources/Methods/SynthOOP_WebSocketConnecti_388a.4dm": {
       "member_id": "WebSocketConnection.send",
@@ -8872,7 +9865,8 @@
           "comment_line": 11,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "5f6bc9d3c9c26554d19665ff1b5d2f1a4ad04b0b7138271a8f5e99245ba499fd"
     },
     "Sources/Methods/SynthOOP_WebSocketConnecti_2dc5.4dm": {
       "member_id": "WebSocketConnection.status",
@@ -8885,7 +9879,8 @@
           "comment_line": 1,
           "lines": 6
         }
-      ]
+      ],
+      "sourceSha256": "1d4a7e24c51848ea6393a2107e16ff741ee01c5cc8313e7cdec946605edb0fc8"
     },
     "Sources/Methods/SynthOOP_WebSocketConnecti_271b.4dm": {
       "member_id": "WebSocketConnection.terminate",
@@ -8904,7 +9899,8 @@
           "comment_line": 6,
           "lines": 4
         }
-      ]
+      ],
+      "sourceSha256": "71a543e94bdc4ea1cc5736c462621e856b2a9814fcc36de511ac813c9e9cb769"
     },
     "Sources/Methods/SynthOOP_WebSocketConnecti_a221.4dm": {
       "member_id": "WebSocketConnection.wss",
@@ -8917,7 +9913,8 @@
           "comment_line": 1,
           "lines": 6
         }
-      ]
+      ],
+      "sourceSha256": "4147edc10d8c9f58393838712bb5bcc712ccd3ea1a80178a526330ea18614e36"
     },
     "Sources/Methods/SynthOOP_WebSocketServer_c_6667.4dm": {
       "member_id": "WebSocketServer.connections",
@@ -8936,7 +9933,8 @@
           "comment_line": 6,
           "lines": 3
         }
-      ]
+      ],
+      "sourceSha256": "81d1ac7953288f591a9af08864ec48169943bec60a894eafb9d6f4cb753e6364"
     },
     "Sources/Methods/SynthOOP_WebSocketServer_d_cd8a.4dm": {
       "member_id": "WebSocketServer.dataType",
@@ -8949,7 +9947,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "73ce408663369e16c2ad715d9e8b70d247d563314c70c676cb5ee3a0b2172607"
     },
     "Sources/Methods/SynthOOP_WebSocketServer_h_0684.4dm": {
       "member_id": "WebSocketServer.handler",
@@ -8968,7 +9967,8 @@
           "comment_line": 6,
           "lines": 3
         }
-      ]
+      ],
+      "sourceSha256": "51094b99469016caaf3a94760d2dc795c6f912a47990e701ab26705e95333044"
     },
     "Sources/Methods/SynthOOP_WebSocketServer_path.4dm": {
       "member_id": "WebSocketServer.path",
@@ -8981,7 +9981,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "9677b307650998ec08d316e2115e755b9b65250c69b59fff97f4b23b3115c225"
     },
     "Sources/Methods/SynthOOP_WebSocketServer_t_f011.4dm": {
       "member_id": "WebSocketServer.terminate",
@@ -9000,7 +10001,8 @@
           "comment_line": 5,
           "lines": 3
         }
-      ]
+      ],
+      "sourceSha256": "f353f1a8b32677763fff6e685549492bbc12442acf755cd99e5d3e11382c3e77"
     },
     "Sources/Methods/SynthOOP_WebSocketServer_t_339b.4dm": {
       "member_id": "WebSocketServer.terminated",
@@ -9013,7 +10015,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "12386ddc2cc7f7d27b45f45323c2d31115b3d85d2b971980fed42f8cfdf28dfc"
     },
     "Sources/Methods/SynthOOP_ZipArchive_root.4dm": {
       "member_id": "ZipArchive.root",
@@ -9026,7 +10029,8 @@
           "comment_line": 1,
           "lines": 5
         }
-      ]
+      ],
+      "sourceSha256": "fcd435afa0d4afa497a81350e13f3c79ede304dc258b032b61b75ab52e7f63a9"
     }
   },
   "target_ids": [
@@ -9124,6 +10128,7 @@
     "DataClass.get",
     "DataClass.getCount",
     "DataClass.getDataStore",
+    "DataClass.getIndexes",
     "DataClass.getInfo",
     "DataClass.getRemoteCache",
     "DataClass.new",
@@ -9385,6 +10390,28 @@
     "POP3Transporter.getMailInfo",
     "POP3Transporter.getMailInfoList",
     "POP3Transporter.undeleteAll",
+    "QuotaManagerClass.currentValues",
+    "QuotaManagerClass.defaultEntitySetTimeout",
+    "QuotaManagerClass.inBytesPerHour",
+    "QuotaManagerClass.inBytesPerHourPerSession",
+    "QuotaManagerClass.inBytesPerMin",
+    "QuotaManagerClass.inBytesPerMinPerSession",
+    "QuotaManagerClass.maxEntitySetTimeout",
+    "QuotaManagerClass.nbEntitySets",
+    "QuotaManagerClass.nbEntitySetsPerSession",
+    "QuotaManagerClass.nbGuestSessions",
+    "QuotaManagerClass.nbRequestsPerHour",
+    "QuotaManagerClass.nbRequestsPerHourPerSession",
+    "QuotaManagerClass.nbRequestsPerMin",
+    "QuotaManagerClass.nbRequestsPerMinPerSession",
+    "QuotaManagerClass.nbSessions",
+    "QuotaManagerClass.outBytesPerHour",
+    "QuotaManagerClass.outBytesPerHourPerSession",
+    "QuotaManagerClass.outBytesPerMin",
+    "QuotaManagerClass.outBytesPerMinPerSession",
+    "SMTPTransporter.certificate",
+    "SMTPTransporter.certificateName",
+    "SMTPTransporter.certificatePassword",
     "SMTPTransporter.keepAlive",
     "SMTPTransporter.send",
     "Session.clearPrivileges",
@@ -9398,6 +10425,7 @@
     "Session.info",
     "Session.isGuest",
     "Session.promote",
+    "Session.quotas",
     "Session.restore",
     "Session.setPrivileges",
     "Session.storage",
@@ -9460,6 +10488,7 @@
     "Vector.dotSimilarity",
     "Vector.euclideanDistance",
     "Vector.length",
+    "Vector.precision",
     "Vector.toCollection",
     "WebForm.componentName",
     "WebForm.disableState",
@@ -9502,6 +10531,7 @@
     "WebServer.name",
     "WebServer.openSSLVersion",
     "WebServer.perfectForwardSecrecy",
+    "WebServer.quotas",
     "WebServer.rootFolder",
     "WebServer.rules",
     "WebServer.scalableSession",
@@ -9533,5 +10563,28 @@
     "WebSocketServer.terminated",
     "ZipArchive.root"
   ],
-  "excluded": {}
+  "excluded": {},
+  "compilerVerification": {
+    "tool4dPath": "/Applications/4D 21 R5/tool4d.app/Contents/MacOS/tool4d",
+    "TOOL4D_PATH": "/Applications/4D 21 R5/tool4d.app/Contents/MacOS/tool4d",
+    "capturedAt": "2026-11-07T09:59:49.453248+00:00",
+    "assembledIRSha256": "57ef9d0319eed3d553b121774323a19210dc88c6e4158f4330453d881be90060",
+    "sourceManifestSha256": "6b48c802e509ad6704f785eeb922b8debc6e897752d930c25acc8958374e9d2e",
+    "docsVersionBadge": "21 R5 BETA",
+    "syntaxSource": {
+      "path": "references/syntaxEN-21-R5.json",
+      "sha1": "228abc950640678ab057896e0e5e28551ce6d761",
+      "sha256": "ee27d9689e834bd1990d60d289d8c4e86e39beb723fe88c55b719e9d1e8bc411",
+      "declaredDocsVersion": "21-R5",
+      "note": "syntaxEN.json carries no version marker. This explicit capture declaration is compared with the actual documentation version badge."
+    },
+    "lspVersion": "tool4d-lsp-stdio 0.3.0",
+    "tool4dBuild": "21 R5 build 21R5.100156",
+    "compilerSyntaxSha256": "ee27d9689e834bd1990d60d289d8c4e86e39beb723fe88c55b719e9d1e8bc411",
+    "synthManifestInputSha256": "0abbd3a4704ad4e2ef11ce21bfb60efc37c532ddb692ec270625867bf0cd9361",
+    "allTargetFilesPresent": true,
+    "projectResponseFiles": 530,
+    "targetedFiles": 528,
+    "reportSha256": "145090463832d0080b1ba098340ffd612704e77192c963e9c5f226b11996edf9"
+  }
 }

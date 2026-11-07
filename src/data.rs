@@ -13,6 +13,9 @@ pub static DOC_EXAMPLES_JSON: &str = include_str!("../data/vendor/oop_doc_exampl
 /// overload/variant blocks live at which line ranges inside it).
 pub static SYNTH_MANIFEST_JSON: &str = include_str!("../data/vendor/oop_synth_manifest.json");
 
+pub static SNAPSHOT_JSON: &str = include_str!("../data/vendor/r5_snapshot.json");
+pub static COMMIT_TEXT: &str = include_str!("../data/vendor/COMMIT");
+
 /// Hand-curated deterministic colloquial/synonym expansion table used by the
 /// tokenizer (see `index.rs`).
 pub static ALIASES_JSON: &str = include_str!("../data/aliases.json");
