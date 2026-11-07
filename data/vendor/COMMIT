@@ -3,5 +3,5 @@ source_ref=explicit-commit
 commit=1dfd4e7eb832d19361f8ec1f4801603899087ca3
 commit_date=2026-11-07T19:28:57+09:00
 commit_subject=Refresh both language corpora to 21 R5 BETA
-fetched_at=2026-11-07T10:36:14Z
+fetched_at=2026-11-07T10:41:09Z
 files_vendored=4d-oop-ir.json,oop_doc_examples.json,oop_synth_manifest.json,oop_corpus_stats.json,r5_snapshot.json,r5_conflict_inventory.json,methods/SynthOOP_*.4dm (528 files)

@@ -426,10 +426,18 @@ fn print_example_block(block: &ExampleBlock, pad: &str) {
 fn print_snapshot_text(snapshot: &serde_json::Value) {
     println!(
         "snapshot: {} {} ({}; source {})",
-        snapshot["version"].as_str().unwrap_or(""),
-        snapshot["status"].as_str().unwrap_or(""),
-        snapshot["compilerBuild"].as_str().unwrap_or(""),
-        snapshot["sourceCommit"].as_str().unwrap_or("")
+        snapshot["version"]
+            .as_str()
+            .expect("snapshot version missing"),
+        snapshot["status"]
+            .as_str()
+            .expect("snapshot status missing"),
+        snapshot["compilerBuild"]
+            .as_str()
+            .expect("snapshot compiler build missing"),
+        snapshot["sourceCommit"]
+            .as_str()
+            .expect("snapshot source commit missing")
     );
 }
 

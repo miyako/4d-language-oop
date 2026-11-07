@@ -10,7 +10,7 @@
 #                        embedded snapshot in this repo is reproducible.
 #   [source-repo-path]  Path to an existing local clone of
 #                        miyako/4d-static-docs. If omitted, a temporary
-#                        shallow clone from https://github.com/miyako/4d-static-docs.git
+#                        blob-filtered clone from https://github.com/miyako/4d-static-docs.git
 #                        is made and removed afterwards.
 #
 # What it does:
@@ -61,7 +61,7 @@ trap cleanup EXIT
 
 if [[ -z "$SRC_REPO" ]]; then
   CLEANUP_TMP="$WORK_DIR/source"
-  echo "Cloning $REMOTE_URL (shallow) into $CLEANUP_TMP ..." >&2
+  echo "Cloning $REMOTE_URL into $CLEANUP_TMP ..." >&2
   git clone --quiet --filter=blob:none "$REMOTE_URL" "$CLEANUP_TMP"
   SRC_REPO="$CLEANUP_TMP"
 fi
@@ -109,23 +109,23 @@ if old_n != new_n:
 PYEOF
 fi
 
-mkdir -p "$VENDOR_DIR/methods"
-mv "$NEW_IR_TMP" "$VENDOR_DIR/4d-oop-ir.json"
-git -C "$SRC_REPO" show "$COMMIT:out/oop_doc_examples.json"   > "$VENDOR_DIR/oop_doc_examples.json"
-git -C "$SRC_REPO" show "$COMMIT:out/oop_synth_manifest.json" > "$VENDOR_DIR/oop_synth_manifest.json"
-git -C "$SRC_REPO" show "$COMMIT:out/oop_corpus_stats.json"   > "$VENDOR_DIR/oop_corpus_stats.json"
+STAGED_VENDOR="$WORK_DIR/vendor"
+mkdir -p "$STAGED_VENDOR/methods"
+mv "$NEW_IR_TMP" "$STAGED_VENDOR/4d-oop-ir.json"
+git -C "$SRC_REPO" show "$COMMIT:out/oop_doc_examples.json"   > "$STAGED_VENDOR/oop_doc_examples.json"
+git -C "$SRC_REPO" show "$COMMIT:out/oop_synth_manifest.json" > "$STAGED_VENDOR/oop_synth_manifest.json"
+git -C "$SRC_REPO" show "$COMMIT:out/oop_corpus_stats.json"   > "$STAGED_VENDOR/oop_corpus_stats.json"
 for artifact in r5_snapshot.json r5_conflict_inventory.json; do
-  git -C "$SRC_REPO" show "$COMMIT:out/$artifact" > "$VENDOR_DIR/$artifact"
+  git -C "$SRC_REPO" show "$COMMIT:out/$artifact" > "$STAGED_VENDOR/$artifact"
 done
 
-rm -f "$VENDOR_DIR"/methods/SynthOOP_*.4dm
 ARCHIVE_TMP="$WORK_DIR/archive"
 mkdir "$ARCHIVE_TMP"
 git -C "$SRC_REPO" archive "$COMMIT" -- oopcheck/Project/Sources/Methods | tar -x -C "$ARCHIVE_TMP"
-cp "$ARCHIVE_TMP"/oopcheck/Project/Sources/Methods/SynthOOP_*.4dm "$VENDOR_DIR/methods/"
+cp "$ARCHIVE_TMP"/oopcheck/Project/Sources/Methods/SynthOOP_*.4dm "$STAGED_VENDOR/methods/"
 rm -rf "$ARCHIVE_TMP"
 
-python3 - "$VENDOR_DIR" <<'PYEOF'
+python3 - "$STAGED_VENDOR" <<'PYEOF'
 import hashlib, json, pathlib, sys
 vendor = pathlib.Path(sys.argv[1])
 snapshot = json.loads((vendor / "r5_snapshot.json").read_text())
@@ -135,6 +135,13 @@ for name in ("4d-oop-ir.json", "oop_doc_examples.json",
     actual = hashlib.sha256((vendor / name).read_bytes()).hexdigest()
     assert actual == snapshot["artifactsSha256"]["out/" + name], name
 manifest = json.loads((vendor / "oop_synth_manifest.json").read_text())
+ir = json.loads((vendor / "4d-oop-ir.json").read_text())
+ids = [entry["member_id"] for entry in manifest["files"].values()]
+assert len(ids) == len(set(ids)) == len(ir["commands"]), "duplicate/missing member ids"
+assert set(ids) == {entry["id"] for entry in ir["commands"]}, "manifest/corpus mismatch"
+assert {p.name for p in (vendor / "methods").glob("SynthOOP_*.4dm")} == {
+    pathlib.Path(p).name for p in manifest["files"]
+}, "method/manifest mismatch"
 for path in manifest["files"]:
     name = pathlib.Path(path).name
     actual = hashlib.sha256((vendor / "methods" / name).read_bytes()).hexdigest()
@@ -148,9 +155,9 @@ COMMIT_FULL="$(git -C "$SRC_REPO" rev-parse "$COMMIT")"
 COMMIT_DATE="$(git -C "$SRC_REPO" log -1 --format=%cI "$COMMIT_FULL")"
 COMMIT_SUBJECT="$(git -C "$SRC_REPO" log -1 --format=%s "$COMMIT_FULL")"
 FETCHED_AT="$(date -u +%Y-%m-%dT%H:%M:%SZ)"
-FILE_COUNT="$(ls "$VENDOR_DIR"/methods/SynthOOP_*.4dm | wc -l | tr -d ' ')"
+FILE_COUNT="$(ls "$STAGED_VENDOR"/methods/SynthOOP_*.4dm | wc -l | tr -d ' ')"
 
-cat > "$VENDOR_DIR/COMMIT" <<EOF
+cat > "$STAGED_VENDOR/COMMIT" <<EOF
 repo=miyako/4d-static-docs
 source_ref=explicit-commit
 commit=$COMMIT_FULL
@@ -159,5 +166,10 @@ commit_subject=$COMMIT_SUBJECT
 fetched_at=$FETCHED_AT
 files_vendored=4d-oop-ir.json,oop_doc_examples.json,oop_synth_manifest.json,oop_corpus_stats.json,r5_snapshot.json,r5_conflict_inventory.json,methods/SynthOOP_*.4dm ($FILE_COUNT files)
 EOF
+
+mkdir -p "$VENDOR_DIR/methods"
+cp "$STAGED_VENDOR"/*.json "$STAGED_VENDOR/COMMIT" "$VENDOR_DIR/"
+rm -f "$VENDOR_DIR"/methods/SynthOOP_*.4dm
+cp "$STAGED_VENDOR"/methods/SynthOOP_*.4dm "$VENDOR_DIR/methods/"
 
 echo "Vendored snapshot refreshed at $VENDOR_DIR (commit $COMMIT_FULL, $FILE_COUNT method files)." >&2
