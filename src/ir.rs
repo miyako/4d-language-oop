@@ -4,7 +4,7 @@
 //! Only the fields needed to build the search index and render results are
 //! given concrete types. Everything structurally rich — `overloads` (params,
 //! union types, returns), `accessor.type` (which is a *list* of TypeRefs for
-//! the 9 multi-variant properties), `returnsShape`, `instantiation.recipes` —
+//! the 10 multi-variant properties), `returnsShape`, `instantiation.recipes` —
 //! is kept as raw `serde_json::Value` and echoed back verbatim in responses.
 //! This is the same deliberate choice classic makes: the whole point of this
 //! service is to hand back *exactly* what the IR says, not a lossy
@@ -59,7 +59,7 @@ pub struct MemberIr {
     #[serde(default)]
     pub overloads: Vec<Value>,
     /// Present for `oop_property`. `accessor.type` may be a single TypeRef
-    /// **or an array** of them (the 9 multi-variant properties); kept raw so
+    /// **or an array** of them (the 10 multi-variant properties); kept raw so
     /// both render, and so a caller can never see only the first variant.
     #[serde(default)]
     pub accessor: Option<Value>,
@@ -97,7 +97,7 @@ pub struct ClassIr {
     pub type_name: String,
     #[serde(rename = "docPage", default)]
     pub doc_page: Option<String>,
-    /// How to obtain an instance. Complete for all 50 classes — this is the
+    /// How to obtain an instance. Complete for all 51 class records — this is the
     /// single most valuable field on the class card.
     #[serde(default)]
     pub instantiation: Option<Value>,

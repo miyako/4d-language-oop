@@ -138,7 +138,7 @@ fn gen_idf_table(out_dir: &str) {
             panic!("documentFrequency.combined[{token}] is {d}, expected >= 1");
         }
         // ln(N / df): 0.0 for a token present in every member (e.g. "the",
-        // df 502), rising as the token gets rarer. This is what replaces a
+        // df 528), rising as the token gets rarer. This is what replaces a
         // hand-written domain stopword list -- see src/index.rs.
         idf.insert(token.clone(), (n / d).ln());
     }

@@ -1,7 +1,7 @@
 repo=miyako/4d-static-docs
-branch=main
-commit=a4a5b0d2269fdff118272cc8ec9eda38ef39c7b3
-commit_date=2026-09-09T16:40:01+09:00
-commit_subject=Deep-link OOP members to their own doc section (#29)
-fetched_at=2026-09-09T07:40:03Z
-files_vendored=4d-oop-ir.json,oop_doc_examples.json,oop_synth_manifest.json,oop_corpus_stats.json,methods/SynthOOP_*.4dm (502 files)
+source_ref=explicit-commit
+commit=1dfd4e7eb832d19361f8ec1f4801603899087ca3
+commit_date=2026-11-07T19:28:57+09:00
+commit_subject=Refresh both language corpora to 21 R5 BETA
+fetched_at=2026-11-07T10:36:14Z
+files_vendored=4d-oop-ir.json,oop_doc_examples.json,oop_synth_manifest.json,oop_corpus_stats.json,r5_snapshot.json,r5_conflict_inventory.json,methods/SynthOOP_*.4dm (528 files)

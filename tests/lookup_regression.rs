@@ -294,7 +294,7 @@ fn naming_a_class_returns_its_card_first() {
 // Class-flooding control
 // ---------------------------------------------------------------------------
 
-/// `WebServer` has 41 members, `Collection` 47, `EntitySelection` 34. Without
+/// `WebServer` has 42 members, `Collection` 47, `EntitySelection` 34. Without
 /// the cap, a query naming one of them returns nothing else.
 #[test]
 fn no_single_class_floods_the_results() {
@@ -325,7 +325,7 @@ fn no_single_class_floods_the_results() {
 }
 
 /// A class whose members flood the candidate pool must also offer its card, so
-/// the caller gets `instantiation` rather than 41 near-identical rows.
+/// the caller gets `instantiation` rather than 42 near-identical rows.
 #[test]
 fn flooding_classes_emit_a_class_card() {
     assert_class_card("web server", "WebServer", TOP_N);
@@ -421,12 +421,12 @@ fn class_card_lists_inherited_members() {
 // Class cards: instantiation and constructibility
 // ---------------------------------------------------------------------------
 
-/// `instantiation` is complete for all 50 classes and is the single most
+/// `instantiation` is complete for all 51 class records and is the single most
 /// common thing an agent gets wrong about 4D OOP.
 #[test]
 fn every_class_says_how_to_obtain_an_instance() {
     let idx = index::get();
-    assert_eq!(idx.classes.len(), 50, "expected the full 50-class corpus");
+    assert_eq!(idx.classes.len(), 51, "expected the full 51-class corpus");
     for id in idx.classes.keys() {
         let card = model::class_card(id).unwrap_or_else(|| panic!("class {id} must resolve"));
         assert!(
@@ -620,7 +620,7 @@ fn members_listing_filters_by_kind() {
 // Multi-variant properties and dynamic pseudo-members
 // ---------------------------------------------------------------------------
 
-/// 9 properties have an *array* of TypeRefs. Rendering only the first variant
+/// 10 properties have an *array* of TypeRefs. Rendering only the first variant
 /// is a bug this project has already been bitten by once.
 #[test]
 fn multi_variant_properties_expose_every_variant() {
@@ -632,6 +632,7 @@ fn multi_variant_properties_expose_every_variant() {
         ("Email.sender", &["Text", "Object", "Collection"]),
         ("Email.to", &["Text", "Object", "Collection"]),
         ("Document.original", &["4D.File", "4D.Folder"]),
+        ("SMTPTransporter.certificate", &["4D.File", "Blob"]),
         ("SystemWorker.response", &["Text", "Blob"]),
         ("WebServer.characterSet", &["Number", "Text"]),
     ];
@@ -647,10 +648,10 @@ fn multi_variant_properties_expose_every_variant() {
     }
 }
 
-/// Exactly 9, corpus-wide: a tenth appearing (or one disappearing) means the
+/// Exactly 10, corpus-wide: another appearing (or one disappearing) means the
 /// upstream IR changed and the rendering needs re-checking.
 #[test]
-fn there_are_exactly_nine_multi_variant_properties() {
+fn there_are_exactly_ten_multi_variant_properties() {
     let idx = index::get();
     let multi: Vec<&str> = idx
         .members
@@ -665,8 +666,8 @@ fn there_are_exactly_nine_multi_variant_properties() {
         .collect();
     assert_eq!(
         multi.len(),
-        9,
-        "expected 9 multi-variant properties, got {multi:?}"
+        10,
+        "expected 10 multi-variant properties, got {multi:?}"
     );
 }
 
@@ -718,15 +719,15 @@ fn dynamic_pseudo_members_render() {
 // Example precedence
 // ---------------------------------------------------------------------------
 
-/// All 502 members have a compiler-verified synthetic example, and 0 have
+/// All 528 members have a compiler-verified synthetic example, and 0 have
 /// neither kind, so every result must carry a compiler-verified primary.
 #[test]
 fn every_member_has_a_compiler_verified_primary_example() {
     let idx = index::get();
     assert_eq!(
         idx.members.len(),
-        502,
-        "expected the full 502-member corpus"
+        528,
+        "expected the full 528-member corpus"
     );
     for (id, record) in &idx.members {
         let example = model::build_example(record);
@@ -859,15 +860,180 @@ fn verified_doc_examples_take_precedence() {
 // Corpus integrity
 // ---------------------------------------------------------------------------
 
+#[test]
+fn r5_api_spellings_are_exact_queries() {
+    for id in [
+        "DataClass.getIndexes",
+        "Vector.precision",
+        "4D.Vector.new",
+        "SMTPTransporter.certificate",
+        "SMTPTransporter.certificateName",
+        "SMTPTransporter.certificatePassword",
+        "Session.quotas",
+        "WebServer.quotas",
+        "QuotaManagerClass.nbSessions",
+        "QuotaManagerClass.nbGuestSessions",
+    ] {
+        assert_eq!(ids(id, TOP_N), [id], "exact spelling must not be fuzzy");
+        assert_eq!(ids(id, 0), Vec::<String>::new());
+    }
+    assert_eq!(
+        ids("4D.QuotaManagerClass.nbSessions", TOP_N),
+        ["QuotaManagerClass.nbSessions"]
+    );
+    assert_eq!(ids("4D.File.exists", TOP_N), ["Document.exists"]);
+    assert_top1("vector precision", "Vector.precision");
+    assert_in_top("quota manager", &["QuotaManagerClass"], TOP_N);
+    for (query, member) in [
+        ("session quotas", "Session.quotas"),
+        ("web server quotas", "WebServer.quotas"),
+        ("smtp certificate", "SMTPTransporter.certificate"),
+        ("get indexes of a dataclass", "DataClass.getIndexes"),
+    ] {
+        assert_in_top(query, &[member], TOP_N);
+    }
+}
+
+#[test]
+fn quota_class_uses_the_compiler_type_and_property_producers() {
+    for spelling in ["QuotaManagerClass", "4D.QuotaManagerClass"] {
+        let card = model::class_card(spelling).expect("compiler type resolves");
+        assert_eq!(card.type_name, "4D.QuotaManagerClass");
+        assert_eq!(card.member_counts.declared, 19);
+        assert_eq!(card.member_counts.inherited, 0);
+        assert!(card.constructor.is_none());
+        assert!(card.superclass.is_none());
+        assert!(card
+            .note
+            .as_deref()
+            .unwrap()
+            .contains("no public constructor"));
+        assert_eq!(card.how_to_obtain.len(), 2);
+    }
+    assert!(model::class_card("4D.QuotaManager").is_none());
+    assert!(model::member_card("4D.QuotaManager.nbSessions").is_none());
+    let returns = model::returns_result("4D.QuotaManagerClass").unwrap();
+    assert_eq!(returns.count, 2);
+    for producer in &returns.producers {
+        assert!(["Session.quotas", "WebServer.quotas"].contains(&producer.producer.as_str()));
+        assert_eq!(producer.relationships.len(), 2);
+        assert!(producer.syntax_warning.is_some());
+    }
+    for (id, version) in [("Session.quotas", "21-R4"), ("WebServer.quotas", "21-R5")] {
+        let member = model::member_card(id).unwrap();
+        assert_eq!(member.since_version.as_deref(), Some(version));
+        assert_eq!(member.accessor_types[0]["name"], "4D.QuotaManagerClass");
+        assert!(member.raw_syntax[0].contains("4D.QuotaManager"));
+        assert!(member.syntax_warning.is_some());
+    }
+    for id in [
+        "currentValues",
+        "defaultEntitySetTimeout",
+        "maxEntitySetTimeout",
+        "nbEntitySets",
+    ] {
+        let member = model::member_card(&format!("QuotaManagerClass.{id}")).unwrap();
+        // These property IR records omit sinceVersion; the source-bound
+        // snapshot supplies the introduction timeline, not a fabricated field.
+        assert!(member.since_version.is_none());
+        let snapshot: serde_json::Value =
+            serde_json::from_str(fourd_language_oop::data::SNAPSHOT_JSON).unwrap();
+        assert!(snapshot["oop"]["introducedInStableR4"]
+            .as_array()
+            .unwrap()
+            .iter()
+            .any(|v| v.as_str() == Some(member.id.as_str())));
+    }
+}
+
+#[test]
+fn r5_corrected_and_added_signatures_are_preserved() {
+    let vector = model::member_card("4D.Vector.new").unwrap();
+    let precision = &vector.overloads[0]["params"][1];
+    assert_eq!(precision["name"], "precision");
+    assert_eq!(precision["optional"], true);
+    assert_eq!(precision["type"]["enum"], "4D.Vector.new.precision");
+    assert!(index::get().enums.contains_key("4D.Vector.new.precision"));
+    let precision = model::member_card("Vector.precision").unwrap();
+    assert_eq!(precision.accessor.as_ref().unwrap()["writable"], false);
+    assert_eq!(precision.accessor_types[0]["name"], "Integer");
+    let indexes = model::member_card("DataClass.getIndexes").unwrap();
+    assert_eq!(indexes.overloads[0]["returns"]["name"], "Collection");
+    assert!(indexes.overloads[0]["params"]
+        .as_array()
+        .unwrap()
+        .is_empty());
+    let privileges = model::member_card("Session.setPrivileges").unwrap();
+    assert_eq!(privileges.overloads.len(), 3);
+    assert!(privileges
+        .overloads
+        .iter()
+        .all(|o| o["returns"]["name"] == "Boolean"));
+    let folder = model::member_card("4D.Folder.new").unwrap();
+    assert!(folder.raw_syntax[0].contains("{ ; * }"));
+    assert_eq!(folder.overloads[0]["params"].as_array().unwrap().len(), 2);
+    assert!(folder.syntax_warning.is_some());
+}
+
+#[test]
+fn r5_provenance_and_fresh_corpus_coverage_are_explicit() {
+    let snapshot: serde_json::Value =
+        serde_json::from_str(fourd_language_oop::data::SNAPSHOT_JSON).unwrap();
+    let p = model::snapshot_provenance();
+    assert_eq!(p["version"], "21-R5");
+    assert_eq!(p["status"], "BETA");
+    assert_eq!(
+        p["sourceCommit"],
+        "1dfd4e7eb832d19361f8ec1f4801603899087ca3"
+    );
+    assert_eq!(p["compilerBuild"], "21 R5 build 21R5.100156");
+    assert_eq!(snapshot["oop"]["hover"]["explainedDisagreements"], 3);
+    assert_eq!(snapshot["oop"]["hover"]["noHoverMultivariantProperty"], 10);
+    assert_eq!(snapshot["oop"]["hover"]["skippedDynamic"], 7);
+    let idx = index::get();
+    let mut coverage = [0usize; 3];
+    for member in idx.members.values() {
+        let category = if member.doc_examples.iter().any(|d| d.is_compiler_verified()) {
+            0
+        } else if !member.doc_examples.is_empty() {
+            1
+        } else {
+            2
+        };
+        coverage[category] += 1;
+        let card = model::build_member_result(member, None);
+        let primary = card.example.primary.unwrap();
+        assert!(primary.compiler_verified);
+        assert!(primary.verification_scope.unwrap().contains("not runtime"));
+        assert_eq!(card.snapshot, p);
+    }
+    assert_eq!(coverage, [147, 78, 303]);
+    assert_eq!(
+        idx.members
+            .values()
+            .map(|m| m.synth_blocks.len())
+            .sum::<usize>(),
+        968
+    );
+    assert_eq!(ir::parse_embedded_doc_examples().examples.len(), 483);
+    assert_eq!(
+        snapshot["oop"]["documentationExamples"]["blocksVerified"],
+        499
+    );
+    assert_eq!(model::class_card("Vector").unwrap().snapshot, p);
+    assert_eq!(model::members_listing("Vector", None).unwrap().snapshot, p);
+    assert_eq!(model::returns_result("Vector").unwrap().snapshot, p);
+}
+
 /// Guards against the embedded IR snapshot drifting out of sync with the
 /// `ir.rs` structs: every member in the real, full corpus must deserialize.
 #[test]
 fn full_ir_corpus_deserializes() {
     let root = ir::parse_embedded();
-    assert_eq!(root.commands.len(), 502);
-    assert_eq!(root.classes.len(), 50);
-    assert_eq!(root.enums.len(), 37);
-    assert!(root.relationships.len() >= 674);
+    assert_eq!(root.commands.len(), 528);
+    assert_eq!(root.classes.len(), 51);
+    assert_eq!(root.enums.len(), 38);
+    assert_eq!(root.relationships.len(), 725);
 
     let mut by_kind: HashMap<&str, usize> = HashMap::new();
     for m in &root.commands {
@@ -877,14 +1043,14 @@ fn full_ir_corpus_deserializes() {
         assert!(!m.receiver.class_id.is_empty());
         *by_kind.entry(m.kind.as_str()).or_insert(0) += 1;
     }
-    assert_eq!(by_kind.get("oop_function"), Some(&258));
-    assert_eq!(by_kind.get("oop_property"), Some(&225));
+    assert_eq!(by_kind.get("oop_function"), Some(&259));
+    assert_eq!(by_kind.get("oop_property"), Some(&250));
     assert_eq!(by_kind.get("oop_constructor"), Some(&19));
 }
 
 /// The synthetic corpus is joined to members by `member_id`, never by file
 /// name (`SynthOOP_<id>` names are truncated to 31 chars with a hash suffix
-/// and are therefore lossy). All 502 must resolve.
+/// and are therefore lossy). All 528 must resolve.
 #[test]
 fn every_member_has_a_synthetic_example_joined_by_id() {
     let idx = index::get();
@@ -951,7 +1117,7 @@ fn idf_discounts_ubiquitous_tokens() {
         imap > function,
         "a rare token ({imap}) must outweigh a ubiquitous one ({function})"
     );
-    assert!(data::CORPUS_MEMBERS as usize == 502);
+    assert!(data::CORPUS_MEMBERS as usize == 528);
 }
 
 /// `docPage` is an official permalink, not a path into the docs mirror the
@@ -998,10 +1164,9 @@ fn doc_pages_are_version_less_official_permalinks() {
         );
         seen += 1;
     }
-    assert_eq!(seen, 502, "expected every member to carry a docPage");
+    assert_eq!(seen, 528, "expected every member to carry a docPage");
 
-    // Classes agree with their members, and the one class with no API page
-    // stays null rather than being given a fabricated URL.
+    // Classes agree with their members.
     // Constructors anchor on the fully-qualified name, everything else on the
     // bare member name. Pinned explicitly because bare-name anchoring would
     // collapse all 19 constructors to `#new` and still look plausible.
@@ -1036,8 +1201,9 @@ fn doc_pages_are_version_less_official_permalinks() {
     );
     let transporter = model::class_card("Transporter").expect("Transporter class");
     assert_eq!(
-        transporter.doc_page, None,
-        "Transporter has no API page; a URL here would be invented"
+        transporter.doc_page.as_deref(),
+        Some("https://developer.4d.com/docs/API/Transporter"),
+        "R5 publishes the shared abstract Transporter base's own API page"
     );
 
     // Doc examples carry their own docPage, and it was missed by the first

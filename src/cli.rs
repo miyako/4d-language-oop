@@ -58,6 +58,7 @@ pub fn run_query(args: QueryArgs) -> i32 {
     if args.json {
         return print_json(&results);
     }
+    print_snapshot_text(&model::snapshot_provenance());
     if results.is_empty() {
         println!("No matches for query: {:?}", args.query);
         return 0;
@@ -163,6 +164,7 @@ pub fn run_class(args: NameArgs) -> i32 {
     if args.json {
         return print_json(&card);
     }
+    print_snapshot_text(&card.snapshot);
     println!("{}", model::class_heading(&card.id, &card.type_name));
     print_class_body(&card, "", usize::MAX);
     0
@@ -175,6 +177,7 @@ pub fn run_member(args: NameArgs) -> i32 {
     if args.json {
         return print_json(&card);
     }
+    print_snapshot_text(&card.snapshot);
     println!("{} ({})", card.display_name, card.kind);
     print_member_body(&card, "");
     0
@@ -192,6 +195,7 @@ pub fn run_members(args: NameArgs) -> i32 {
 }
 
 fn print_members_text(listing: &MembersListing) {
+    print_snapshot_text(&listing.snapshot);
     println!(
         "{} ({} member(s){})",
         model::class_heading(&listing.class_id, &listing.type_name),
@@ -229,6 +233,7 @@ pub fn run_returns(args: NameArgs) -> i32 {
 }
 
 fn print_returns_text(r: &ReturnsResult) {
+    print_snapshot_text(&r.snapshot);
     println!(
         "What produces a {}?",
         model::class_heading(&r.class_id, &r.type_name)
@@ -264,6 +269,9 @@ fn print_returns_text(r: &ReturnsResult) {
         }
         for note in &p.notes {
             println!("      {note}");
+        }
+        if let Some(warning) = &p.syntax_warning {
+            println!("      SYNTAX WARNING: {warning}");
         }
     }
 }
@@ -355,6 +363,10 @@ fn print_member_body(m: &MemberResult, pad: &str) {
         }
     }
 
+    if let Some(warning) = &m.syntax_warning {
+        println!("{pad}SYNTAX WARNING: {warning}");
+    }
+
     print_example(&m.example, pad);
 }
 
@@ -394,6 +406,9 @@ fn print_example_block(block: &ExampleBlock, pad: &str) {
         "NOT compiler-verified"
     };
     println!("{pad}example ({}, {verified}):", source_label(block.source));
+    if let Some(scope) = block.verification_scope {
+        println!("{pad}  verification scope: {scope}");
+    }
     if let Some(caption) = &block.caption {
         println!("{pad}  {}", first_line(caption));
     }
@@ -406,6 +421,16 @@ fn print_example_block(block: &ExampleBlock, pad: &str) {
     for line in block.raw.lines() {
         println!("{pad}    {line}");
     }
+}
+
+fn print_snapshot_text(snapshot: &serde_json::Value) {
+    println!(
+        "snapshot: {} {} ({}; source {})",
+        snapshot["version"].as_str().unwrap_or(""),
+        snapshot["status"].as_str().unwrap_or(""),
+        snapshot["compilerBuild"].as_str().unwrap_or(""),
+        snapshot["sourceCommit"].as_str().unwrap_or("")
+    );
 }
 
 fn print_class_body(c: &ClassResult, pad: &str, max_members: usize) {
